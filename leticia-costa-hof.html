@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#0f0e17"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="HOF Letícia C."/>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkxldFx1MDBlZGNpYSBDLiBcdTAwYjcgUGxhbm8gSE9GIiwgInNob3J0X25hbWUiOiAiSE9GIExldFx1MDBlZGNpYSBDLiIsICJkZXNjcmlwdGlvbiI6ICJQbGFubyBkZSB2ZW5kYXMgZSB0YXJlZmFzIGRpXHUwMGUxcmlhcyBcdTIwMTQgTVx1MDBlOXRvZG8gRnVsbCBGYWNlIDNEIiwgInN0YXJ0X3VybCI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwZjBlMTciLCAidGhlbWVfY29sb3IiOiAiIzBmMGUxNyIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQVlBQUFCUzNHd0hBQUFHWVVsRVFWUjRuTzNkTzQ1Y1pSREY4UnJrRU5rUnNzUUdJSUZWSUNGTFNFZ0dreU1SSVRaQXlCS1FrQ043QlR3aUpDZE8yQUdFc0FBQ1NFbkJCT2pETSszdTZjZjlIcWZxL0grWkphdlZVMVhuMW5kbnB1ZGUzYnQ3LzBVQXBsNWIvUWFBbFFnQXJCRUFXQ01Bc0VZQVlJMEF3Qm9CZ0RVQ0FHc0VBTllJQUt3UkFGZ2pBTEJHQUdDTkFNQWFBWUExQWdCckJBRFdDQUNzM1ZuOUJpcDc5dmhSbDlkNThQbTNYVjRIcjdyaU04SGI5UnIwY3hHTTdRakFCVllOL0RFRTRud0U0QVNxQTM4TWdUaU9BQnlRZGVnUElRejdFWUFkMVFaL0YwRzRpUUJFL2FFL2hEQ1lCOEIxOEhjNUI4RXlBQXorZm81QnNBb0FnMzhhcHlCWUJJREJ2NHhERU1yL0xoRERmem1IMnBYZEFBN05tNm5xTmlpNUFSaisvcXJXdE5RR3FOb2tOWlcyUVprQXFBNy8xbUdwK25XcEtCRUFsU0daTlJSdVgrOUlxUU93ZWhCVUJvQTZYQzV0QVBnUXluN1U1VHdwQXpDN3lWbWJTNTJPU3hlQW1VM04yTkI5cU5saHFRSXdvNUhaR25ndWFuaFRtaCtFMGJnK1pueU5xMi9LejVGaUE0d3VxTVBnNzBOZEV3UmdaSk15TkdnRzV4cExINEdjR3pQVHlGcW9INGRrTjhDb3dqSDR0M09ydStRR2NHdUNrbEUxVXQwRWNnRmcrTmR6Q2tINVA0N0w0RittMVUxeGFIdVMyZ0M5aTgzd2I5ZTdobXFCa2drQXc2K3JjZ2drQXNEdzY2c2FBb2tBOU1Ud2oxT3h0c3NEMFBOS1VMRkJhbnJXV0dFTExBMEF3NTlUcFJBczN3QTlNUHp6VmFuNXNnRHdBTG44ZXRWKzVSWllFb0RWYXc5NlZzMUU2aU1RVi8vMXN2ZGdlZ0E0K3RTVCtTaVVjZ013L0hxeTltUnFBRGo3NDVqWk01SnVBMlM5MGpqSTJKdHBBZWlSN0l3RmR0T2pSek8zUUxvTkFQUTBKUUJjL2IxazJnSnNBRmhMRVFDdS92bGs2ZG53QUd4ZFpWa0tpVmRsZURwT2lnMEFqREkwQVB6Z0MxdU5uaUhwRGNEeEp6LzFIa29IQUJodDJOOEdyWHJ6KytZYnI4ZlRyeDRNZWUyZmYvMGp2dno2cHlHdnZacnFQTEFCWUkwQXdKcGtBRlNQUDdpY2FrK0gzQU9vbnZkRyt1aTl0K0t6aCsrZS9QOC8rT0s3K1BzZnlVY3pES000RjVJYkFKaEZMZ0Faci80NGpXSnY1UUlBek5ROUFQejZBMFlaTVZ0c0FGaVRDb0RpR1JGOXFmVllLZ0RBYkFRQTFnZ0FySFVOQU44QndtaTlaMHhtQTZqZEhHRWNwVjdMQkFCWWdRREFHZ0dBTlFJQWF3UUExZ2dBckJFQVdDTUFzRVlBWUkwQXdCb0JnRFVDQUdzRUFOWUlBS3dSQUZpVENRQWZwdkdoMU91dUFWRDZvQU5xNmoxamQ3cStHcWI2NVAyMzQ5TVAzL24vMzk4Ly95MmUvUERMd25lVWo4d1JDRmlCQU1DYVZBQ1VibzR3aGxxUHBRSUF6Tlk5QUh3bkNLUHdoQmlnTTdsdmd6NTcvRWg2aS9SNlR2Q1AzM3pjNGQza29uYitqMkFEd055UUFDaGZ3WkdUMVpQaUZWY2x0bEh0cWR3OWdMcmYvL3lMRFZlSTVBWUFaaGtXZ0sxWFNkV1ZpZk1wUGlHK1lRUEFtblFBMkFMNXFmZHdhQUM0V2NSV28yZEllZ01Bb3cwUEFEZkR2cFJ2ZnBzVUc0QVE1Sk9sWnlrQ0FJd3lKUUE5VmxtV0t3cjY5R3JXTjFEWUFMQTJMUUJzQVErWnJ2NFJDVGNBSWRDVnNUZFRBOEFQeG5ETTdCbEp0d0VpY2w1cHFzdmFrK2tCNkpYd3JBV3ZxRmN2VnB3UVVtNkFoaENzbDcwSFN3TEF2UUIyclpxSlpSdUFvMUIrbVk4K1Rlb2pVRU1JNXF0Uzg2VUI2Sm44S2czSm9HZXRWeCtIbDI4QVFwQkxwZUdQRUFoQWI0UmduSXExbFFoQTd5dEJ4VWF0MXJ1bUNsZi9DSkVBUkJBQ1pWV0hQMElvQUJHRVFGSGw0WTh3K05PSXJZRnFoVmZuY3ZHUTJnQVI0d2JWcGFFOWpLcVY0a1ZJTGdBUmhHQWxwK0dQaUxpNmQvZitpOVZ2NHBDUkE2dmFrRlZjYXkyNUFacVJoV01idk9RNi9CSGlHNkFaUGF6cVRScUZ1aVlKUU1TY0szYUdodlZBTFYrU1BnSmRONk9nRHNjaWh2K21OQnVnbVRta21ScDVHMnAyV0xvQVJNeS9VbWRyYWtPZGprc1pnSWgxeHhYMUpsT1g4NlFOUU1UNk03dEswNm5ENVZJSG9GazlBTTJzUVhEN2VrY3FFWUFJbmFIWVZmVUJJUldHUDZKUUFDSjBoNldhS3NNZlVTd0FEVUVZbzlMZ04ybCtFSGFPaW8xYXJXcE5TMjZBNjlnRzIxUWQvS2JrQnJpdWVnTkhjcWhkK1Exd0hkdmdOQTZEMzFnRm9DRUkremtOZm1NWmdJWWcvTWR4OEJ2ckFEU3VRWEFlL0lZQTdLZ2VCb2IrSmdKd1FMVWdNUGo3RVlBVFpBMERRMzhjQWJpQWFpQVkrUE1SZ0E3NEVFcGVCR0NnQ3MvUXFvNEF3RnI1M3dVQ2JrTUFZSTBBd0JvQmdEVUNBR3NFQU5ZSUFLd1JBRmdqQUxCR0FHQ05BTUFhQVlBMUFnQnJCQURXQ0FDc0VRQllJd0N3UmdCZzdWOWZpRWVHbVBIMEtBQUFBQUJKUlU1RXJrSmdnZz09IiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FZQUFBRDBlTlQ2QUFBVGVFbEVRVlI0bk8zY3I2OWwxMzNHNGUyUmFXem9rQ2k4Q3F0a1ZoSlVnNmdvTkFxMklnVlVvVVdscFFHRkpRV1dTZ3JNVWg0Y3RTZ2d2SDlCcThnQlkrZjZ6ajMzbnIzUC9ySFc5L3MrRDdZMEIrejFycy9zY3p3ZmZmckpaOThzQUVDVWQ2TS9BQUJ3UFFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFK0h2MEJnUDIrL3UzUEwvM3p2dmp5cTB2L1BPQjRIMzM2eVdmZmpQNFF3RXRYWCtwbkVRc3dKd0VBQTNXNTVCOGxEbUFjQVFBWFNML290eElHY0Q0QkFBZHoyWjlERk1DeEJBRHM1TUlmUXhEQVBnSUFObkxoejBrUXdEWUNBTzV3NGRja0NPQnRBZ0J1Y09uM0lnYmdKUUVBaXdzL2pTQUFBVUF3bHo3TElnYklKUUNJNHRMbkxXS0FKQUtBQ0M1K3RoQUNKQkFBdE9YUzV3aGlnSzRFQUsyNDlEbVRHS0FUQVVBTExuNnVKQVRvUUFCUW1vdWZrWVFBbFFrQXluSHBNeU14UURVQ2dESmMvRlFnQktoQ0FEQTlGejhWQ1FGbUp3Q1lsb3VmRG9RQXN4SUFUTWZGVDBkQ2dOa0lBS2JoNGllQkVHQVdBb0RoWFB3a0VnS01KZ0FZeHNVUFFvQnhCQUNYYy9IRFMwS0Fxd2tBTHVQaWgvdUVBRmQ1Ti9vRGtNSGxEK3M0SzF6Rkd3Qk9aY3pnY2Q0R2NDWUJ3Q2xjL0hBY0ljQVpmQVhBNFZ6K2NDeG5pak40QThCaGpCU2N6OXNBamlJQTJNM0ZEOWNUQXV6bEt3QjJjZm5ER000ZWUza0R3RU9NRDh6RDJ3QWU0UTBBbTduOFlTN09KSS93Qm9EVmpBek16OXNBMXZJR2dGVmMvbENEczhwYUFvQzdEQXJVNHN5eWhxOEFlSlVSZ2ZwOEpjQnJ2QUhnSnBjLzlPQXM4eHB2QUhqQllOUjAxZC8wUEI4MWVSUEFod1FBZjJYWTUxVnR2RDFMODZyMkxIRWVBY0N5TEFaN0Z0M0gyWE0yaCs3UEdlc0lBSXp5QUFiNE9jL2c5VHlEQ0lCZ1J2YzZ4bllieitaMVBKdTVCRUFvQTNzdW8zb3N6K3U1UEsrWkJFQWdZM284QTNvdHovRHhQTU41QkVBWXcza2NnemtIei9SeFBOTlpCRUFRUTdtZmdaeWJaM3cvejNnT0FSREFLTzVqRUd2eTNPL2p1ZTlQQURSbkJCOWovSHB4RGg3akhQUW1BQm96ZXRzWnZONmNpZTJjaWI0RVFGT0diajBEbDhrWldjOFo2VWtBTkdUWTFqRnFMSXZ6c3BiejBvOEFhTWFZM1dmSXVNWFp1Yy9aNlVVQU5HTEEzbWE4V01NNWVwdHoxSWNBYU1KbzNXYXMyTU81dXMyNTZrRUFOR0NrWGpKUUhNa1plOGtacTA4QUZHZVluak5Lbk1sNWU4NTVxKzNkNkEvQTQ0elJjOGFJczNuR25yTkJ0WGtEVUpTRDk4UW9NNEl6K01RWnJFa0FGR1I0M2pNNnpNQjVmTTk1ckVjQUZHTnNEQTF6Y2phZHpXcjhCcUFRQTJOZ21KZG4wMFpWNHcxQUVla0h5N2hTaWZQcXZGWWdBQXBJSGhORFFtWE9MalB6RmNEa0RBalVsZndNSjI5WEZkNEFUQ3oxQUNXUEpuMDV6OHpHRzRCSkdRdm9KZlhaVHQyeUNyd0JtRkRpZ1VrZFJ6STU0OHpBR3dDR013eWs4Y3d6QXdFd21iUy9HUmhDVXFVOSsybmJWb0d2QUNhU2RFRFN4Zy9lNHV3emdqY0FrekFBa0N2cFRDUnQzZXdFd0FTU0RrVFMwTUVXU1djamFmTm01aXVBd1ZJT1F0SzR3VjUyZ1N0NEE4RHBISExZeHBuaENnSmdvSVRLTjJUd21JU3prN0NCTXhNQWd5UTgrQWtEQm1kS09FTUpXemdydndFWW9Qc0RuekJhY0RXN3dkRzhBZUJRRGpHY3c5bmlhQUxnWXAwcjNrREJ1VHFmc2M3Yk9Dc0JjS0hPRDNqbllZS1pkRDVyblRkeVJnTGdJcDBmN002REJEUHFmT1k2YitWc0JBQzdkQjRpbUptengxNEM0QUpkaTlZQXdWaGR6MkRYelp5TkFEaFoxd2U1Ni9CQU5WM1BZdGZ0bklrQU9GSFhCN2pyNEVCVlhjOWsxdzJkaFFCZ2s2NURBOVU1bTJ3bEFFN1NzVndORE15dDR4bnR1S1d6RUFBbjZQakFkaHdXNktqaldlMjRxVE1RQU56VmNWQ2dNMmVXTlFUQXdicVZxaUdCbXJxZDNXN2JPZ01CY0tCdUQyaTNBWUUwM2M1d3Q0MGRUUUJ3VTdmaGdGVE9NcThSQUFmcFZLWUdBM3JwZEtZN2JlMW9Bb0JuT2cwRjhNVFo1a01DNEFCZGl0UkFRRzlkem5pWHpSMU5BT3prUVFTNG51M2RUd0N3TEV1ZnZ4a0FiM1BXK1k0QTJLRkxnUm9FeU5MbHpIZlo0RkVFUUxndVF3QnM0K3dqQUI3VW9Ud05BR1Ryc0FFZHRuZ1VBZkFBRHh6QVBHenlZd1JBcUE3bEQreG5DM0lKZ0kwNmxLWUREM3hmaDAzb3NNMVhFd0JoT2h4MDRIaTJJWThBMkVCaEFzekxSbThqQUlJb2ZPQXROaUtMQUZpcGVsazYyTUFhMWJlaStsWmZTUUFFcUg2Z2dXdlpqQXdDWUFWRkNWQ0h6VjVIQURTbjVJRkgySTcrQk1BZGxVdlNBUWIycUx3aGxiZjdLZ0lBQUFJSmdEZFVMc2pLNVE3TW8vS1dWTjd3S3dpQWhpb2ZXR0ErTnFVbkFmQUs1UWhRbnkxL25RQm9ScWtEWjdBdC9RaUFHeFFqUUI4Mi9UWUIwSWhDQjg1a1kzb1JBQitvV29vT0puQ0ZxbHRUZGR2UEpBQUFJSkFBYUtCcWtRTTEyWndlQk1EM2VFVUUwSmVOZjA0QUZLZkVnUkZzVDMwQzRGdktFS0EvVy85RUFCU213SUdSYkZCdEFtQ3BXWVFPSGpDRGlsdFVjZlBQSUFBQUlKQUFLS2hpY1FOOTJhU2E0Z1BBcXlDQVBMWmZBSlNqdElFWjJhWjZCQUFBQklvT0FLK0FBSEtsM3dIUkFWQ05WMnpBekd4VUxiRUJrRjUrQUdUZkJiRUJVSTJ5Qmlxd1ZYVUlBQUFJOU5Hbm4zejJ6ZWdQY2JWcXIzd1U5VngrK3ZtUGw5Lzg4dlBSSCtOUy8vM0gvMTMrOFYvK2EvVEhvQkE3T3o5dkFBQWdrQUNZWEdLVkF2WFpydm5GQlVDMTExSUFuQy94Ym9nTEFBQkFBRXpOS3pTZ01oczJOd0VBQUlHaUFxRFNkenpLR2VpZzBwWlZ1aU9PRUJVQUFNQjdBZ0FBQXNYOFM0Q1ZYdTFVZW1YR05qLzY0UStXZi8ybnZ4L3laLy9iZi81aCtmZXYvMmZJbncwMmVEN2VBQUJBSUFFQUFJRUV3R1JTWGowQldXemJmQ0lDb05KM1R3Q01sWEpuUkFRQUFQQ2NBSmlJVjJSQVp6WnVMZ0lBQUFLMUQ0Q1U3M0lBT0U3QzNkRStBS3J3YWd4SVlPdm1JUUFBSUpBQUFJQkFyUU1nNFRzY0FNN1IvUTVwSFFCVitFNE1TR0x6NWlBQUFDQ1FBQUNBUUFJQUFBSzFEWUFxUDk3d1hSaVFxTXIyVmJsTEh0RTJBQUNBMXdrQUFBZ2tBQUFna0FBWXFNcDNZQUJuc0lGakNRQUFDTlF5QURyL2FoT0FhM1c5VTFvR0FBRHdOZ0VBQUlFRUFBQUVFZ0NEK1BVcmdDMGNTUUFBUUNBQkFBQ0IyZ1ZBMS85ZEE0QnhPdDR0N1FJQUFMaFBBQUJBSUFFd2dGKzlBanl4aVdNSUFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQ3RBcURqUDlVSXdCeTYzVEd0QXFBQy8rQUZ3RXUyOFhvQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1lDTGZmM2JuNC8rQ0FEVHNZM1hheFVBWDN6NTFlaVBBRUJUM2U2WVZnRUFBS3dqQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUpnQVAvZ0JjQVRtemlHQUFDQVFCK1AvZ0FBOS96enIvNXUrZHUvK2VHcS8vWWZmdjBmeS8vOS81OVAva1JRWDdzM0FOMytxVVlBeHV0NHQ3UUxBQURnUGdFQUFJRUV3Q0IrOVFwZ0MwY1NBQUFRU0FBQVFDQUJBQUNCV2daQXgvOWRBNEF4dXQ0cExRTUFBSGliQUJqSXIxK0JaRFp3TEFFQUFJRUVBQUFFRWdBQUVLaHRBRlQ1MWFidndJQkVWYmF2eWwzeWlMWUJBQUM4VGdBQVFDQUJBQUNCQk1BRXFud1hCbkFFbXplSGowZC9nRE45OGVWWEhqVDQxaTkrOXBQbEZ6Lzd5ZWlQQVdWMC9nSGdzalFQQURqRFR6Ly84ZktiWDM0KyttTUE3T0lyQUFBSUpBQW00YXNLSUlHdG0wZjdBT2orSFE0QXgwdTRPOW9IQUFEd2tnQ1lpRmRqUUdjMmJpNENBQUFDUlFSQXduYzVBQndqNWM2SUNJQkt2Q0lET3JKdDh4RUFBQkRJdndRSUcvM3U5MzlhZnZmN1A0MytHQUM3eEx3QnFQU2RqbGRsUUNlVk5xM1NYYkZYVEFBQUFFOEVBQUFFaWdxQVNxOTJLcjB5QTNoTnBTMnJkRWNjSVNvQUFJRDNCTURFS3BVendJZHMyTndFQUFBRWlndUF0Tzk0QUxndjhXNklDNEJxdkVJREtySmQ4eE1BQUJBb01nQ3F2ZXBSMGtBbDFUYXIycDF3bE1nQUFJQjBBcUNJYWtVTlpMSlZkY1FHUU9vckh3Q2VKTjhGc1FGUWtiSUdabWFqYW9rT2dPVHlBMGlYZmdkRUJ3QUFwQklBeFhqRkJzeklOdFVUSHdEcHI0QUFFdGwrQVZDUzBnWm1ZcE5xRWdBQUVFZ0FMRFZmQlNsdVlBWVZ0NmppNXA5QkFCUlc4ZUFCZmRpZzJnVEF0eFFoUUgrMi9va0FLRTZCQXlQWW52b0V3UGNvUTRDK2JQeHpBcUFCSlE1Y3llYjBJQUFBSUpBQStFRFZWMFNLSExoQzFhMnB1dTFuRWdDTlZEMllRQTAycGhjQmNJTlNCT2pEcHQ4bUFKcFI2TUFaYkVzL0F1QVZpaEdnUGx2K09nSFFrRklIam1SVGVoSUFiNmhjamc0c2NJVEtXMUo1dzY4Z0FBQWdrQUM0bzNKQlZpNTNZTHpLRzFKNXU2OGlBSnFyZklDQmNXeEhmd0pnQlNVSlVJZk5Ya2NBQkZEeXdCWTJJNE1BV0tsNlVUclF3QnJWdDZMNlZsOUpBQVNwZnJDQmM5bUlMQUpnQTJVSk1DOGJ2WTBBQ0tQd2dWdHNReDRCc0ZHSHduVFFnZS9yc0FrZHR2bHFBaUJVaHdNUDdHY0xjZ21BQnloTmdIblk1TWNJZ0FkMWVPQ1VQMlRyc0FFZHRuZ1VBUkN1d3dBQTJ6bjdDSUFkdXBTbklZQXNYYzU4bHcwZVJRQ3dMRXVmUVFEZTVxenpIUUd3a3dJRnVKN3QzVThBSEtETGcraHZCdEJibHpQZVpYTkhFd0E4MDJVZ2dPZWNiVDRrQUE3U3FVZ05CZlRTNlV4MzJ0clJCQUEzZFJvTVNPWXM4eG9CY0tCdVpXbzRvTFp1WjdqYnhvNG1BQTdXN1FIdE5pQ1FvdHZaN2JhdE14QUEzTlZ0U0tBN1o1WTFCTUFKT3BhcVFZRWFPcDdWanBzNkF3RndrbzRQYk1kaGdVNDZudEdPV3pvTEFjQW1IUWNHT25BMjJVb0FuS2hydVJvYW1FdlhNOWwxUTJjaEFFN1c5UUh1T2poUVRkZXoySFU3WnlJQUx0RDFRZTQ2UEZCRjF6UFlkVE5uSXdEWXBlc0F3ZXljUGZZU0FCZnBYTFNHQ0s3VitjeDEzc3JaQ0lBTGRYNndPdzhTektUeldldThrVE1TQUJmci9JQjNIaWFZUWVjejFua2JaeVVBT0ZUbmdZS1JuQzJPOXRHbm4zejJ6ZWdQa1NqaE1DdDYyTTlXY0JadkFBWkplT0FUaGd2T2xIQ0dFclp3VmdKZ29JUUhQMkhBNEF3Slp5ZGhBMmNtQURoZHdwREJrWndacnVBM0FCTklPdXlLSDE1bkM3aVNOd0FUU0RvSVNRTUhXeVNkamFUTm01a0FtRVRTZ1VnYU9sZ2o2VXdrYmQzc2ZBVXdtYVFoV0JaalFEYm5uWkc4QVpoTTJnRkpHMEQ0VHRxem43WnRGUWdBaGtzYlF2RE1Nd05mQVV3cWRTRDhMWUhPbkd0bTRnM0FwRklQVE9wQTBsL3FzNTI2WlJWNEF6QzUxTkZZRnNOQkQ4NHdzL0lHWUhMSkJ5aDVPT2toK1JsTzNxNHF2QUVvSW5sSWxzV1lVSXZ6NnJ4V0lBQUtTUitWWlRFc3pNMFpkVVlyOFJWQUlRNldnV1ZlbmswYlZZMDNBQVVabXZlTURUTndIdDl6SHVzUkFFVVpuU2VHaHhHY3dTZk9ZRTBDb0RBRDlKd1I0Z3JPM1hQT1hWMStBMUNZZy9lY1llWnNuckhuYkZCdDNnQTBZSlJlTWt3Y3lSbDd5Um1yVHdBMFlhQnVNMUxzNFZ6ZDVsejFJQUFhTVZadk0xcXM0Unk5elRucVF3QTBZN3p1TTJEYzR1emM1K3owSWdBYU1tVHJHRE9XeFhsWnkzbnBSd0EwWmRUV00yeVpuSkgxbkpHZUJFQmpCbTQ3UTllYk03R2RNOUdYQUdqTzREM0c2UFhpSER6R09laE5BQVF3ZnZzWXdabzg5L3Q0N3ZzVEFFRU00bjVHY1c2ZThmMDg0emtFUUJnRGVSeERPUWZQOUhFODAxa0VRQ0NEZVR6RGVTM1A4UEU4dzNrRVFDZ0RlaTVqZWl6UDY3azhyNWtFUURDamVoMER1NDFuOHpxZXpWd0NBR003Z05GOXpqTjRQYzhnQW9CbFdRendMTHFQc3Vkc0R0MmZNOVlSQVB5VmNaNVh0Y0gyTE0ycjJyUEVlUVFBTHhqdm1xNGFkczlIVFM1K1BpUUF1TW5JUXg4dWYyNTVOL29ETUNlREFUMDR5N3pHR3dEdThqWUE2bkh4YzQ4M0FOeGxTS0FXWjVZMUJBQ3JHQlNvd1ZsbExWOEJzSm12QkdBK0xuNjI4Z2FBelF3TnpNV1o1QkhlQUxDTHR3RXdqb3VmUGJ3QllCY0RCR000ZSt6bERRQ0g4VFlBenVmaTV5Z0NnTU1KQVRpZWk1K2orUXFBd3hrcU9KWXp4Um04QWVCVTNnYkE0MXo4bkVrQWNBa2hBT3U1K0xtQ3J3QzRoRUdEZFp3VnJ1SU5BSmZ6TmdCZWN2RnpOUUhBTUVJQVhQeU1Jd0FZVGdpUXlNWFBhQUtBYVFnQkVyajRtWVVBWURwQ2dJNWMvTXhHQURBdElVQUhMbjVtSlFDWW5oQ2dJaGMvc3hNQWxDRUVxTURGVHhVQ2dIS0VBRE55OFZPTkFLQTBNY0JJTG4wcUV3QzBJQVM0a291ZkRnUUFyUWdCenVUaXB4TUJRRnRpZ0NPNDlPbEtBQkJCRExDRlM1OEVBb0FvUW9DM3VQaEpJZ0NJSlFaWUZwYyt1UVFBTEdJZ2pVc2ZCQURjSkFoNmNlSERTd0lBN2hBRE5ibjA0VzBDQURZU0JITnk0Y00yQWdCMkVnUmp1UEJoSHdFQUJ4TUU1M0RodzdFRUFGeEFGR3pqc29mekNRQVlLRDBNWFBRd2pnQ0FTWFdKQTVjOHpFa0FRQU5YeDRKTEhlb1RBQUFRNk4zb0R3QUFYRThBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUNndndDbzJjOGE3NENKOVFBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9XX0="/>
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAGYUlEQVR4nO3dO45cZRDF8RrkENkRssQGIIFVICFLSEgGkyMRITZAyBKQkCN7BTwiJCdO2AGEsAACSEnBBOjDM+3u6cf9Hqfq/H+ZJavVU1Xn1ndnpude3bt7/0UApl5b/QaAlQgArBEAWCMAsEYAYI0AwBoBgDUCAGsEANYIAKwRAFgjALBGAGCNAMAaAYA1AgBrBADWCACs3Vn9Bip79vhRl9d58Pm3XV4Hr7riM8Hb9Rr0cxGM7QjABVYN/DEE4nwE4ASqA38MgTiOAByQdegPIQz7EYAd1QZ/F0G4iQBE/aE/hDCYB8B18Hc5B8EyAAz+fo5BsAoAg38apyBYBIDBv4xDEMr/LhDDfzmH2pXdAA7Nm6nqNii5ARj+/qrWtNQGqNokNZW2QZkAqA7/1mGp+nWpKBEAlSGZNRRuX+9IqQOwehBUBoA6XC5tAPgQyn7U5TwpAzC7yVmbS52OSxeAmU3N2NB9qNlhqQIwo5HZGnguanhTmh+E0bg+ZnyNq2/Kz5FiA4wuqMPg70NdEwRgZJMyNGgG5xpLH4GcGzPTyFqoH4dkN8CowjH4t3Oru+QGcGuCklE1Ut0EcgFg+NdzCkH5P47L4F+m1U1xaHuS2gC9i83wb9e7hmqBkgkAw6+rcggkAsDw66saAokA9MTwj1OxtssD0PNKULFBanrWWGELLA0Aw59TpRAs3wA9MPzzVan5sgDwALn8etV+5RZYEoDVaw96Vs1E6iMQV//1svdgegA4+tST+SiUcgMw/Hqy9mRqADj745jZM5JuA2S90jjI2JtpAeiR7IwFdtOjRzO3QLoNAPQ0JQBc/b1k2gJsAFhLEQCu/vlk6dnwAGxdZVkKiVdleDpOig0AjDI0APzgC1uNniHpDcDxJz/1HkoHABht2N8GrXrz++Ybr8fTrx4Mee2ff/0jvvz6pyGvvZrqPLABYI0AwJpkAFSPP7icak+H3AOonvdG+ui9t+Kzh++e/P8/+OK7+PsfyUczDKM4F5IbAJhFLgAZr/44jWJv5QIAzNQ9APz6A0YZMVtsAFiTCoDiGRF9qfVYKgDAbAQA1ggArHUNAN8Bwmi9Z0xmA6jdHGEcpV7LBABYgQDAGgGANQIAawQA1ggArBEAWCMAsEYAYI0AwBoBgDUCAGsEANYIAKwRAFiTCQAfpvGh1OuuAVD6oANq6j1jd7q+Gqb65P2349MP3/n/398//y2e/PDLwneUj8wRCFiBAMCaVACUbo4whlqPpQIAzNY9AHwnCKPwhBigM7lvgz57/Eh6i/R6TvCP33zc4d3konb+j2ADwNyQAChfwZGT1ZPiFVcltlHtqdw9gLrf//yLDVeI5AYAZhkWgK1XSdWVifMpPiG+YQPAmnQA2AL5qfdwaAC4WcRWo2dIegMAow0PADfDvpRvfpsUG4AQ5JOlZykCAIwyJQA9VlmWKwr69GrWN1DYALA2LQBsAQ+Zrv4RCTcAIdCVsTdTA8APxnDM7BlJtwEicl5pqsvak+kB6JXwrAWvqFcvVpwQUm6AhhCsl70HSwLAvQB2rZqJZRuAo1B+mY8+TeojUEMI5qtS86UB6Jn8Kg3JoGetVx+Hl28AQpBLpeGPEAhAb4RgnIq1lQhA7ytBxUat1rumClf/CJEARBACZVWHP0IoABGEQFHl4Y8w+NOIrYFqhVfncvGQ2gAR4wbVpaE9jKqV4kVILgARhGAlp+GPiLi6d/f+i9Vv4pCRA6vakFVcay25AZqRhWMbvOQ6/BHiG6AZPazqTRqFuiYJQMScK3aGhvVALV+SPgJdN6OgDscihv+mNBugmTmkmRp5G2p2WLoARMy/UmdrakOdjksZgIh1xxX1JlOX86QNQMT6M7tK06nD5VIHoFk9AM2sQXD7ekcqEYAInaHYVfUBIRWGP6JQACJ0h6WaKsMfUSwADUEYo9LgN2l+EHaOio1arWpNS26A69gG21Qd/KbkBriuegNHcqhd+Q1wHdvgNA6D31gFoCEI+zkNfmMZgIYg/Mdx8BvrADSuQXAe/IYA7KgeBob+JgJwQLUgMPj7EYATZA0DQ38cAbiAaiAY+PMRgA74EEpeBGCgCs/Qqo4AwFr53wUCbkMAYI0AwBoBgDUCAGsEANYIAKwRAFgjALBGAGCNAMAaAYA1AgBrBADWCACsEQBYIwCwRgBg7V9fiEeGmPH0KAAAAABJRU5ErkJggg=="/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<title>Letícia C. · Plano HOF</title>
+<style>
+:root {
+  --gold: #C6A46C;
+  --gold-light: #D4B882;
+  --gold-dim: rgba(198,164,108,0.18);
+  --gold-border: rgba(198,164,108,0.28);
+  --bg: #0f0e17;
+  --bg2: #16151f;
+  --bg3: #1e1d2a;
+  --bg4: #252433;
+  --text: #f0ede6;
+  --text2: #a09d96;
+  --text3: #6b6862;
+  --danger: #e05c5c;
+  --success: #5cba8a;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  height: 100%; overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Jost', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* APP SHELL */
+.app {
+  display: flex; flex-direction: column;
+  height: 100%;
+  padding-top: var(--safe-top);
+  padding-bottom: var(--safe-bottom);
+}
+
+/* HEADER */
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px 10px;
+  background: var(--bg);
+  border-bottom: 0.5px solid rgba(198,164,108,0.1);
+  flex-shrink: 0;
+}
+
+.topbar-left { display: flex; flex-direction: column; }
+.topbar-greeting { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); }
+.topbar-name { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); margin-top: 1px; }
+
+.notif-btn {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--bg3); border: 0.5px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; position: relative;
+  font-size: 18px;
+}
+.notif-dot {
+  position: absolute; top: 7px; right: 7px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold); border: 2px solid var(--bg);
+}
+
+/* SCROLL AREA */
+.scroll {
+  flex: 1; overflow-y: auto; overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 100px;
+}
+
+/* BOTTOM NAV */
+.nav {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  padding-bottom: var(--safe-bottom);
+  background: var(--bg2);
+  border-top: 0.5px solid rgba(198,164,108,0.12);
+  display: flex;
+  z-index: 100;
+}
+
+.nav-item {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; gap: 3px;
+  padding: 10px 4px 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.nav-icon { font-size: 22px; }
+.nav-label { font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text3); }
+.nav-item.active .nav-icon { filter: drop-shadow(0 0 4px var(--gold)); }
+.nav-item.active .nav-label { color: var(--gold); }
+
+/* PAGES */
+.page { display: none; padding: 0; }
+.page.active { display: block; }
+
+/* ============ HOME PAGE ============ */
+.hero {
+  background: linear-gradient(160deg, #1a1828 0%, #0f0e17 60%);
+  padding: 20px 20px 16px;
+  border-bottom: 0.5px solid rgba(198,164,108,0.1);
+  position: relative; overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute; top: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  border: 1px solid rgba(198,164,108,0.08);
+}
+
+.hero::after {
+  content: '';
+  position: absolute; top: -10px; right: -10px;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(198,164,108,0.06);
+}
+
+.hero-date { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text3); margin-bottom: 6px; }
+.hero-title { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--text); line-height: 1.3; }
+.hero-title span { color: var(--gold); font-style: italic; }
+
+.progress-wrap { margin-top: 16px; }
+.progress-label { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 12px; color: var(--text3); }
+.progress-bar { height: 4px; background: var(--bg4); border-radius: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; transition: width 0.5s ease; }
+
+/* Alert banner */
+.alert-banner {
+  margin: 16px 16px 0;
+  background: rgba(198,164,108,0.08);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+
+.alert-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.alert-text { font-size: 13px; line-height: 1.6; color: var(--text2); }
+.alert-text strong { color: var(--gold); font-weight: 500; }
+
+/* Section header */
+.sec-hd {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 16px 10px;
+}
+
+.sec-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text3); }
+.sec-link { font-size: 12px; color: var(--gold); cursor: pointer; }
+
+/* Daily tasks */
+.task-list { padding: 0 16px; display: flex; flex-direction: column; gap: 8px; }
+
+.task-item {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 13px 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.task-item:active { background: var(--bg3); }
+
+.task-check {
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 1.5px solid var(--text3);
+  flex-shrink: 0; margin-top: 1px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+  font-size: 12px;
+}
+
+.task-item.done .task-check {
+  background: var(--gold); border-color: var(--gold);
+  color: var(--bg);
+}
+
+.task-item.done { opacity: 0.5; }
+
+.task-body { flex: 1; }
+.task-cat { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.task-txt { font-size: 14px; color: var(--text); line-height: 1.4; }
+.task-item.done .task-txt { text-decoration: line-through; color: var(--text3); }
+
+/* Stats row */
+.stats-row {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 8px; padding: 0 16px;
+}
+
+.stat-card {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 13px 10px;
+  text-align: center;
+}
+
+.stat-val { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold); }
+.stat-lbl { font-size: 10px; color: var(--text3); margin-top: 2px; line-height: 1.3; }
+
+/* ============ DIAGNÓSTICO PAGE ============ */
+.page-pad { padding: 16px; }
+
+.diag-header {
+  background: linear-gradient(135deg, #1a1828, #0f1a2e);
+  border-radius: var(--radius);
+  padding: 18px;
+  margin-bottom: 14px;
+  border: 0.5px solid var(--gold-border);
+}
+
+.diag-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.diag-title { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); margin-bottom: 10px; }
+
+.badge-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.badge {
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 20px; padding: 4px 12px;
+  font-size: 11px; color: var(--gold);
+}
+
+.card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+
+.info-card {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 13px;
+}
+
+.info-card.full { grid-column: 1/-1; }
+.info-card.highlight { border-left: 2.5px solid var(--gold); }
+
+.info-lbl { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text3); margin-bottom: 5px; }
+.info-val { font-size: 13px; color: var(--text); line-height: 1.5; }
+.info-val.gold { color: var(--gold); font-weight: 500; }
+
+.insight-box {
+  background: rgba(198,164,108,0.06);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.insight-title { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.insight-text { font-size: 14px; color: var(--text2); line-height: 1.7; }
+.insight-text em { color: var(--gold); font-style: normal; font-weight: 500; }
+
+/* ============ FLUXOGRAMA PAGE ============ */
+.fluxo-container {
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.fluxo-card {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 16px;
+  min-width: 300px;
+}
+
+/* Flowchart vertical */
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.flow-step {
+  width: 100%;
+  max-width: 320px;
+  background: var(--bg3);
+  border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.flow-step:active { border-color: var(--gold); }
+.flow-step.active-step { border-color: var(--gold); background: rgba(198,164,108,0.07); }
+
+.flow-num { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; }
+.flow-title { font-size: 14px; font-weight: 500; color: var(--text); }
+.flow-sub { font-size: 12px; color: var(--text3); margin-top: 2px; line-height: 1.4; }
+
+.flow-arrow {
+  width: 1px; height: 28px;
+  background: rgba(198,164,108,0.3);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.flow-arrow::after {
+  content: '▾';
+  position: absolute; bottom: -3px; left: 50%; transform: translateX(-50%);
+  color: var(--gold); font-size: 10px;
+}
+
+/* Split arrow */
+.flow-split {
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  gap: 10px;
+}
+
+.flow-branch {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.flow-branch-line {
+  width: 1px; height: 20px;
+  background: rgba(198,164,108,0.3);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.flow-step.green { border-color: rgba(92,186,138,0.3); }
+.flow-step.green .flow-num { color: var(--success); }
+
+.flow-step.red { border-color: rgba(224,92,92,0.3); }
+.flow-step.red .flow-num { color: var(--danger); }
+
+.flow-split-bar {
+  width: 100%;
+  max-width: 320px;
+  height: 1px;
+  background: rgba(198,164,108,0.3);
+  position: relative;
+}
+
+/* ============ PLANO PAGE ============ */
+.plano-pad { padding: 16px; }
+
+.plano-item {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.plano-header {
+  display: flex; gap: 12px; align-items: center;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.plano-num {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--bg4);
+  border: 1px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 500; color: var(--gold);
+  flex-shrink: 0;
+}
+
+.plano-meta { flex: 1; }
+.plano-prazo { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.plano-title { font-size: 14px; font-weight: 500; color: var(--text); }
+
+.plano-chevron { font-size: 12px; color: var(--text3); transition: transform 0.2s; }
+.plano-item.open .plano-chevron { transform: rotate(180deg); }
+
+.plano-body {
+  display: none;
+  padding: 0 16px 14px;
+  border-top: 0.5px solid rgba(255,255,255,0.04);
+}
+
+.plano-item.open .plano-body { display: block; }
+
+.plano-desc { font-size: 13px; color: var(--text2); line-height: 1.6; margin: 10px 0 12px; }
+
+.plano-actions { display: flex; flex-direction: column; gap: 7px; }
+
+.plano-action {
+  display: flex; gap: 8px; align-items: flex-start;
+  font-size: 13px; color: var(--text2); line-height: 1.5;
+}
+
+.plano-action::before {
+  content: '→';
+  color: var(--gold); font-size: 11px; flex-shrink: 0; margin-top: 2px;
+}
+
+/* ============ SCRIPTS PAGE ============ */
+.script-pad { padding: 16px; }
+
+.script-item {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.script-header {
+  padding: 14px 16px;
+  cursor: pointer;
+  display: flex; gap: 12px; align-items: flex-start;
+}
+
+.script-tag-wrap { flex-shrink: 0; margin-top: 2px; }
+.script-tag {
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 20px; padding: 3px 10px;
+  font-size: 10px; color: var(--gold);
+}
+
+.script-meta { flex: 1; }
+.script-objecao { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px; line-height: 1.4; }
+.script-preview { font-size: 12px; color: var(--text3); }
+
+.script-body {
+  display: none;
+  padding: 0 16px 16px;
+  border-top: 0.5px solid rgba(255,255,255,0.04);
+}
+
+.script-item.open .script-body { display: block; }
+
+.script-label { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text3); margin: 12px 0 6px; }
+
+.script-text {
+  background: rgba(198,164,108,0.05);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 12px;
+  font-size: 13px; color: var(--text); line-height: 1.7;
+  font-style: italic;
+}
+
+.copy-btn {
+  display: flex; align-items: center; gap: 6px;
+  margin-top: 10px;
+  background: var(--gold-dim); border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 12px; color: var(--gold);
+  cursor: pointer; width: 100%; justify-content: center;
+  transition: background 0.2s;
+}
+
+.copy-btn:active { background: rgba(198,164,108,0.3); }
+
+/* ============ NOTIFICATION SETUP ============ */
+.notif-panel {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15,14,23,0.95);
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  padding: 40px 20px 20px;
+}
+
+.notif-panel.open { display: flex; }
+
+.notif-close {
+  position: absolute; top: 16px; right: 20px;
+  font-size: 24px; color: var(--text2);
+  cursor: pointer;
+  padding: 8px;
+}
+
+.notif-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--text); margin-bottom: 6px; }
+.notif-sub { font-size: 13px; color: var(--text2); margin-bottom: 30px; line-height: 1.6; }
+
+.notif-time-label { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text3); margin-bottom: 10px; }
+
+.time-presets { display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; margin-bottom: 20px; }
+
+.time-preset {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.time-preset:active,
+.time-preset.selected { border-color: var(--gold); background: var(--gold-dim); }
+
+.time-val { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold); }
+.time-lbl { font-size: 11px; color: var(--text3); margin-top: 2px; }
+
+.notif-btn-activate {
+  background: var(--gold);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px; font-weight: 500;
+  color: var(--bg);
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+  letter-spacing: 0.5px;
+}
+
+/* Toast */
+.toast {
+  position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
+  background: var(--bg3); border: 1px solid var(--gold-border);
+  border-radius: 20px; padding: 10px 20px;
+  font-size: 13px; color: var(--gold);
+  z-index: 9999;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.toast.show { opacity: 1; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--text3); border-radius: 1px; }
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page.active > * { animation: fadeUp 0.3s ease forwards; }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="topbar-greeting" id="greeting">Bom dia</div>
+      <div class="topbar-name">Letícia Costa</div>
+    </div>
+    <div class="notif-btn" onclick="openNotif()">
+      🔔
+      <div class="notif-dot" id="notif-dot"></div>
+    </div>
+  </div>
+
+  <!-- SCROLL AREA -->
+  <div class="scroll" id="scroll">
+
+    <!-- HOME -->
+    <div class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-date" id="hero-date"></div>
+        <div class="hero-title">Seu <span>plano HOF</span><br/>de hoje</div>
+        <div class="progress-wrap">
+          <div class="progress-label">
+            <span>Tarefas concluídas</span>
+            <span id="progress-pct">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert-banner">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-text">
+          <strong>Gargalo identificado:</strong> Você sempre recebeu casos já vendidos. Vender do zero ao fim é uma habilidade NOVA — e se aprende. O foco é dominar o ciclo completo, com destaque no momento de passar o valor.
+        </div>
+      </div>
+
+      <div class="sec-hd">
+        <div class="sec-title">Tarefas de hoje</div>
+        <div class="sec-link" onclick="resetTasks()">Reiniciar</div>
+      </div>
+
+      <div class="task-list" id="task-list"></div>
+
+      <div class="sec-hd" style="margin-top:10px">
+        <div class="sec-title">Suas metas</div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-val">↑</div>
+          <div class="stat-lbl">Vendas feitas do início ao fim</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">↑</div>
+          <div class="stat-lbl">Melhorias no perfil profissional</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">↓</div>
+          <div class="stat-lbl">Vezes que hesitou no preço</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIAGNÓSTICO -->
+    <div class="page" id="page-diag">
+      <div class="page-pad">
+        <div class="diag-header">
+          <div class="diag-tag">Diagnóstico · Clínica &amp; Vendas</div>
+          <div class="diag-title">Onde está o erro real</div>
+          <div class="badge-row">
+            <span class="badge">Vender do zero ao fim</span>
+            <span class="badge">Prioridade: Alta</span>
+          </div>
+        </div>
+
+        <div class="insight-box">
+          <div class="insight-title">⚡ Insight principal</div>
+          <div class="insight-text">
+            A Letícia está numa <em>transição de papel</em>: hoje recebe os casos já vendidos por uma avaliadora, então nunca precisou vender do início ao fim. Agora quer assumir a venda da HOF sozinha — e é natural sentir insegurança, porque é uma habilidade nova. A dificuldade específica é <em>passar o valor</em>, e o que trava fora do consultório é o perfil ainda amador. Não é falta de competência — é falta de prática no ciclo completo + um perfil que ainda não comunica profissionalismo.
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <div class="info-card highlight">
+            <div class="info-lbl">Objetivos</div>
+            <div class="info-val">Faturamento + pacientes + conversão + processo</div>
+          </div>
+          <div class="info-card highlight">
+            <div class="info-lbl">Gargalo real</div>
+            <div class="info-val gold">Pouca prática em vender do início ao fim</div>
+          </div>
+          <div class="info-card">
+            <div class="info-lbl">Dificuldade</div>
+            <div class="info-val">Quebra de objeções — sobretudo passar o valor</div>
+          </div>
+          <div class="info-card">
+            <div class="info-lbl">Contexto</div>
+            <div class="info-val">Hoje recebe casos vendidos por avaliadora — quer vender a HOF sozinha</div>
+          </div>
+          <div class="info-card full">
+            <div class="info-lbl">Maior bloqueio</div>
+            <div class="info-val">Insegurança na hora de passar valores + perfil digital amador</div>
+          </div>
+        </div>
+
+        <div class="sec-hd" style="padding: 4px 0 12px">
+          <div class="sec-title">Os 3 focos da sua transição</div>
+        </div>
+
+        <div class="insight-box" style="margin-bottom:8px">
+          <div class="insight-title">01 · Dominar o ciclo completo de venda</div>
+          <div class="insight-text">Você sempre recebeu o caso pronto. Agora precisa conduzir do acolhimento ao fechamento. É uma habilidade que se aprende com método e prática — e você já tem a base clínica.</div>
+        </div>
+        <div class="insight-box" style="margin-bottom:8px">
+          <div class="insight-title">02 · Passar o valor com firmeza</div>
+          <div class="insight-text">Seu maior desafio. Hesitar na hora do preço faz o paciente hesitar também. Dizer o valor com clareza e sem se desculpar é o que se treina — e muda tudo.</div>
+        </div>
+        <div class="insight-box" style="margin-bottom:14px">
+          <div class="insight-title">03 · Profissionalizar o perfil</div>
+          <div class="insight-text">Um Instagram organizado e profissional gera confiança antes do primeiro contato. Aparecer e mostrar seu trabalho com identidade é o que atrai e prepara o paciente para a venda.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLUXOGRAMA -->
+    <div class="page" id="page-fluxo">
+      <div class="fluxo-container">
+        <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text3); margin-bottom:14px;">Vendendo do início ao fim, sozinha</div>
+
+        <div class="flow">
+
+          <div class="flow-step active-step" onclick="showFlowDetail(0)">
+            <div class="flow-num">01 · Base</div>
+            <div class="flow-title">Perfil profissional</div>
+            <div class="flow-sub">Instagram que transmite profissionalismo</div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(1)">
+            <div class="flow-num">02 · Início</div>
+            <div class="flow-title">Acolher e avaliar</div>
+            <div class="flow-sub">Agora VOCÊ conduz desde o começo</div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(2)">
+            <div class="flow-num">03 · Desejo</div>
+            <div class="flow-title">Construir o desejo</div>
+            <div class="flow-sub">Fazer o paciente querer antes do preço</div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(3)">
+            <div class="flow-num">04 · Momento-chave</div>
+            <div class="flow-title">Passar o valor com firmeza</div>
+            <div class="flow-sub">Dizer o preço, fazer silêncio, não se desculpar</div>
+          </div>
+
+          <div class="flow-arrow" style="height:16px;"></div>
+
+          <!-- Split -->
+          <div class="flow-split-bar"></div>
+          <div class="flow-split">
+            <div class="flow-branch">
+              <div class="flow-branch-line"></div>
+              <div class="flow-step green">
+                <div class="flow-num">✓ FECHA</div>
+                <div class="flow-title">Venda completa</div>
+                <div class="flow-sub">Do início ao fim, por você</div>
+              </div>
+            </div>
+            <div class="flow-branch">
+              <div class="flow-branch-line"></div>
+              <div class="flow-step red" onclick="showFlowDetail(4)">
+                <div class="flow-num">⚠ Hesita</div>
+                <div class="flow-title">Ancorar valor</div>
+                <div class="flow-sub">Sem baixar preço — toque</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(5)">
+            <div class="flow-num">05 · Consolidar</div>
+            <div class="flow-title">Fechar e acompanhar</div>
+            <div class="flow-sub">Cada venda completa aumenta sua confiança</div>
+          </div>
+
+        </div>
+
+        <!-- Flow detail -->
+        <div id="flow-detail" style="display:none; margin-top:16px; background:var(--gold-dim); border:1px solid var(--gold-border); border-radius:var(--radius-sm); padding:14px;">
+          <div style="font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); margin-bottom:6px;" id="fd-title"></div>
+          <div style="font-size:13px; color:var(--text); line-height:1.7;" id="fd-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLANO 30 DIAS -->
+    <div class="page" id="page-plano">
+      <div class="plano-pad">
+        <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text3); margin-bottom:14px;">Plano de ação · 30 dias</div>
+
+        <div class="plano-item" id="pi-0">
+          <div class="plano-header" onclick="togglePlano(0)">
+            <div class="plano-num">1</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 1 · Fundamental</div>
+              <div class="plano-title">Profissionalizar o perfil</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Um perfil profissional gera confiança antes do primeiro contato — e facilita toda a venda. É a sua vitrine.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Organizar a bio: nome, especialidade (HOF) e como agendar, de forma clara</div>
+              <div class="plano-action">Padronizar a identidade visual: cores, fotos boas, destaques organizados</div>
+              <div class="plano-action">Postar conteúdo de HOF que te posicione como profissional da área</div>
+              <div class="plano-action">Começar a aparecer (stories, Réels) — pessoas confiam em quem elas veem</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-1">
+          <div class="plano-header" onclick="togglePlano(1)">
+            <div class="plano-num">2</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 1–2 · Fundamental</div>
+              <div class="plano-title">Aprender o ciclo completo de venda</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Você sempre recebeu o caso pronto. Agora vai conduzir do início ao fim — e isso se aprende com método e observação.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Mapear as etapas: acolher → avaliar → criar desejo → passar valor → fechar → pós</div>
+              <div class="plano-action">Observar como a avaliadora conduz a venda hoje — aprender com quem já faz</div>
+              <div class="plano-action">Ter um roteiro de atendimento próprio e seguir em cada consulta</div>
+              <div class="plano-action">Praticar mentalmente o ciclo completo antes de cada atendimento</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-2">
+          <div class="plano-header" onclick="togglePlano(2)">
+            <div class="plano-num">3</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 2 · Alta prioridade</div>
+              <div class="plano-title">Dominar o momento de passar o valor</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Seu maior desafio. A forma como você passa o valor ensina o paciente a percebê-lo. Firmeza gera confiança.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Construir o desejo ANTES de falar o preço — mostrar a transformação primeiro</div>
+              <div class="plano-action">Dizer o valor com clareza, sem hesitar e sem baixar a voz</div>
+              <div class="plano-action">Depois de dizer o preço, fazer SILÊNCIO — não se desculpar nem justificar demais</div>
+              <div class="plano-action">Treinar dizer o valor em voz alta, todos os dias, até virar natural</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-3">
+          <div class="plano-header" onclick="togglePlano(3)">
+            <div class="plano-num">4</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 2–3 · Importante</div>
+              <div class="plano-title">Treinar a quebra de objeções</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Como você está começando a vender sozinha, ter os scripts na ponta da língua é o que traz segurança na hora H.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Nunca baixar o preço — ancorar no resultado, na segurança e na qualidade</div>
+              <div class="plano-action">Explicar o que está incluso antes de falar o número</div>
+              <div class="plano-action">Treinar os scripts da aba "Scripts" em voz alta, todos os dias</div>
+              <div class="plano-action">Simular atendimentos completos com colega ou na frente do espelho</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-4">
+          <div class="plano-header" onclick="togglePlano(4)">
+            <div class="plano-num">5</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 3–4 · Consolidação</div>
+              <div class="plano-title">Consolidar como profissional independente</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Cada venda completa que você faz do início ao fim aumenta sua confiança — e constrói sua base própria na HOF.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Registrar cada venda que fez sozinha — acompanhar sua evolução</div>
+              <div class="plano-action">Contato após o procedimento: resultado, foto, acompanhamento carinhoso</div>
+              <div class="plano-action">Pedir depoimento e indicação — construir sua reputação de profissional de HOF</div>
+              <div class="plano-action">Celebrar cada avanço — vender do zero ao fim é uma conquista real</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <div class="page" id="page-scripts">
+      <div class="script-pad">
+        <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text3); margin-bottom:14px;">Scripts prontos para usar</div>
+
+        <div class="script-item" id="si-0">
+          <div class="script-header" onclick="toggleScript(0)">
+            <div class="script-tag-wrap"><div class="script-tag">Valor</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">Passar o valor SEM hesitar (o principal)</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como dizer</div>
+            <div class="script-text">"O valor do seu tratamento é R$ [X]. (Diga com firmeza, sem baixar a voz, e faça SILÊNCIO.) Esse investimento inclui a avaliação completa, os produtos de qualidade e todo o acompanhamento. Posso te explicar o que está incluso?"</div>
+            <button class="copy-btn" onclick="copyScript(0)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div class="script-item" id="si-1">
+          <div class="script-header" onclick="toggleScript(1)">
+            <div class="script-tag-wrap"><div class="script-tag">Objeção</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">"Está caro / preciso pensar"</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como responder</div>
+            <div class="script-text">"Eu entendo que seja um investimento importante. E é justamente por isso que eu quero que você faça a escolha certa. O que eu te ofereço é segurança, qualidade e um resultado que você vai ver todos os dias. Me diz: o que pesa mais pra você, o valor em si ou a forma de pagamento? Vamos encontrar o melhor caminho."</div>
+            <button class="copy-btn" onclick="copyScript(1)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div class="script-item" id="si-2">
+          <div class="script-header" onclick="toggleScript(2)">
+            <div class="script-tag-wrap"><div class="script-tag">Desejo</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">Construir desejo antes do preço</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como conduzir</div>
+            <div class="script-text">"Posso te mostrar por que esse investimento vale a pena? Não é só um procedimento — é uma transformação feita com técnica, produtos de qualidade e o meu cuidado em cada etapa. O seu rosto merece isso. Qual parte do resultado mais te animou?"</div>
+            <button class="copy-btn" onclick="copyScript(2)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div class="script-item" id="si-3">
+          <div class="script-header" onclick="toggleScript(3)">
+            <div class="script-tag-wrap"><div class="script-tag">Primeiro contato</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">Primeiro contato no WhatsApp</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como responder</div>
+            <div class="script-text">"Oi [nome]! Que alegria seu interesse 🤍 Eu trabalho com harmonização facial personalizada — cada rosto é único. Que tal marcarmos uma avaliação pra eu entender o que você deseja e te mostrar o que dá pra fazer? Aí você decide com tranquilidade."</div>
+            <button class="copy-btn" onclick="copyScript(3)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div style="background: var(--bg2); border-radius: var(--radius); padding: 16px; margin-top: 6px; border: 0.5px solid rgba(255,255,255,0.05);">
+          <div style="font-size:12px; color:var(--gold); font-weight:500; margin-bottom:8px;">💡 Regra de ouro</div>
+          <div style="font-size:13px; color:var(--text2); line-height:1.7;">
+            A forma como você <strong style="color:var(--text)">passa o valor</strong> ensina o paciente a percebê-lo. Diga o preço com firmeza, sem se desculpar, e faça <strong style="color:var(--text)">silêncio</strong>. Quem hesita no preço faz o paciente hesitar também. Firmeza gera confiança.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /scroll -->
+
+  <!-- BOTTOM NAV -->
+  <div class="nav">
+    <div class="nav-item active" id="nav-home" onclick="goPage('home')">
+      <div class="nav-icon">🏠</div>
+      <div class="nav-label">Início</div>
+    </div>
+    <div class="nav-item" id="nav-diag" onclick="goPage('diag')">
+      <div class="nav-icon">🔍</div>
+      <div class="nav-label">Diagnóstico</div>
+    </div>
+    <div class="nav-item" id="nav-fluxo" onclick="goPage('fluxo')">
+      <div class="nav-icon">🗺️</div>
+      <div class="nav-label">Fluxo</div>
+    </div>
+    <div class="nav-item" id="nav-plano" onclick="goPage('plano')">
+      <div class="nav-icon">📋</div>
+      <div class="nav-label">Plano</div>
+    </div>
+    <div class="nav-item" id="nav-scripts" onclick="goPage('scripts')">
+      <div class="nav-icon">💬</div>
+      <div class="nav-label">Scripts</div>
+    </div>
+  </div>
+</div>
+
+<!-- NOTIFICATION PANEL -->
+<div class="notif-panel" id="notif-panel">
+  <div class="notif-close" onclick="closeNotif()">✕</div>
+  <div class="notif-title">Lembrete diário 🔔</div>
+  <div class="notif-sub">Escolha o horário para ser lembrada de revisar seu plano e tarefas do dia.</div>
+
+  <div class="notif-time-label">Selecione o horário</div>
+  <div class="time-presets">
+    <div class="time-preset" onclick="selectTime('07:00', this)">
+      <div class="time-val">07:00</div>
+      <div class="time-lbl">Manhã cedo</div>
+    </div>
+    <div class="time-preset" onclick="selectTime('08:30', this)">
+      <div class="time-val">08:30</div>
+      <div class="time-lbl">Antes do consultório</div>
+    </div>
+    <div class="time-preset selected" onclick="selectTime('09:00', this)">
+      <div class="time-val">09:00</div>
+      <div class="time-lbl">Início do dia</div>
+    </div>
+    <div class="time-preset" onclick="selectTime('12:00', this)">
+      <div class="time-val">12:00</div>
+      <div class="time-lbl">Intervalo do almoço</div>
+    </div>
+  </div>
+
+  <div id="notif-status" style="font-size:13px; color:var(--text2); margin-bottom:16px; line-height:1.6; min-height:40px;"></div>
+
+  <button class="notif-btn-activate" onclick="activateNotif()">
+    Ativar lembretes diários
+  </button>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ============ DATA ============
+const TASKS_KEY = 'leticiacosta_tasks_' + new Date().toDateString();
+const NOTIF_KEY = 'leticiacosta_notif_time';
+
+const DAILY_TASKS = [
+  { cat: 'Valor', txt: 'Treinar dizer o preço em voz alta, com firmeza e sem hesitar — 2 min' },
+  { cat: 'Ciclo', txt: 'Praticar mentalmente uma venda do início ao fim (acolher → avaliar → valor → fechar)' },
+  { cat: 'Perfil', txt: 'Melhorar 1 detalhe do Instagram hoje (bio, foto, destaque, descrição)' },
+  { cat: 'Aparecer', txt: 'Postar 1 conteúdo que te posicione como profissional de HOF' },
+  { cat: 'Confiança', txt: 'Lembrar: passar o valor com segurança faz o paciente confiar no valor' },
+  { cat: 'Observar', txt: 'Observar como a avaliadora conduz a venda — aprender com quem já faz' },
+];
+
+const FLOW_DETAILS = [
+  { t: '01 · Perfil profissional', d: 'Antes de vender, você precisa parecer a profissional que é. Organize seu Instagram para transmitir profissionalismo: bio clara, identidade visual, conteúdo de HOF. Um perfil profissional gera confiança antes mesmo do primeiro contato — e facilita toda a venda.' },
+  { t: '02 · Acolher e avaliar', d: 'O ciclo de venda começa no acolhimento. Diferente de hoje (onde o caso chega pronto), agora VOCÊ conduz desde o início: entender o que o paciente quer, avaliar, criar conexão. Essa etapa constrói a confiança que sustenta o momento do valor.' },
+  { t: '03 · Construir o desejo', d: 'Antes de falar preço, faça o paciente DESEJAR o resultado. Mostre a transformação, explique o que vai mudar, use exemplos. Quando o desejo está construído, o valor faz sentido. Vender é conduzir o paciente a querer — o preço vem depois, naturalmente.' },
+  { t: '04 · Passar o valor com firmeza', d: 'Seu maior desafio hoje. A regra de ouro: diga o valor com clareza, sem hesitar e sem baixar a voz. Depois do preço, faça SILÊNCIO. Não se desculpe, não justifique demais. A forma como você passa o valor ensina o paciente a percebê-lo. Firmeza gera confiança.' },
+  { t: '⚠ Quebra de objeção', d: 'Quando o paciente hesita no preço, não baixe o valor — ancore no resultado e na segurança. Como você está começando a vender sozinha, treinar os scripts é essencial. Veja a aba Scripts e pratique até soar natural.' },
+  { t: '05 · Fechar e acompanhar', d: 'Conduza ao fechamento com naturalidade e cuide do pós. Cada venda completa que você faz do início ao fim aumenta sua confiança para a próxima. E cada paciente bem cuidado vira indicação — construindo sua base como profissional independente na HOF.' },
+];
+
+// ============ INIT ============
+window.addEventListener('load', () => {
+  setGreeting();
+  setDate();
+  loadTasks();
+  updateProgress();
+  registerSW();
+});
+
+function setGreeting() {
+  const h = new Date().getHours();
+  const el = document.getElementById('greeting');
+  if (h < 12) el.textContent = 'Bom dia';
+  else if (h < 18) el.textContent = 'Boa tarde';
+  else el.textContent = 'Boa noite';
+}
+
+function setDate() {
+  const d = new Date();
+  const opts = { weekday:'long', day:'numeric', month:'long' };
+  document.getElementById('hero-date').textContent = d.toLocaleDateString('pt-BR', opts);
+}
+
+// ============ TASKS ============
+function loadTasks() {
+  const saved = JSON.parse(localStorage.getItem(TASKS_KEY) || '[]');
+  const list = document.getElementById('task-list');
+  list.innerHTML = '';
+  DAILY_TASKS.forEach((t, i) => {
+    const done = saved.includes(i);
+    const el = document.createElement('div');
+    el.className = 'task-item' + (done ? ' done' : '');
+    el.id = 'task-' + i;
+    el.onclick = () => toggleTask(i);
+    el.innerHTML = `
+      <div class="task-check">${done ? '✓' : ''}</div>
+      <div class="task-body">
+        <div class="task-cat">${t.cat}</div>
+        <div class="task-txt">${t.txt}</div>
+      </div>
+    `;
+    list.appendChild(el);
+  });
+}
+
+function toggleTask(i) {
+  const saved = JSON.parse(localStorage.getItem(TASKS_KEY) || '[]');
+  const idx = saved.indexOf(i);
+  if (idx === -1) saved.push(i);
+  else saved.splice(idx, 1);
+  localStorage.setItem(TASKS_KEY, JSON.stringify(saved));
+  loadTasks();
+  updateProgress();
+}
+
+function resetTasks() {
+  localStorage.removeItem(TASKS_KEY);
+  loadTasks();
+  updateProgress();
+  showToast('Tarefas reiniciadas ✓');
+}
+
+function updateProgress() {
+  const saved = JSON.parse(localStorage.getItem(TASKS_KEY) || '[]');
+  const pct = Math.round((saved.length / DAILY_TASKS.length) * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-pct').textContent = pct + '%';
+}
+
+// ============ NAVIGATION ============
+function goPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  document.getElementById('nav-' + id).classList.add('active');
+  document.getElementById('scroll').scrollTop = 0;
+}
+
+// ============ ACCORDIONS ============
+function togglePlano(i) {
+  const el = document.getElementById('pi-' + i);
+  el.classList.toggle('open');
+}
+
+function toggleScript(i) {
+  const el = document.getElementById('si-' + i);
+  el.classList.toggle('open');
+}
+
+// ============ FLOW DETAIL ============
+function showFlowDetail(i) {
+  const d = FLOW_DETAILS[i];
+  document.getElementById('fd-title').textContent = d.t;
+  document.getElementById('fd-text').textContent = d.d;
+  const box = document.getElementById('flow-detail');
+  box.style.display = 'block';
+  box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ============ COPY SCRIPTS ============
+const SCRIPTS = [
+  '"O valor do seu tratamento é R$ [X]. (Diga com firmeza, sem baixar a voz, e faça SILÊNCIO.) Esse investimento inclui a avaliação completa, os produtos de qualidade e todo o acompanhamento. Posso te explicar o que está incluso?"',
+  '"Eu entendo que seja um investimento importante. E é justamente por isso que eu quero que você faça a escolha certa. O que eu te ofereço é segurança, qualidade e um resultado que você vai ver todos os dias. Me diz: o que pesa mais pra você, o valor em si ou a forma de pagamento? Vamos encontrar o melhor caminho."',
+  '"Posso te mostrar por que esse investimento vale a pena? Não é só um procedimento — é uma transformação feita com técnica, produtos de qualidade e o meu cuidado em cada etapa. O seu rosto merece isso. Qual parte do resultado mais te animou?"',
+  '"Oi [nome]! Que alegria seu interesse 🤍 Eu trabalho com harmonização facial personalizada — cada rosto é único. Que tal marcarmos uma avaliação pra eu entender o que você deseja e te mostrar o que dá pra fazer? Aí você decide com tranquilidade."',
+];
+
+function copyScript(i) {
+  navigator.clipboard.writeText(SCRIPTS[i]).then(() => {
+    showToast('Script copiado! ✓');
+  }).catch(() => {
+    showToast('Copie manualmente o texto acima');
+  });
+}
+
+// ============ NOTIFICATIONS ============
+let selectedTime = '09:00';
+
+function openNotif() {
+  document.getElementById('notif-panel').classList.add('open');
+  const saved = localStorage.getItem(NOTIF_KEY);
+  if (saved) {
+    document.getElementById('notif-status').textContent = '✅ Lembretes ativos para ' + saved + ' todos os dias.';
+    selectedTime = saved;
+  }
+}
+
+function closeNotif() {
+  document.getElementById('notif-panel').classList.remove('open');
+}
+
+function selectTime(t, el) {
+  selectedTime = t;
+  document.querySelectorAll('.time-preset').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+async function activateNotif() {
+  if (!('Notification' in window)) {
+    document.getElementById('notif-status').textContent = '⚠️ Seu navegador não suporta notificações. Adicione o app à tela inicial para ativar.';
+    return;
+  }
+
+  const perm = await Notification.requestPermission();
+
+  if (perm === 'granted') {
+    localStorage.setItem(NOTIF_KEY, selectedTime);
+    document.getElementById('notif-dot').style.display = 'block';
+    document.getElementById('notif-status').textContent = '✅ Lembretes ativados para ' + selectedTime + ' todos os dias!';
+    scheduleDaily(selectedTime);
+    showToast('Lembrete ativado para ' + selectedTime + ' ✓');
+    setTimeout(closeNotif, 1500);
+  } else {
+    document.getElementById('notif-status').textContent = '⚠️ Permissão negada. Ative as notificações nas configurações do celular.';
+  }
+}
+
+function scheduleDaily(timeStr) {
+  if (!navigator.serviceWorker.controller) return;
+  const [h, m] = timeStr.split(':').map(Number);
+  const now = new Date();
+  const target = new Date();
+  target.setHours(h, m, 0, 0);
+  if (target <= now) target.setDate(target.getDate() + 1);
+  const delay = target - now;
+
+  navigator.serviceWorker.controller.postMessage({
+    type: 'SCHEDULE_NOTIFICATION',
+    title: '✨ Seu plano HOF te espera',
+    body: 'Bom dia, Letícia! Revise suas tarefas e scripts de hoje.',
+    delay
+  });
+}
+
+// ============ SERVICE WORKER ============
+
+const swCode = `
+self.addEventListener('install', e => self.skipWaiting());
+self.addEventListener('activate', e => self.clients.claim());
+self.addEventListener('notificationclick', e => {
+  e.notification.close();
+  e.waitUntil(clients.matchAll({type:'window'}).then(cl => {
+    for (const c of cl) { if ('focus' in c) return c.focus(); }
+    if (clients.openWindow) return clients.openWindow('./');
+  }));
+});
+self.addEventListener('message', e => {
+  if (e.data && e.data.type === 'SCHEDULE_NOTIFICATION') {
+    const { title, body, delay } = e.data;
+    setTimeout(() => {
+      self.registration.showNotification(title, { body, vibrate:[200,100,200], tag:'leticiacosta-daily', renotify:true });
+    }, delay || 0);
+  }
+});
+`;
+
+function registerSW() {
+  if ('serviceWorker' in navigator) {
+    const blob = new Blob([swCode], {type:'application/javascript'});
+    const url = URL.createObjectURL(blob);
+    navigator.serviceWorker.register(url).then(reg => {
+      const saved = localStorage.getItem(NOTIF_KEY);
+      if (saved && Notification.permission === 'granted') {
+        document.getElementById('notif-dot').style.display = 'block';
+      }
+    }).catch(err => console.log('SW error', err));
+  }
+}
+
+// ============ TOAST ============
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+</script>
+</body>
+</html>
