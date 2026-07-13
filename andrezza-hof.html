@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#0f0e17"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="HOF Andrezza"/>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkFuZHJlenphIFx1MDBiNyBQbGFubyBIT0YiLCAic2hvcnRfbmFtZSI6ICJIT0YgQW5kcmV6emEiLCAiZGVzY3JpcHRpb24iOiAiUGxhbm8gZGUgdmVuZGFzIGUgdGFyZWZhcyBkaVx1MDBlMXJpYXMgXHUyMDE0IE1cdTAwZTl0b2RvIEZ1bGwgRmFjZSAzRCIsICJzdGFydF91cmwiOiAiLiIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMGYwZTE3IiwgInRoZW1lX2NvbG9yIjogIiMwZjBlMTciLCAib3JpZW50YXRpb24iOiAicG9ydHJhaXQiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFNQUFBQURBQ0FZQUFBQlMzR3dIQUFBS29FbEVRVlI0bk8zZFMzQVUxeFVHNERONm9RZVNrQUFoSGhKQ2dzaU9zVkVNanJBTUVuSHNPQ2hTZGxsa2sreXljTExLSW91VVYxbGtsYXBra3l5elNhcThNRlZ4cFl4Vk5nVjJlQlVtVHBYTDJFV3dqQVEyQkd5Q3dRSXN5UnFrTEVnalRjOUkwNDk3YjU5enovL3RKTTFNdCs0OWY1L3VudTZaWEhQVGhnVUNVS29pNnhVQXlCSUNBS29oQUtBYUFnQ3FJUUNnR2dJQXFpRUFvQm9DQUtvaEFLQWFBZ0NxSVFDZ0dnSUFxaUVBb0JvQ0FLb2hBS0FhQWdDcUlRQ2dHZ0lBcWxWbHZRSStHL3ZUajR5OHpzRVhYekh5T2xBc2gzdUMwek5WNkhFaEdPa2hBQWxrVmZEbElCRHhJUUFSY0MzNGNoQ0k4aENBWlVndCt1VWdES1VoQUNHK0ZYNFlnbEFJQVNEL2kzNDVDSVB5QUdndC9ERE5RVkFaQUJSK2FScURvQ29BS1B4b05BVkJSUUJRK01sb0NJTDMxd0toK0pQVE1IYmVkZ0FOaytlU3I5M0F5dzZBNGpmUDF6SDFxZ1A0T2tuYytOUU52QWtBMStKUFd5eSsvbDljZUJFQUxrWGlxaWkwL2I4MmlRNUExb1hBcFFBd0RzbUpEUUJ1UWlrTjR4S1B5QUM0bm1TcGs0dHhLazljQUZ4T3FzUUpMUVZqdGp4UkFYQXhrZEltTUM2TVlTRXhiNFJoNHN4dzhUOW1mVkFlaDRnT1lIdEFOUlIrS1JoWEFRR3dPVWtTSnNnRnpXUE1laGRJODhTNFpITXN1TzhPc2UwQXRnWU9oYjh5YmVQT3NnTm9td1JPYkkwUjEwN0FMZ0FvL3V4cENvSDNINDZMd2s4bUdEZU9SV3NTcXc1Z2VyQlIvT21aSGtOdWdXSVRBQlEvWHo2SGdFVUFVUHo4K1JvQ0ZnRXdDY1Z2ajQ5am0za0FURzRKZkp3Z2JreU9NWWN1a0drQVVQd3krUlNDekR1QUNTaCs5M3daODh3Q2dDK1FrOC9VMkdmWkJUSUpRTlp0RC9qSnFpWkU3d0poNjU4OTZYUGdQQURZOWZHUDVGMGhrUjBBeGMrUDFEbHhHZ0RzKzBNNXJtdEVYQWVRdXFYUlFPTGNPQXVBaVdSTEhHQnRUTXlSeXk0Z3JnTUFtT1FrQU5qNjZ5S3BDNkFEZ0dvaUFvQ3R2enhTNXN4NkFOSzJNaWtEQ2NVa2ZEdU9pQTRBWUl2VkFPQ05MMGpMZGcyeDdnRFkvWkdQK3h5eURnQ0FiZFkrR3hRSHY4V2U2ZHRNTC8xc1lObS8vL0ozeCtqOHhFMkhhK1FPMTNwQUIzQm9kR2o3eW44ZlhQbnZZQjRDNEVoSGV5UHQ2bTFiOFRIN245eENheHBYT1ZvaklHSWFBQjkzZjBZaWJOMnJxaXJvKzg5ME8xZ2I5N2pPcVpVQTRQUm5vYnBWVmZUYzNxMlJIanU4djVzcUtuS1cxMGdlV3pYRnNnUDQ1dG4rclZSZld4M3BzZXRiNm1udkU1c3NyeEVFMkFXQWE2dE1ZMlN3SjliamYxam1ZRmtxam5QTExnQytlWHpIZXVyYTFCenJPYnQ2MjZpanZjblNHc0ZTeGdPQS9mOUM1VTU5TGlkdTE5REFSbTJoQTFpMHRybU9Cdm8ySjNydTgzdTdxRzZWOTEvZ2t6bFdBZUM0ajVqRzhQNXVxa3g0UnFldXRvcSsyeC90ekpFazNPYVlWUUI4VWxWWmZFNy8rTDgramZVYVNYZWZJRG9Fd0pLQnZzM1UybHo3OE9kNzAzUDBoNysrUzlkdTNJMzhHcDBibStpSmI2eTNzWHJ3ZndpQUplR3Q5OUYzTHRQMGJKN0dUazJtZWgwd3kyZ0FjQWJvZ2E1TnpiUnorN3FDM3gwK2NaR0lpTjQ4UFVuNS9IemsxM3A2MTJaYXU2Yk82UHBKWnJyRzJIUUFiZ2RIYVlTMzJ1ZkdiOUFuMTZhSWlPakx1N04wNnIycmtWK3JzaUpIdy92OHVqNkkwMXl6Q1lBdkd1cXE2ZG4rem9MZnZYYjhZc0hQUVRlSTZ1QyticXFxd2xUWmdGRTE3TG05WFZSYnMzaisvdGJVREowT2JmSFBqZCtnVDY5UFJYN05scVphMnRlM3hkZzZ3aUlFd0tCY3J2Z2QzRGRPVDFMK2Z2RSsvK3NuSm1LOTl1Z1EzaG0yQVFFdzZGdVBiS0F0R3hvZi9yeXdzRUJqSjBzWCtwRXpsK2pydWZ1UlgvdWJQZXVvZTh1YXRLc0lJUWlBUVNPaGc5K3pIMXluejcvNHF1Umo3MDNQMFQvd3hsam1FQUJEMmxycnFYL254b0xmbFR2WWpic2I5SjJuT3FtaEx0cDlCUkFOQW1ESThQNmVnanU1UHJ0NWo5Nzk4UHFLei9uMzVFMmF1SEk3OGpKVzFWVFM5NTdlbG5RVm9RUUV3SUFIOS9JV0Z1YnJKeWRvWWFIOEo4N0U3UUlqUXoyVXd4MlR4aUFBQmd3KzJVSE5xeGMvelNHZm42YzNUMGU3NU9IWTJjczBQWk9Qdkt4TjYxZlQ3a2ZiWTY4amxJWUFHQkErUlhueXZTdDArODVzcE9kT3orYnByWDkrRW10NTRZTnRTQTRCU0dsN1J3czlzbTF0d2U4T0g0LzNUbS9jZDRhL3ZiT2QydGMyeEhvT2xJWUFwQlRlK2wrK05rVWZmUHpmV0s4eGNlVTJYYmowUmVUSDUzSTUrZ0Z1bVRRQzk5eWxzTHEraGc0OFZYamR6OWFOVFU2dWluMWhZQnY5NWJVUFk3MlpCc1hRQVZKNFlXQWIxVlJYWnJMc3hvWWFHdHJka2NteWZZSUFKRlRxdWgvWFJnL2dZRGd0TmdHUWRqUE5uc2MyVXZ1NmJBOUVkM1MyVUc5WGE2YnJrQVNudVRaNkRIRHd4VmRZL1hNMmpZYTIvcmVtWnVpbkx4Mm11UmgzZTRWVlZ1VG96NzhacHJiVyt1anJNYlNkTGx3Nm0zaVowcGkrbVlaTkI1Q2tmVjBEN1htczhNMm9WOThhVDFYOFJFVDM1eGZvYjhjK2l2V2N3ZDJGYjhKQlBBaEFBaU9EUFpSYmNqM0M5RXcrOXJuLzVieHhhcEx1ZnZWMTVNZFhsN2dNQTZKREFHS3FxUzYrSU8zd2lZdDBiM3JPeU90UHorYUxicUVzSjN3aEhrVEhLZ0FTamg4TzdPbWd4b2FhaHovbjgvUDA2ckZ4bzh2NCs5c2Z4OXFkYW11dHAvN0haWHlrT3JjNVpoVUFDY0xYNFJ3OWU1bHVmamx0ZEJtM3BtYm82RHVYWWowSHQwd21ZendBbkQ3eXdyVGVybGJhMGRueThPZUZCYUpEUnk1WVdkYWhJeDlGdXB3NjBOZGJlRHVtajJ6VUZqcEFET0ZiRXMrOGY1V3VmSGJIeXJLdWZuNkh6cnovbjhpUHorVnd5MlFTVnI0bm1PdDN3c2IxNDRPUDBrOUdkOFo2enJueEcvU3IzNytkYUhsLy9QWHp4bTk4SC9uRkliby9iK1dyb0dQaldCZm9BS0NhbFFCdzJZS0RQMVI5VXp5M1UyV1FIdGM1eGYwQUszaDU3RHk5UEhiZTJmSisvdHNqenBZRkQ3RHNBQUN1V0F0QTJuMDJyaTBUNHVONDlpZUFEZ0Nxc1E0QXVvQjgzT2ZRYWdCd09oVFNzbDFEckRzQWdHM1dBNENEWWIwNEgvd0dSSFFBaEVBZUtYTW1JZ0FBdGpnSmdJbFdKbVdMQW1ibXl0VUpGSFFBVU0xWkFOQUZkSkMwOVNjUzJBRVFBcjRrem8zVEFPQ05NU2pIZFkySTZ3QkVNcmMwdnBNNko4NERZQ3JoVWdmY1I2Ym1Jb3M5QkpFZElJQVFaRS82SEdRU0FCd0xRRmhXTlpGWkI4Q3VrSHlTZDMwQ29uZUJBZ2lCZTc2TWVhWUJNSmw4WHlaRUFwTmpuZlh1Y09ZZEFDR1F4YWZpSjJJUUFOTVFBbnQ4SEZzV0FUQzlKZkJ4b3JKbWVrdzViUDJKbUFTQUNDSGd6TmZpSjJJVUFDS0VnQ09maTU5SXdVY2pCaFBJYmVDNTA3THhZTlVCaU93VnFwWUpOY0hXV0hIY0NMRUxBQkZDa0NWTnhVOWs2UnRpVExGWnNGd25KQ3RheDVwbEJ3allIRGgwZzBWYWk1K0llUWNJMkM1VzdwTmtDOFpWU0FDSTNHeXhKVXlZQ1JqTFJheDNnWlp5TWFBYWRvdFEvSVhFZElDQXl5S1ZOSkVyd1pndFQxd0FpTnh2cWFWTmFnRGpWSjdJQUJCbHQ3dkNmWkl4THZHSURRQlI5dnZzWENZZDQ1Q2M2QUFFc2k2QWdLdEMwUGIvMnVSRkFJajRGRVdZcjE4UTRrUHhFM2tVQUNLK3hlSWJYNHFmeUxNQUJCQUVPM3dxL0lDWU44TGk4SEdpc3Vicm1IclpBWlpDTjBqSDE4SVBlTmtCbHZKOUFtM1NNSGJlZDRDbDBBMmkwVkQ0QVZVQkNDQUlwV2txL0lES0FBUVFoQWMwRm41QWRRQUNXb09ndWZBRENFQ0k3MkZBMFJkQ0FKYmhXeEJRK0tVaEFCRklEUU9Ldmp3RUlBR3VnVURCeDRjQUdJQ2JVT1JDQUN6eTRUdTBmSWNBZ0dyZVh3c0VzQklFQUZSREFFQTFCQUJVUXdCQU5RUUFWRU1BUURVRUFGUkRBRUExQkFCVVF3QkFOUVFBVkVNQVFEVUVBRlJEQUVBMUJBQlVRd0JBTlFRQVZQc2ZTeTFpKzJDTmVuTUFBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FZQUFBRDBlTlQ2QUFBZjgwbEVRVlI0bk8zZHlaTmQxWjBuOFBOU3FkUThJZENBSkRTQUFkdllZa1lDQ2VPeU1VaXc2NjQvb1JkZDBidGU5cVlpT3FKNzA1dnVSZld1SXpvNmFsV2JpbTZtc2dzN2pJUXgyTmhReGxNVkZoS3poUmtzQmdsSktIdEJZVmxTS3ZQZTkrNjlaL3A4bHZaVHZtUEgvWDNQTjgrOStkNW96ZXFOc3dFQXFNcFU3QVVBQU1OVEFBQ2dRZ29BQUZSSUFRQ0FDaWtBQUZBaEJRQUFLcVFBQUVDRkZBQUFxSkFDQUFBVlVnQUFvRUlLQUFCVVNBRUFnQW9wQUFCUUlRVUFBQ3FrQUFCQWhSUUFBS2lRQWdBQUZWSUFBS0JDQ2dBQVZFZ0JBSUFLS1FBQVVDRUZBQUFxcEFBQVFJVVVBQUNva0FJQUFCVlNBQUNnUWdvQUFGUklBUUNBQ2lrQUFGQWhCUUFBS3FRQUFFQ0ZGQUFBcUpBQ0FBQVZVZ0FBb0VJS0FBQlVTQUVBZ0FvcEFBQlFJUVVBQUNxa0FBQkFoUlFBQUtpUUFnQUFGVklBQUtCQ0NnQUFWRWdCQUlBS0tRQUFVQ0VGQUFBcXBBQUFRSVVVQUFDb2tBSUFBQlZTQUFDZ1F0T3hGd0JNN3ZHLytjdEIzKy9BWC8zZG9POEhkRyswWnZYRzJkaUxBQzQxOUtiZUYyVUIwcVFBUUVTbGJQTGpVZzRnSGdVQUJsRDdSdCtXWWdEOVV3Q2dZemI3ZmlnRjBDMEZBQ1prdzQ5RElZREpLQURRa2cwL1RRb0J0S01Bd0FKcytIbFNDR0IrQ2dETXdhWmZGbVVBTHFVQVFMRGgxMFloQUFXQWl0bjBDVUVab0Y0S0FGV3g2VE1mWllDYUtBQlV3Y1pQRzRvQU5WQUFLSlpObnk0b0E1UktBYUFvTm4zNnBBeFFFZ1dBSXRqNEdaSWlRQWtVQUxKbTR5Y21SWUNjS1FCa3g2WlBpcFFCY3FNQWtBMGJQemxRQk1pRkFrRHliUHprU0JFZ2RRb0F5Ykx4VXdKRmdGUXBBQ1RIeGsrSkZBRlNvd0NRREJzL05WQUVTSVVDUUhRMmZtcWtDQkNiQWtBME5uNVFCSWhIQVdCd05uNjRsQ0xBMEJRQUJtUGpoNFVwQWd4bEt2WUNxSVBOSDVveEt3ekZDUUM5RW1Zd1BxY0I5RWtCb0JjMmZ1aU9Ja0FmM0FLZ2N6Wi82SmFab2c5T0FPaU1rSUwrT1EyZ0t3b0FFN1B4dy9BVUFTYmxGZ0FUc2ZsREhHYVBTVGtCWUN6Q0I5TGhOSUJ4T0FHZ05acy9wTVZNTWc0bkFEUW1aQ0I5VGdOb3lna0FqZGo4SVE5bWxhWVVBQllrVUNBdlpwWW0zQUxnc29RSTVNOHRBUzdIQ1FCenN2bERHY3d5bCtNRWdFc0lqRHdOOVp1ZTZ5TlBUZ0s0bUFMQW53ajJkT1VXM3E2bGRPVjJMZEVmQllBUWdzQk9SZW5oN0RwTFErblhHYzBvQUFqbENBVHdoVnlEdzNNTm9nQlVUT2dPUjlpMjQ5b2NqbXV6WGdwQXBRUnN2NFJxdDF5di9YSzkxa2tCcUpBdzdaNEFIWlpydUh1dTRmb29BSlVSbk4wUm1HbHdUWGZITlYwWEJhQWlnbkp5QWpKdHJ2SEp1Y2Jyb1FCVVFDaE9SaURteVhVL0dkZDkrUlNBd2duQjhRaS9zcGlEOFppRHNpa0FCUk42N1FtOHNwbUo5c3hFdVJTQVFnbTY1Z1JjbmN4SWMyYWtUQXBBZ1FSYk0wS05FTXhMVSthbFBBcEFZWVRad2dRWmN6RTdDek03WlZFQUNpTEE1aWU4YU1JY3pjOGNsVU1CS0lUUW1wdXdZaExtYW03bXFnd0tRQUdFMUtVRUZGMHlZNWN5WS9sVEFESW5tQzRrbE9pVGVidVFlY3ZiVk93Rk1ENWhkQ0ZoUk45Y1l4ZVNRWGx6QXBBcGczZWVVQ1lHTTNpZUdjeVRBcEFod2ZNNW9VTUt6T1BuekdOK0ZJRE1DQnRCUTVyTXB0bk1qV2NBTWlKZ0JBenBjbTNLcU53NEFjaEU3WU1sWE1tSmVUV3ZPVkFBTWxCem1BZ1NjbVoyU1psYkFJa1RJSkN2bXEvaG1yTXJGMDRBRWxickFOVWNtcFRMUEpNYUp3Q0pFaFpRbGxxdjdWcXpMQWRPQUJKVTQ4RFVHbzdVeVl5VEFpY0FSQ2NZcUkxcm5oUW9BSW1wN1RjRFFVaXRhcnYyYTh1MkhMZ0ZrSkNhQnFTMjhJUDVtSDFpY0FLUUNBRUE5YXBwSm1yS3V0UXBBQW1vYVNCcUNqcG9vNmJacUNuelV1WVdRR1MxREVKTjRRYVRrZ3NNd1FrQXZUUGswSTZaWVFnS1FFUTF0SHhCQnVPcFlYWnF5TUNVS1FDUjFIRGgxeEJnMEtjYVpxaUdMRXlWWndBaUtQMkNyeUcwWUdoeWc2NDVBYUJUaGhqNlliYm9tZ0l3c0pKYnZJQ0NmcFU4WXlWblk2b1VnQUdWZklHWEhFeVFrcEpucmVTTVRKRUNNSkNTTCt5U0F3bFNWUExNbFp5VnFWRUFtRWpKUVFRcE0zdE1TZ0VZUUttTlZnQkJYS1hPWUttWm1Sb0ZvR2VsWHNpbEJnL2twdFJaTERVN1U2SUE5S2pVQzdqVXdJRmNsVHFUcFdab0toUUFXaWsxYUNCM1pwTzJGSUNlbE5oY0JReWtyY1FaTFRGTFU2RUE5S0RFQzdiRVlJRVNsVGlySldacUNoUUFGbFJpb0VESnpDeE5LQUFkSzYycENoTElVMm16VzFxMnBrQUI2RkJwRjJocEFRSzFLVzJHUzh2WTJCUUE1bFJhY0VDdHpES1hvd0IwcEtSbUtqQ2dMQ1hOZEVsWkc1c0N3QVZLQ2dyZ1BMUE54UlNBRHBUU1NBVUVsSzJVR1M4bGMyTlRBQ2JrUWdRWW51eWRuQUpBQ0tHYzN3eUErWmwxdnFBQVRLQ1VCaW9Rb0M2bHpId3BHUnlMQWxDNVVvSUFhTWZzb3dDTXFZVG1LUUNnYmlWa1FBbFpISXNDTUFZWEhFQTZaUEo0RklCS2xkRDhnY25KZ25vcEFDMlYwRFFOUFBEblNzaUVFcko1YUFwQVpVb1lkS0I3c3FFK0NrQUxHaVpBdW1SME93cEFSVFI4WUQ0eW9pNEtRRU81TjB1RERUU1JlMWJrbnRWRFVnQXFrUHRBQThPU0dYVlFBQnJRS0FIeUliT2JVUUFLcDhrRDQ1QWQ1Vk1BRnBCemt6VEF3Q1J5enBDY3Mzc29DZ0FBVkVnQm1FZk9EVExuNWc2a0krY3N5VG5EaDZBQUZDam5nUVhTSTFQS3BBQmNodVlJa0Q5WmZua0tRR0UwZGFBUHNxVThDc0FjTkVhQWNzajB1U2tBQmRIUWdUN0ptTElvQUJmSnRTa2FUR0FJdVdaTnJ0bmVKd1VBQUNxa0FCUWcxMFlPNUVubWxFRUIrRE9PaUFES0plTXZwQUJrVGhNSFlwQTkrVk1BL3BWbUNGQStXWCtlQXBBeERSeUlTUWJsVFFFSWVUWkNnd2VrSU1jc3lqSHorNkFBQUVDRkZJQU01ZGk0Z1hMSnBEeFZYd0FjQlFIVVIvWXJBTm5SdElFVXlhYjhLQUFBVUtHcUM0QWpJSUI2MWI0SFZGMEFjdU9JRFVpWmpNcEx0UVdnOXVZSFFOMTdRYlVGSURlYU5aQURXWlVQQlFBQUtqUmFzM3JqYk94RkRDMjNJeCtObXFaV0xwOEpmL3RmSHc0eml4ZDE4dlArKzkvK05Eeng5Q3VkL0N6cUltZlQ1d1FBQ3ZLZHZUczYyL3hEQ09HaGU2L3Q3R2NCYVZFQUVsZGpLMlU4bzFFSUIvZnY2dlJuWHJkdFhiaGh4eFdkL2t6cUlMdlNWMTBCeU8xWUNwcTYrWWFOWWN1R1ZaMy9YS2NBMUtER3ZhRzZBZ0NsNm11ai9zWnQyOEtxRlRPOS9Hd2dIZ1VnWVk3UWFHcjltbVZoejlldjd1Vm56eXhlRk83ZnM2T1huMDNaWkZqYUZBQW93SVA3ZG9aRlU2UGVmdjdCL2RlR1VYOC9Ib2lncWdLUTB6MGV6Wm1tcHFaRzRjQTkzVDc4ZDdFdEcxYUdtMi9ZMk90N1VLYWNzaXluUGFJTFZSVUFLTkdlcjE4ZDFxOWQxdnY3UE94aFFDaUtBZ0NaZTJqL01CdnpVRVVER0VZMUJTQ25vNTJjanN5STYrcXJWb1piYmh6bWFINklXdzJVS2FkTXkybXZtRlExQlFCS05QVERlWDAvYkFnTVJ3R0FUTTBzWGhUdTM3dGowUGRjdjJaWjJMdDd5NkR2Q2ZSREFVaE1Ua2RseExYLzFxMWhkWVFQNlBISmdJeER0cVduaWdKUTB6MGQ2aEhycWZ6ZDEyL281U09ISVJXMTdCbFZGQUFvemJYYjFvWWJkNjZQOHQ2alVRZ1AzZXRoUU1pZEFwQVFSMlEwRmZ0djh1L2YwKzNYRGxNSEdaY1dCUUF5czN6cDRuRGZIZGRFWGNQSzVUUGh2dHUzUlYwRE1KbmlDMEF0OTNLb3g3ZjNiQTlMWjZaakw4UERnQlN0aHIyaitBS1FDMGRqTkhWd29FLytXOGoxMjY4SVg3cG1YZXhsa0JsWmx3NEZBREp5MDNWWGhlMmJWOGRleHAvRWZoWUJHSjhDQUJsSmJjUDl4dTNYaEJYTEZzZGVCakNHb2d0QURmZHdxTWZhVlV2Q1BUZW45U2w4UzJZV2hmdjM3SWk5RE9oRjZYdEkwUVVnRis2SjBjUURkKzhNMDlQcGpXd3F6eVNRRDVtWGh2VFNCTGpFYURRS0IvYWwrZUU3MnphdENydHYyQkI3R1VCTENnQms0STZ2YmdvYjE2K0l2WXpMU3UzWkJHQmhDZ0JrSVBXL3VkKzdlMHU0WXMzUzJNc0FXaWkyQU9UeThJWjdZU3hrd3hYTHd4MWYzUlI3R2ZOYU5EVUtEOTZUNWkwSzBwUkw5dVd5bDR5ajJBSUFwVGk0Lzlvd0dvMWlMMk5CQi9idENsTlQ2YThUK0p3Q0FBbWJucDRLRDl5OXMvSHJ6NXc5MStOcTVuZmwybVhocnE5ZEhlMzlnWFlVQUVqWVBUZHZDV3RYTFduMDJvOVBuZ24vNisvL3FlY1Z6Yy9EZ0pBUEJTQ2lYTzZCRWMvRDkxN1grTFZQUG5zc1BISDRsZkRKcVRNOXJtaCt0OXk0TVZ4OTFjcG83MDllWkdCY0NnQWthdnZtMWVHbTY2NXMvUHBIRC8wdW5EcDlOdnpndVZkN1hOWDhSaU1mREFTNUtMSUFsUHpVSnZWbzg2ZC92L2lYZDhLcmI1MElJWHhlQkdMNnp0NGRZV2J4b3FocmdDNlZ1cWNVV1FBZ2QwdG5wc08zN3RyZStQV1BQSFYrMDMvbGpUK0czN3p5YmgvTGFtVFZpcG13LzlhdDBkNGZhRVlCZ0FSOTg4NXJ3dktsemI1bDc0TVBQdzAvZXZHTkMvNnp4dzRkNldOWmpYa1lFTktuQUVDQzJteWdUeng5Skp5OTZNLy9mdmo4YStHalQwNTN2YXpHYnR5NVBseTdiVzIwOXdjV3BnQkU0dWxYTHVmR25ldkRycTFyRzcxMmRuWTJQSDc0MHQvMlQ1LzVMRHo1N0xHT1Y5YU9Vd0Nha0lYeEtBQ1FtRFliNTA5KytYWTQvdDRuYy81M2owYStEWERmSGMxdll3RERVd0FnSVcwZm9IdjBxY3MvOGYvYTJ5ZkNTeS8vb1l0bGpXWHB6SFQ0OXA3bUR6SUN3eXF1QUpUNjV4clVvYzJmMEIxLzc1UHdrMSsrUGU5ckhvdjhKNEVQK1V3QUNsSGkzbEpjQVlCY2pVWWhITmpYZk1OODdORHZ3dXpzN0x5dk9menoxOE9Kano2ZGRHbGp1MmJ6NnZDMUwxMFY3ZjJCeTFNQUlCRzMzTGd4Yk5uUTdHTjB6NTQ5Ri83aFI2OHMrTG96WjgrRjcvMzQ2SVFybTR5SEFTRk5Da0FFbm5wbExtMk95NTkrNFkzd3dZZk5mck4vL1BDUnNNQkJRYS91dm5sTFdMZDZhYndGa0R5WkdJY0NBQWxZdjNaWnVPdnJ6YjlLOTVGNUh2NjcyQnZIUHdvdi92UHhjWmJWaWVsRjdiN1NHQmlHQWdBSk9IRFByckJvYXRUb3RhKytkU0s4OVBJN3JYNSs3SWNCRCt6YkZVYWpadi83Z0dFb0FCRFpvcWxSZUhCZjg5K1F4L215bjJkZWZETzhmK0pVNjMvWGxRMVhMQTkzM3JRNTJ2c0RsMUlBSUxLOXU3ZUU5V3VXTlhydHA2ZkgrNFMvczUrZEM5OTk1bWpyZjljbER3TkNXaFFBaUt6TjEvNys0Q2V2aG85UG5obnJmVDUvR0REZTA0QzNmV1ZqMkhUbGltanZEMXhJQVlDSXRteFlGWFpmdjZIeDYrZjc1TCtGL1A3ZGo4UHp2Lzc5MlA5K1VxUFJLQnowd1VDUURBVUFJbnJvM2wyaDZiTnh2ejM2WG5qNXRmY25lci9ISmlnUVhYaGc3NDZ3ZUZyc1FBcUttc1FTUDZxUmNzMHNYaFR1MzdPajhlc24rZTMvQzgrKzlGWjQ5NE9URS8rY2NhMWV1U1RzYS9GZEI1Q1MwdmFZb2dwQURuemdCVi80eG0zYndzcmxNNDFlKzlFbnA4TVBuMzl0NHZjOGQyNDJQUEgwd3A4ZzJLZUg3NzB1NnZ1VEp0azRQQVVBSW1uejhOLzNmbncwbkQ3eldTZnYrOFRUUjhLNWMvRWVCdnpLcnZWaDU1WTEwZDRmK0p3Q0FCRmN0MjFkdUdISEZZMWYvOWloSTUyOTl4OCtPQmwrOHN1M092dDU0MmhUZm9CK0tBQVFRWnNOOElYZkhnK3YvLzdEVHQvLzBRNEx4VGorNHM3dFlkblM2YWhyZ05vcEFEQ3dGY3NXaC92dTJOYjQ5VjA4L0hleG4vN3k3WEQ4dlU4Ni83bE5MVnN5SGI1MTUvWm83dzhvQURDNGI5MjFQU3lkYWZiYjczdC9QQldlZWZHTnp0Y3dPenNiSGo4Yzl4VEFiUUNJU3dHQWdiWDUydDhubmo0U1B1dnBnYjEvK05FcnZmM3NKblpjdlNaODlkb3JvNzAvMUU0QmdBRjk3VXRYaFdzMnIyNzAycjcvWk8vOUUvMmNMclRoRkFEaVVRQmdRRzIrRU9mWmw5NEs3N3pmNzMzNjJMY0I5dCt5TmF4WnVTVHFHcUJXQ2dBTVpOM3FwZUh1bTdjMGZuMGZELzlkN09lLytYMTQ2NTJQZW4rZnk1bWVuZ29QM05QOHE1Q0I3aWdBTUpBSDd0NFpwaGMxRzdtMy8vQngrTm12Mys1NVJTSE16c1kvQlRpNGIxY1lOZjFDQktBekNnQU1ZRFFhaFFQN2RqVisvYU9IZmhlRyt1YmU3ejV6Tkp3OWUyNllONXZEeHZVcnd1MWYzUlR0L2FGV0NnQU00TTZiTm9jTlZ5eHY5Tm96WjgrRjd6NXp0TjhGL1prL2Z2UnBlUHFGdUE4RHRuazJBdWlHQWdBRGFMUEJIZjdaNitIRVI1LzJ1SnBMUFhvbzd0Y0UzL0hWVFdIaitoVlIxd0MxVVFDZ1o1dldyd2kzZldWajQ5Yy9FbUV6L3NXL3ZCTmVlN3Zianh0dW8rMHRFbUJ5Q2dEMDdPRCs1Zys1SFgzemorRlh2L3REenl1YTIyT0g0NTRDUEhEM3pqQTlMWkpnS0tZTmVqUTlQUlcrYzNmelAzTjdaSUEvL2J1Y2YvenhzYzYrY25nY2ExY3RDZnR1M2hydC9hRTJDZ0QwcU0wSDNaejg5R3o0L25QSGVsN1I1WDMweWVsdzZHZXZSM3YvRUh3eUlBeEpBWUFldGRuUXZ2L2NzWER5MU5rZVY3T3d4eUkvREhqVGRWZUc3UTAvS2htWWpBSUFQV243WlRlUEhZcjdnVHdoaFBDckkrK0dvMi8rTWVvYW5BTEFNQlFBNkVtYmpleFhSOTROUjE3L29ML0Z0QkM3aUh6cnJ1MWgyWkptWDVjTWpFOEJnQjRzV3pJZC91TE9heHEvZm9qUC9XL3F5V2VQaFZPbjQ5MktXTDUwY2ZobWkvL3ZnUEVvQU5DRGI5NTVUVmkrZEhHajE1NzQrSFE0OUxQWGVsNVJjNStjT2hOKytOTzQ2M2xvdjlzQTBEZm5iTkNETmh2WTZoVXo0Zi8rajMvVDQycnlzMnZyMnZEbFhldkRyNCs4RzNzcFVDd25BTkN4TCs5YUgzWnRYUnQ3R2Ruei9RRFFMd1VBT21iajZzYitXN2VGMVEwL1F3Rm9Ud0VZMk9OLzg1ZXhsMENQVnErWUNmdHYzUlo3R1VWWVBEMFZ2ck4zUit4bE1CRFpPTHlpQ3NDQnYvcTcyRXVnY3QrNWUyZFk3UFBzTy9QUS9tdER3NjlSZ042VnRzZElLdWpJYUJUQ1FkOW8xNmxOVjY0SXQzMTVVK3hsUUpFVUFPaklyVi9lRkRaZnRUTDJNb3Jqa3dHaEh3b0FkTVJHMVk4N2I5b2NybHEzUFBZeW9EZ0tBSFRneXJYTHdsMDNiWTY5akNKTlRZM0NBYmRXb0hNS0FIVGd3TDVkWVdySzAycDllZkNlbldGNmtiaUNMdmtrUUpqUW9xbFJlUENlNXIraFB2bnNzZkRmL3ZkelBhNm9lM2Q5YlhQNDYzKy9MOXI3cjF1OU5OeDk4NWJ3MVBQcGZHUXk1RTZsaGdudDNiMGxYTEZtYWVQWFA1TFFGLzgwOWR4TGI0Zmo3MzBTZFEyK0h3QzZwUUJFNEFNdnl0TG1rLzkrOTlvSDRUZXY1UGY1OXJPenMrR0pwK04rVGZEWHI3OHFiTnUwT3VvYTZJZE1qRU1CZ0FsczNiZ3E3TDVoUStQWFAvTFV5ejJ1cGw5UFBQMUtPUHZadWFocjhESEwwQjBGQUNiUTVsajY0NU5ud2c5KzhtcVBxK25YK3lkT2hSLy8wNXRSMS9DdHU3YUhKVE9Mb3E0QlNsRmNBU2p0b3hwSjE4emlSZUhiZTdZM2Z2MzNuamthUGozOVdZOHI2dCtqa1o5ZldMRnNjZmptSGRkRVhRTjFLbkZ2S2E0QXdGRHV1MzFiV0xsOHB0RnJaMmZ6ZlBqdllpLys4L0h3eHZFUG82N0JCeTVCTnhRQUdGT2JqZWlGMy80KytzYlpoZG5aRUI0N0ZQZGh3T3UyclFzMzdMZ2k2aHFnQkFwQUpKNTZ6ZHVYcmxrWHJ0L2VmQk1xNGJmL0wzenZ4MGZENlROeGIyVjRHTEFjc2pBZUJRREcwR1lEK3NNSEo2TS9QTmVsRHo4K0hRNzk3UFdvYTdqM3RtMWgxWXBtdDErQXVTa0EwTktLWll2RE4yNXYvaURhNDRlUGhIUG5abnRjMGZBZVBSVDNSR05tOGFKdy81NGRVZGNBdVZNQW9LWDc5K3hvL0tkb1p6ODdGeDQvSFBlZWVSOStmZVRkY09UMUQ2S3U0ZUQrYThQSTF5L0EySW9zQUNYK3VRYnBPTmppYi85LzlNSWI0ZjBUcDNwY1RUeXhId2Jjc21GbHVPWEdqVkhYUUIxSzNWT0tMQURRbDkzWGJ3amJOcTFxL1ByLzk4TnlIdjY3MlBlZk94Wk9uam9iZFEyK0h3REdwd0JFNU9uWC9MVDUwNzlqYjUwSUw3MzhUbytyaWV2a3AyZWpmN0xobnE5ZkhkYXZYUloxRFl4UEJzYWxBRUJENjFZdkRYdDNYOTM0OVkvOE1OL1AvVzhxOXNPQVUxT2pjSEJmODY5aUJzNVRBS0NoQisvWkdhWVhOUnVaazZmT2hpZWZPOWJ6aXVJNzhucjhiemQ4NEo2ZFlkR1Vwd0doTFFVQUdwaWFHb1VETFg3VGZES0IrK05EZVRUeXc0RHIxeXdMZTNkdmlib0d5Rkd4QlNDWHB6YmRBOHZEblRkdERsZXRXOTc0OVRVYy8zL2hxZWRmQ3g5K2ZEcnFHbncvUUg1eXliNWM5cEp4RkZzQW9FdHROcGlYWG40bkhIdnJSSStyU2N2cE01K0ZmM3oyYU5RMTdMNStROWk2c2ZsZlp3QUtBQ3hvMDVVcndtMWYzdFQ0OVNYLzZkL2xQUHBVM05zQW81RS9DWVMyRkFCWVFKdFBuSHYveEtud294ZmU2SGRCQ1hyaitJZmh4ZDhlajdxR2IrL1pIbVlXTi91RVJrQUJTRUl1OThKcXRIaDZLanl3ZDBmajF6L3g5Q3ZoN0dmbitsdFF3bUwvU2VESzVUUGh2dHUzUlYwRHpjaThOQlJkQUVwK2VJTmg3THQxYTFpOWNrbWoxNTQ3TnhzZWk3d0p4dlRNaTI5Ry85ampoKys5THVyN1U1YlM5NURwMkF1QUdHNy95cWJ3bi8vRC9rNS81dFRVS1B5Zi8vTHdXUC8yMy83SHZ3OGZuenpUNlhxNnNPK1dyZUUvL2J1OXNaZlIySmUycjJ2MTIrVmYvOC9ENGRsZnZOWGppaUJkUlo4QUFBQnpVd0FTNFo0WVVBTlpsNDdpQzBEcDkzQUE2RjROZTBmeEJRQUF1SlFDa0JCSFkwREpaRnhhRkFBQXFGQVZCYUNHZXprQWRLT1dQYU9LQXBBVFIyUkFpV1JiZWhRQUFLaVFUd0trU2ovOTFkdlZIUE5ONHZEUFgvZi9FeFNxbWhPQW5FTE1VUmxRa3B3eUxhZTlZbExWRkFBQTREd0ZBQUFxVkZVQnlPbG9KNmNqTTRETHlTbkxjdG9qdWxCVkFRQUFQcWNBSkN5bjVneHdNUm1XTmdVQUFDcFVYUUdvN1I0UEFBdXJjVytvcmdEa3hoRWFrQ1BabFQ0RkFBQXFWR1VCeU8yb1I1TUdjcEpiWnVXMkozU2x5Z0lBQUxWVEFES1JXNk1HNmlTcjhsRnRBYWoxeUFlQTgycmVDNm90QURuU3JJR1V5YWk4VkYwQWFtNStBTFdyZlErb3VnQUFRSzBVZ013NFlnTlNKSnZ5VTMwQnFQMElDS0JHc2w4QnlKS21EYVJFSnVWSkFRQ0FDaWtBSWMraklJMGJTRUdPV1pSajV2ZEJBY2hZam9NSGxFTUc1VTBCK0ZjYUlVRDVaUDE1Q2tEbU5IQWdCdG1UUHdYZ3oyaUdBT1dTOFJkU0FBcWdpUU5Ea2psbFVBQUFvRUlLd0VWeVBTTFN5SUVoNUpvMXVXWjdueFNBZ3VRNm1FQWVaRXhaRklBNWFJb0E1WkRwYzFNQUNxT2hBMzJRTGVWUkFDNURZd1RJbnl5L1BBV2dRSm82MENXWlVpWUZZQjQ1TjBjREMzUWg1eXpKT2NPSG9BQUFRSVVVZ0FYazNDQnpidTVBZkRsblNNN1pQUlFGb0hBNUR6QVFqK3dvbndMUWdDWUprQStaM1l3Q1VBRk5IbWhEWnRSQkFXZ285MFpwb0lFbWNzK0szTE42U0FwQVJYSWZiS0JmTXFJdUNrQUxtaVZBdW1SME93cEFaVFI4WUM2eW9UNEtRRXNsTkV5RER2eTVFaktoaEd3ZW1nSlFxUklHSHBpY0xLaVhBakFHVFJNZ0hUSjVQQXJBbUVxNDREUi9xRnNKR1ZCQ0ZzZWlBRlN1aEFBQTJqUDdLQUFUS0tWNUNnS29TeWt6WDBvR3g2SUFFRUlvSnhDQStabDF2cUFBVEVnREJSaWU3SjJjQXRDQlVpNUV2eGxBMlVxWjhWSXlOellGZ0F1VUVoREFoY3cyRjFNQU9sSlNJeFVVVUphU1pycWtySTFOQVdCT0pRVUcxTXdzY3prS1FJZEthNmFDQS9KVzJneVhsckd4S1FBZEsrMENMUzFBb0JhbHpXNXAyWm9DQllBRmxSWWtVRG96U3hNS1FBOUtiS29DQmZKUTRxeVdtS2twVUFCNlV1SUZXMkt3UUVsS25ORVNzelFWQ2dDdGxCZ3dVQUt6U1ZzS1FJOUtiYTZDQnRKUzZreVdtcUdwVUFCNlZ1b0ZYR3JnUUc1S25jVlNzek1sQ3NBQVNyMlFTdzBleUVXcE0xaHFacVpHQVdBaXBRWVFwTTdzTVNrRllDQWxOMXBCQk1NcWVlWkt6c3JVS0FBREt2bkNMam1RSUNVbHoxckpHWmtpQldCZ0pWL2dKUWNUcEtEa0dTczVHMU9sQU5DcGtnTUtZakpiZEcyMFp2WEcyZGlMcUZFTnc2elJ3K1JrQlgxeEFoQkpEUmQ4RGNFRmZhcGhobXJJd2xRcEFCSFZjT0hYRUdEUWh4cG1wNFlNVEprQ1FPOXFDRExva3BsaENKNEJTRUJOdzY3eHcrWEpBb2JrQkNBQk5RMUNUUUVIYmRRMEd6VmxYc29VZ0VUVU5CQTFCUjAwVWROTTFKUjFxWE1MSURFMUJVRUl3b0M2bVhkaWNnS1FtTm9HcExZQWhDL1VkdTNYbG0wNVVBQ0lycllnQk5jOEtYQUxJRkcxQm9UZkVpaVp1U1lsVGdBU1ZldkExQnFRbEsvV2E3dldMTXVCRTRERTFSb2FJUWdPeW1DR1NaVVRnTVRWUEVBMUJ5ZGxxUGthcmptN2N1RUVJQk0xQjBrSXdvUzhtRmZ6bWdNRklDTzFoMG9JZ29XMG1WRXptaE8zQURKaXNBUXM2WEp0eXFqY09BSElrS0Q1bkxBaEJlYnhjK1l4UHdwQXBvVE9lWUtIR016Z2VXWXdUd3BBeGdUUWhZUVFRekIzRnpKMytmSU1RTVlNM29VRU0zMXpqVjFJQnVYTkNVQUJoTktsQkJOZE1tT1hNbVA1VXdBS0lhRG1KcVNZaExtYW03a3Fnd0pRRUdFMVA2RkZFK1pvZnVhb0hBcEFZWVRYd2dRWWN6RTdDek03WlZFQUNpVEltaEZtaEdCZW1qSXY1VkVBQ2lYVW1oTnNkVElqelptUk1pa0FCUk53N1FtNnNwbUo5c3hFdVJTQXdnbTg4UWk5c3BpRDhaaURzaWtBRlJCK2t4R0NlWExkVDhaMVh6NEZvQ0lDY1hKQ01XMnU4Y201eHV1aEFGUkdRSFpIVUtiQk5kMGQxM1JkRklBS0NjenVDYzVodVlhNzV4cXVqd0pRS1FIYUwySGFMZGRydjF5dmRWSUFLaVpVaHlOZzIzRnREc2UxV1M4RkFHRWJnZEM5a0d0d2VLNUJGQUJDQ0FJNEZhV0hzdXNzRGFWZlp6U2pBUEFud2psZHVRVzJheWxkdVYxTDlFY0I0QkxDTzA5REJidnJJMDgyZmk2bUFEQW5JUS9sc1Bremw2bllDeUJOQWdQS1lKYTVIQ2NBTE1ocEFPVEh4czlDbkFDd0lFRUNlVEd6TktFQTBJaEFnVHlZVlpweUM0RFczQktBOU5qNGFjc0pBSzBKR2tpTG1XUWNUZ0NZaU5NQWlNZkd6eVNjQURBUkFRUnhtRDBtNVFTQXpqZ05nUDdaK09tS0FrRG5GQUhvbm8yZnJya0ZRT2NFRlhUTFRORUhKd0QweW1rQWpNL0dUNThVQUFhaENFQnpObjZHNEJZQWd4Qm8wSXhaWVNoT0FCaWMwd0M0bEkyZm9Ta0FSS01JZ0kyZmVCUUFvbE1FcUpHTm45Z1VBSktoQ0ZBREd6K3BVQUJJamlKQWlXejhwRVlCSUZtS0FDV3c4Wk1xQllEa0tRTGt5TVpQNmhRQXNxRUlrQU1iUDdsUUFNaU9Ja0NLYlB6a1JnRWdhOG9BTWRuMHlaa0NRQkVVQVlaazQ2Y0VDZ0JGVVFUb2s0MmZraWdBRkVzWm9BczJmVXFsQUZBRlpZQTJiUHJVUUFHZ0tvb0E4N0h4VXhNRmdHb3BBNFJnMDZkZUNnQUVaYUEyTm4xUUFHQk9Da0ZaYlBod0tRVUFGcUFNNU1tbUQvTlRBS0FsaFNCTk5ueG9Sd0dBQ1NrRWNkandZVElLQUhSTUllaUhEUis2cFFEQUFKU0NkbXoyMEQ4RkFDS3F2UmpZNkNFZUJRQVNWVW81c01sRG1oUUFLTURRWmNHbUR2bFRBQUNnUWxPeEZ3QUFERThCQUlBS0tRQUFVQ0VGQUFBcXBBQUFRSVVVQUFDb2tBSUFBQlZTQUFDZ1Fnb0FBRlJJQVFDQUNpa0FBRkFoQlFBQUtxUUFBRUNGRkFBQXFKQUNBQUFWVWdBQW9FSUtBQUJVU0FFQWdBb3BBQUJRSVFVQUFDcWtBQUJBaFJRQUFLaVFBZ0FBRlZJQUFLQkNDZ0FBVkVnQkFJQUtLUUFBVUNFRkFBQXFwQUFBUUlVVUFBQ29rQUlBQUJWU0FBQ2dRZ29BQUZSSUFRQ0FDaWtBQUZBaEJRQUFLcVFBQUVDRkZBQUFxSkFDQUFBVlVnQUFvRUlLQUFCVVNBRUFnQW9wQUFCUUlRVUFBQ3FrQUFCQWhSUUFBS2lRQWdBQUZWSUFBS0JDQ2dBQVZFZ0JBSUFLL1grOWs3L0x2aFFxY2dBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9XX0="/>
+<link rel="apple-touch-icon" href="data:image/png;base64,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"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<title>Andrezza · Plano HOF</title>
+<style>
+:root {
+  --gold: #C6A46C;
+  --gold-light: #D4B882;
+  --gold-dim: rgba(198,164,108,0.18);
+  --gold-border: rgba(198,164,108,0.28);
+  --bg: #0f0e17;
+  --bg2: #16151f;
+  --bg3: #1e1d2a;
+  --bg4: #252433;
+  --text: #f0ede6;
+  --text2: #a09d96;
+  --text3: #6b6862;
+  --danger: #e05c5c;
+  --success: #5cba8a;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  height: 100%; overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Jost', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* APP SHELL */
+.app {
+  display: flex; flex-direction: column;
+  height: 100%;
+  padding-top: var(--safe-top);
+  padding-bottom: var(--safe-bottom);
+}
+
+/* HEADER */
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px 10px;
+  background: var(--bg);
+  border-bottom: 0.5px solid rgba(198,164,108,0.1);
+  flex-shrink: 0;
+}
+
+.topbar-left { display: flex; flex-direction: column; }
+.topbar-greeting { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); }
+.topbar-name { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); margin-top: 1px; }
+
+.notif-btn {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--bg3); border: 0.5px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; position: relative;
+  font-size: 18px;
+}
+.notif-dot {
+  position: absolute; top: 7px; right: 7px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold); border: 2px solid var(--bg);
+}
+
+/* SCROLL AREA */
+.scroll {
+  flex: 1; overflow-y: auto; overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 100px;
+}
+
+/* BOTTOM NAV */
+.nav {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  padding-bottom: var(--safe-bottom);
+  background: var(--bg2);
+  border-top: 0.5px solid rgba(198,164,108,0.12);
+  display: flex;
+  z-index: 100;
+}
+
+.nav-item {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; gap: 3px;
+  padding: 10px 4px 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.nav-icon { font-size: 22px; }
+.nav-label { font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text3); }
+.nav-item.active .nav-icon { filter: drop-shadow(0 0 4px var(--gold)); }
+.nav-item.active .nav-label { color: var(--gold); }
+
+/* PAGES */
+.page { display: none; padding: 0; }
+.page.active { display: block; }
+
+/* ============ HOME PAGE ============ */
+.hero {
+  background: linear-gradient(160deg, #1a1828 0%, #0f0e17 60%);
+  padding: 20px 20px 16px;
+  border-bottom: 0.5px solid rgba(198,164,108,0.1);
+  position: relative; overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute; top: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  border: 1px solid rgba(198,164,108,0.08);
+}
+
+.hero::after {
+  content: '';
+  position: absolute; top: -10px; right: -10px;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(198,164,108,0.06);
+}
+
+.hero-date { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text3); margin-bottom: 6px; }
+.hero-title { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--text); line-height: 1.3; }
+.hero-title span { color: var(--gold); font-style: italic; }
+
+.progress-wrap { margin-top: 16px; }
+.progress-label { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 12px; color: var(--text3); }
+.progress-bar { height: 4px; background: var(--bg4); border-radius: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; transition: width 0.5s ease; }
+
+/* Alert banner */
+.alert-banner {
+  margin: 16px 16px 0;
+  background: rgba(198,164,108,0.08);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+
+.alert-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.alert-text { font-size: 13px; line-height: 1.6; color: var(--text2); }
+.alert-text strong { color: var(--gold); font-weight: 500; }
+
+/* Section header */
+.sec-hd {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 16px 10px;
+}
+
+.sec-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text3); }
+.sec-link { font-size: 12px; color: var(--gold); cursor: pointer; }
+
+/* Daily tasks */
+.task-list { padding: 0 16px; display: flex; flex-direction: column; gap: 8px; }
+
+.task-item {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 13px 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.task-item:active { background: var(--bg3); }
+
+.task-check {
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 1.5px solid var(--text3);
+  flex-shrink: 0; margin-top: 1px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+  font-size: 12px;
+}
+
+.task-item.done .task-check {
+  background: var(--gold); border-color: var(--gold);
+  color: var(--bg);
+}
+
+.task-item.done { opacity: 0.5; }
+
+.task-body { flex: 1; }
+.task-cat { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.task-txt { font-size: 14px; color: var(--text); line-height: 1.4; }
+.task-item.done .task-txt { text-decoration: line-through; color: var(--text3); }
+
+/* Stats row */
+.stats-row {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 8px; padding: 0 16px;
+}
+
+.stat-card {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 13px 10px;
+  text-align: center;
+}
+
+.stat-val { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold); }
+.stat-lbl { font-size: 10px; color: var(--text3); margin-top: 2px; line-height: 1.3; }
+
+/* ============ DIAGNÓSTICO PAGE ============ */
+.page-pad { padding: 16px; }
+
+.diag-header {
+  background: linear-gradient(135deg, #1a1828, #0f1a2e);
+  border-radius: var(--radius);
+  padding: 18px;
+  margin-bottom: 14px;
+  border: 0.5px solid var(--gold-border);
+}
+
+.diag-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.diag-title { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); margin-bottom: 10px; }
+
+.badge-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.badge {
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 20px; padding: 4px 12px;
+  font-size: 11px; color: var(--gold);
+}
+
+.card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+
+.info-card {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 13px;
+}
+
+.info-card.full { grid-column: 1/-1; }
+.info-card.highlight { border-left: 2.5px solid var(--gold); }
+
+.info-lbl { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text3); margin-bottom: 5px; }
+.info-val { font-size: 13px; color: var(--text); line-height: 1.5; }
+.info-val.gold { color: var(--gold); font-weight: 500; }
+
+.insight-box {
+  background: rgba(198,164,108,0.06);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.insight-title { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.insight-text { font-size: 14px; color: var(--text2); line-height: 1.7; }
+.insight-text em { color: var(--gold); font-style: normal; font-weight: 500; }
+
+/* ============ FLUXOGRAMA PAGE ============ */
+.fluxo-container {
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.fluxo-card {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 16px;
+  min-width: 300px;
+}
+
+/* Flowchart vertical */
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.flow-step {
+  width: 100%;
+  max-width: 320px;
+  background: var(--bg3);
+  border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.flow-step:active { border-color: var(--gold); }
+.flow-step.active-step { border-color: var(--gold); background: rgba(198,164,108,0.07); }
+
+.flow-num { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; }
+.flow-title { font-size: 14px; font-weight: 500; color: var(--text); }
+.flow-sub { font-size: 12px; color: var(--text3); margin-top: 2px; line-height: 1.4; }
+
+.flow-arrow {
+  width: 1px; height: 28px;
+  background: rgba(198,164,108,0.3);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.flow-arrow::after {
+  content: '▾';
+  position: absolute; bottom: -3px; left: 50%; transform: translateX(-50%);
+  color: var(--gold); font-size: 10px;
+}
+
+/* Split arrow */
+.flow-split {
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  gap: 10px;
+}
+
+.flow-branch {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.flow-branch-line {
+  width: 1px; height: 20px;
+  background: rgba(198,164,108,0.3);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.flow-step.green { border-color: rgba(92,186,138,0.3); }
+.flow-step.green .flow-num { color: var(--success); }
+
+.flow-step.red { border-color: rgba(224,92,92,0.3); }
+.flow-step.red .flow-num { color: var(--danger); }
+
+.flow-split-bar {
+  width: 100%;
+  max-width: 320px;
+  height: 1px;
+  background: rgba(198,164,108,0.3);
+  position: relative;
+}
+
+/* ============ PLANO PAGE ============ */
+.plano-pad { padding: 16px; }
+
+.plano-item {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.plano-header {
+  display: flex; gap: 12px; align-items: center;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.plano-num {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--bg4);
+  border: 1px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 500; color: var(--gold);
+  flex-shrink: 0;
+}
+
+.plano-meta { flex: 1; }
+.plano-prazo { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.plano-title { font-size: 14px; font-weight: 500; color: var(--text); }
+
+.plano-chevron { font-size: 12px; color: var(--text3); transition: transform 0.2s; }
+.plano-item.open .plano-chevron { transform: rotate(180deg); }
+
+.plano-body {
+  display: none;
+  padding: 0 16px 14px;
+  border-top: 0.5px solid rgba(255,255,255,0.04);
+}
+
+.plano-item.open .plano-body { display: block; }
+
+.plano-desc { font-size: 13px; color: var(--text2); line-height: 1.6; margin: 10px 0 12px; }
+
+.plano-actions { display: flex; flex-direction: column; gap: 7px; }
+
+.plano-action {
+  display: flex; gap: 8px; align-items: flex-start;
+  font-size: 13px; color: var(--text2); line-height: 1.5;
+}
+
+.plano-action::before {
+  content: '→';
+  color: var(--gold); font-size: 11px; flex-shrink: 0; margin-top: 2px;
+}
+
+/* ============ SCRIPTS PAGE ============ */
+.script-pad { padding: 16px; }
+
+.script-item {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.script-header {
+  padding: 14px 16px;
+  cursor: pointer;
+  display: flex; gap: 12px; align-items: flex-start;
+}
+
+.script-tag-wrap { flex-shrink: 0; margin-top: 2px; }
+.script-tag {
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 20px; padding: 3px 10px;
+  font-size: 10px; color: var(--gold);
+}
+
+.script-meta { flex: 1; }
+.script-objecao { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px; line-height: 1.4; }
+.script-preview { font-size: 12px; color: var(--text3); }
+
+.script-body {
+  display: none;
+  padding: 0 16px 16px;
+  border-top: 0.5px solid rgba(255,255,255,0.04);
+}
+
+.script-item.open .script-body { display: block; }
+
+.script-label { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text3); margin: 12px 0 6px; }
+
+.script-text {
+  background: rgba(198,164,108,0.05);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 12px;
+  font-size: 13px; color: var(--text); line-height: 1.7;
+  font-style: italic;
+}
+
+.copy-btn {
+  display: flex; align-items: center; gap: 6px;
+  margin-top: 10px;
+  background: var(--gold-dim); border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 12px; color: var(--gold);
+  cursor: pointer; width: 100%; justify-content: center;
+  transition: background 0.2s;
+}
+
+.copy-btn:active { background: rgba(198,164,108,0.3); }
+
+/* ============ NOTIFICATION SETUP ============ */
+.notif-panel {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15,14,23,0.95);
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  padding: 40px 20px 20px;
+}
+
+.notif-panel.open { display: flex; }
+
+.notif-close {
+  position: absolute; top: 16px; right: 20px;
+  font-size: 24px; color: var(--text2);
+  cursor: pointer;
+  padding: 8px;
+}
+
+.notif-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--text); margin-bottom: 6px; }
+.notif-sub { font-size: 13px; color: var(--text2); margin-bottom: 30px; line-height: 1.6; }
+
+.notif-time-label { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text3); margin-bottom: 10px; }
+
+.time-presets { display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; margin-bottom: 20px; }
+
+.time-preset {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.time-preset:active,
+.time-preset.selected { border-color: var(--gold); background: var(--gold-dim); }
+
+.time-val { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold); }
+.time-lbl { font-size: 11px; color: var(--text3); margin-top: 2px; }
+
+.notif-btn-activate {
+  background: var(--gold);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px; font-weight: 500;
+  color: var(--bg);
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+  letter-spacing: 0.5px;
+}
+
+/* Toast */
+.toast {
+  position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
+  background: var(--bg3); border: 1px solid var(--gold-border);
+  border-radius: 20px; padding: 10px 20px;
+  font-size: 13px; color: var(--gold);
+  z-index: 9999;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.toast.show { opacity: 1; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--text3); border-radius: 1px; }
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page.active > * { animation: fadeUp 0.3s ease forwards; }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="topbar-greeting" id="greeting">Bom dia</div>
+      <div class="topbar-name">Andrezza Esteves</div>
+    </div>
+    <div class="notif-btn" onclick="openNotif()">
+      🔔
+      <div class="notif-dot" id="notif-dot"></div>
+    </div>
+  </div>
+
+  <!-- SCROLL AREA -->
+  <div class="scroll" id="scroll">
+
+    <!-- HOME -->
+    <div class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-date" id="hero-date"></div>
+        <div class="hero-title">Seu <span>plano HOF</span><br/>de hoje</div>
+        <div class="progress-wrap">
+          <div class="progress-label">
+            <span>Tarefas concluídas</span>
+            <span id="progress-pct">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert-banner">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-text">
+          <strong>Gargalo identificado:</strong> Você já sabe vender — quebra a objeção de artificialidade e vive de indicação. Faltam 2 peças: ancorar valor no preço e abrir a captação pelas redes, além do boca a boca.
+        </div>
+      </div>
+
+      <div class="sec-hd">
+        <div class="sec-title">Tarefas de hoje</div>
+        <div class="sec-link" onclick="resetTasks()">Reiniciar</div>
+      </div>
+
+      <div class="task-list" id="task-list"></div>
+
+      <div class="sec-hd" style="margin-top:10px">
+        <div class="sec-title">Suas metas</div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-val">↑</div>
+          <div class="stat-lbl">Conteúdos de atração/semana</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">↑</div>
+          <div class="stat-lbl">Pacientes vindos das redes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">↓</div>
+          <div class="stat-lbl">Objeções de preço revertidas</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIAGNÓSTICO -->
+    <div class="page" id="page-diag">
+      <div class="page-pad">
+        <div class="diag-header">
+          <div class="diag-tag">Diagnóstico · Clínica &amp; Vendas</div>
+          <div class="diag-title">Onde está o erro real</div>
+          <div class="badge-row">
+            <span class="badge">Preço &amp; Captação</span>
+            <span class="badge">Prioridade: Alta</span>
+          </div>
+        </div>
+
+        <div class="insight-box">
+          <div class="insight-title">⚡ Insight principal</div>
+          <div class="insight-text">
+            A Andrezza <em>já sabe vender</em>: ela reverte a objeção de artificialidade e vive de indicação — prova de que encanta e entrega resultado. Mas está presa a um teto por dois gargalos precisos: a objeção de <em>preço</em>, que nem sempre reverte, e a <em>dependência quase total da indicação</em>, com pouca captação pelas redes. Não é uma iniciante — é uma profissional boa que destrava o faturamento resolvendo esses dois pontos.
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <div class="info-card highlight">
+            <div class="info-lbl">Objetivo</div>
+            <div class="info-val">Aumentar faturamento</div>
+          </div>
+          <div class="info-card highlight">
+            <div class="info-lbl">Gargalo real</div>
+            <div class="info-val gold">Objeção de preço + captação só por indicação</div>
+          </div>
+          <div class="info-card">
+            <div class="info-lbl">Dificuldade</div>
+            <div class="info-val">Quebra de objeção de preço (artificialidade ela já resolve)</div>
+          </div>
+          <div class="info-card">
+            <div class="info-lbl">Ponto forte</div>
+            <div class="info-val">Vive de indicação — encanta e entrega resultado</div>
+          </div>
+          <div class="info-card full">
+            <div class="info-lbl">Objeção dominante</div>
+            <div class="info-val">Preço (reverte artificialidade, mas nem sempre o valor)</div>
+          </div>
+        </div>
+
+        <div class="sec-hd" style="padding: 4px 0 12px">
+          <div class="sec-title">Os 3 focos do seu crescimento</div>
+        </div>
+
+        <div class="insight-box" style="margin-bottom:8px">
+          <div class="insight-title">01 · Depende só de indicação</div>
+          <div class="insight-text">A indicação é ótima e mostra que você encanta — mas é um só canal. Sem captação ativa pelas redes, seu crescimento fica limitado a quem os pacientes atuais trazem.</div>
+        </div>
+        <div class="insight-box" style="margin-bottom:8px">
+          <div class="insight-title">02 · Não ancora valor no preço</div>
+          <div class="insight-text">Você reverte a artificialidade, mas o preço nem sempre. O segredo é comunicar o valor completo (resultado, segurança, sua experiência) ANTES do número — e nunca competir por preço.</div>
+        </div>
+        <div class="insight-box" style="margin-bottom:14px">
+          <div class="insight-title">03 · Redes sociais subaproveitadas</div>
+          <div class="insight-text">As redes são o canal que traz quem ainda não te conhece — seu maior potencial de crescimento. Conteúdo pensado para ATRAIR (não só informar) abre a torneira que a indicação sozinha não abre.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLUXOGRAMA -->
+    <div class="page" id="page-fluxo">
+      <div class="fluxo-container">
+        <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text3); margin-bottom:14px;">Da indicação ao crescimento com redes</div>
+
+        <div class="flow">
+
+          <div class="flow-step active-step" onclick="showFlowDetail(0)">
+            <div class="flow-num">01 · Expandir</div>
+            <div class="flow-title">Ampliar a captação</div>
+            <div class="flow-sub">Além da indicação: abrir o canal das redes</div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(1)">
+            <div class="flow-num">02 · Atrair</div>
+            <div class="flow-title">Atrair pelas redes</div>
+            <div class="flow-sub">Conteúdo que traz quem ainda não te conhece</div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(2)">
+            <div class="flow-num">03 · Seu forte</div>
+            <div class="flow-title">Consulta que já funciona</div>
+            <div class="flow-sub">Você encanta e reverte a artificialidade</div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(3)">
+            <div class="flow-num">04 · Peça que falta</div>
+            <div class="flow-title">Ancorar valor no preço</div>
+            <div class="flow-sub">Valor completo antes do número — nunca baixar</div>
+          </div>
+
+          <div class="flow-arrow" style="height:16px;"></div>
+
+          <!-- Split -->
+          <div class="flow-split-bar"></div>
+          <div class="flow-split">
+            <div class="flow-branch">
+              <div class="flow-branch-line"></div>
+              <div class="flow-step green">
+                <div class="flow-num">✓ FECHA</div>
+                <div class="flow-title">Valor venceu o preço</div>
+                <div class="flow-sub">Faturamento cresce</div>
+              </div>
+            </div>
+            <div class="flow-branch">
+              <div class="flow-branch-line"></div>
+              <div class="flow-step red" onclick="showFlowDetail(4)">
+                <div class="flow-num">⚠ Preço</div>
+                <div class="flow-title">Ancorar valor</div>
+                <div class="flow-sub">Nunca baixar preço — toque</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(5)">
+            <div class="flow-num">05 · Potencializar</div>
+            <div class="flow-title">Multiplicar a indicação</div>
+            <div class="flow-sub">Seu ponto forte, agora com método</div>
+          </div>
+
+        </div>
+
+        <!-- Flow detail -->
+        <div id="flow-detail" style="display:none; margin-top:16px; background:var(--gold-dim); border:1px solid var(--gold-border); border-radius:var(--radius-sm); padding:14px;">
+          <div style="font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); margin-bottom:6px;" id="fd-title"></div>
+          <div style="font-size:13px; color:var(--text); line-height:1.7;" id="fd-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLANO 30 DIAS -->
+    <div class="page" id="page-plano">
+      <div class="plano-pad">
+        <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text3); margin-bottom:14px;">Plano de ação · 30 dias</div>
+
+        <div class="plano-item" id="pi-0">
+          <div class="plano-header" onclick="togglePlano(0)">
+            <div class="plano-num">1</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 1 · Fundamental</div>
+              <div class="plano-title">Dominar a objeção de preço</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Você já reverte a artificialidade — falta o preço. A chave é ancorar valor antes do número, nunca competir por preço.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Comunicar o valor completo (resultado, segurança, sua experiência) ANTES de dizer o preço</div>
+              <div class="plano-action">Nunca baixar o valor — ancorar no que o paciente ganha, não no número</div>
+              <div class="plano-action">Ter formas de pagamento prontas para oferecer sem desvalorizar o trabalho</div>
+              <div class="plano-action">Treinar os scripts de preço da aba "Scripts" em voz alta, todos os dias</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-1">
+          <div class="plano-header" onclick="togglePlano(1)">
+            <div class="plano-num">2</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 1–2 · Crítico</div>
+              <div class="plano-title">Abrir o canal das redes sociais</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Sua captação depende quase só de indicação. As redes trazem quem ainda não te conhece — seu maior potencial de crescimento.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Postar conteúdo pensado para ATRAIR paciente novo, não só informar</div>
+              <div class="plano-action">Mostrar transformações reais e histórias — fazer a pessoa se imaginar com o resultado</div>
+              <div class="plano-action">Manter constância: aparecer sempre, com um calendário simples de conteúdo</div>
+              <div class="plano-action">Terminar os conteúdos com convite claro: "me chama pra avaliar seu caso"</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-2">
+          <div class="plano-header" onclick="togglePlano(2)">
+            <div class="plano-num">3</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 2 · Alta prioridade</div>
+              <div class="plano-title">Transformar seguidor em paciente</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Postar não basta — é preciso converter quem te segue em quem te procura. Relacionamento nas redes vira agendamento.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Interagir diariamente: responder stories, comentar, conversar nas DMs</div>
+              <div class="plano-action">Usar depoimentos e antes/depois como prova social constante</div>
+              <div class="plano-action">Criar chamadas para ação: enquetes, "quer saber mais?", convite para avaliação</div>
+              <div class="plano-action">Responder rápido e com acolhimento quem chega pelas redes</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-3">
+          <div class="plano-header" onclick="togglePlano(3)">
+            <div class="plano-num">4</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 2–3 · Importante</div>
+              <div class="plano-title">Potencializar a indicação (seu forte)</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">A indicação já é sua maior fonte — com método, ela cresce ainda mais. Não substitua o que funciona, potencialize.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Criar um pedido de indicação estruturado após cada paciente satisfeita</div>
+              <div class="plano-action">Ter um pequeno incentivo/mimo para quem indica</div>
+              <div class="plano-action">Fazer pós-venda ativo — paciente bem cuidada indica mais</div>
+              <div class="plano-action">Documentar resultados para alimentar tanto a indicação quanto as redes</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-4">
+          <div class="plano-header" onclick="togglePlano(4)">
+            <div class="plano-num">5</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 3–4 · Estrutural</div>
+              <div class="plano-title">Integrar os dois canais e escalar</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Com preço ancorado e redes ativas, você deixa de depender de um só canal. Indicação + redes = crescimento real de faturamento.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Acompanhar de onde vêm os pacientes (indicação x redes) e equilibrar os canais</div>
+              <div class="plano-action">Usar os resultados dos pacientes de indicação como conteúdo para as redes</div>
+              <div class="plano-action">Medir a taxa de conversão da objeção de preço — e ajustar os scripts</div>
+              <div class="plano-action">Considerar tráfego pago quando o orgânico e a indicação estiverem sólidos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <div class="page" id="page-scripts">
+      <div class="script-pad">
+        <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text3); margin-bottom:14px;">Scripts prontos para usar</div>
+
+        <div class="script-item" id="si-0">
+          <div class="script-header" onclick="toggleScript(0)">
+            <div class="script-tag-wrap"><div class="script-tag">Objeção 01</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">"Está caro" (o principal)</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como responder</div>
+            <div class="script-text">"Eu entendo perfeitamente. E é justamente porque é um investimento importante que eu não faria você gastar com algo que não trouxesse um resultado seguro e natural. O que eu te entrego é a minha experiência, produtos de qualidade e o acompanhamento em cada etapa. Me diz: o que pesa mais pra você, o valor em si ou a forma de pagamento? Vamos encontrar o melhor caminho juntas."</div>
+            <button class="copy-btn" onclick="copyScript(0)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div class="script-item" id="si-1">
+          <div class="script-header" onclick="toggleScript(1)">
+            <div class="script-tag-wrap"><div class="script-tag">Objeção 02</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">"Valor alto" (ancorar no resultado)</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como responder</div>
+            <div class="script-text">"Sei que parece um valor alto à primeira vista. Mas pensa comigo: esse é um resultado que você vai ver e sentir todos os dias, com naturalidade e segurança. Não é um gasto, é um investimento em você — feito por alguém em quem você pode confiar. Posso te mostrar as formas de pagamento pra ver qual cabe melhor?"</div>
+            <button class="copy-btn" onclick="copyScript(1)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div class="script-item" id="si-2">
+          <div class="script-header" onclick="toggleScript(2)">
+            <div class="script-tag-wrap"><div class="script-tag">Objeção 03</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">Conteúdo que ATRAI (para as redes)</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como criar</div>
+            <div class="script-text">Mostre a transformação real, conte a história da paciente, explique o cuidado por trás. Conteúdo que atrai não é o que fala de você — é o que faz a pessoa se imaginar com aquele resultado. Termine sempre com um convite: "me chama pra avaliar seu caso".</div>
+            <button class="copy-btn" onclick="copyScript(2)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div class="script-item" id="si-3">
+          <div class="script-header" onclick="toggleScript(3)">
+            <div class="script-tag-wrap"><div class="script-tag">Primeiro contato</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">Primeiro contato no WhatsApp</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como responder</div>
+            <div class="script-text">"Oi [nome]! Que alegria seu interesse 🤍 Trabalho com harmonização focada em resultado natural e seguro — do jeito que combina com você. Vamos marcar sua avaliação pra eu entender seu rosto e te mostrar o que dá pra fazer? Aí você decide com toda a tranquilidade."</div>
+            <button class="copy-btn" onclick="copyScript(3)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div style="background: var(--bg2); border-radius: var(--radius); padding: 16px; margin-top: 6px; border: 0.5px solid rgba(255,255,255,0.05);">
+          <div style="font-size:12px; color:var(--gold); font-weight:500; margin-bottom:8px;">💡 Regra de ouro</div>
+          <div style="font-size:13px; color:var(--text2); line-height:1.7;">
+            Você já encanta e vive de indicação — sua base é forte. Agora <strong style="color:var(--text)">ancore o valor antes do preço</strong> e <strong style="color:var(--text)">abra o canal das redes</strong>. Preço não se defende baixando — se defende mostrando o que o paciente ganha.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /scroll -->
+
+  <!-- BOTTOM NAV -->
+  <div class="nav">
+    <div class="nav-item active" id="nav-home" onclick="goPage('home')">
+      <div class="nav-icon">🏠</div>
+      <div class="nav-label">Início</div>
+    </div>
+    <div class="nav-item" id="nav-diag" onclick="goPage('diag')">
+      <div class="nav-icon">🔍</div>
+      <div class="nav-label">Diagnóstico</div>
+    </div>
+    <div class="nav-item" id="nav-fluxo" onclick="goPage('fluxo')">
+      <div class="nav-icon">🗺️</div>
+      <div class="nav-label">Fluxo</div>
+    </div>
+    <div class="nav-item" id="nav-plano" onclick="goPage('plano')">
+      <div class="nav-icon">📋</div>
+      <div class="nav-label">Plano</div>
+    </div>
+    <div class="nav-item" id="nav-scripts" onclick="goPage('scripts')">
+      <div class="nav-icon">💬</div>
+      <div class="nav-label">Scripts</div>
+    </div>
+  </div>
+</div>
+
+<!-- NOTIFICATION PANEL -->
+<div class="notif-panel" id="notif-panel">
+  <div class="notif-close" onclick="closeNotif()">✕</div>
+  <div class="notif-title">Lembrete diário 🔔</div>
+  <div class="notif-sub">Escolha o horário para ser lembrada de revisar seu plano e tarefas do dia.</div>
+
+  <div class="notif-time-label">Selecione o horário</div>
+  <div class="time-presets">
+    <div class="time-preset" onclick="selectTime('07:00', this)">
+      <div class="time-val">07:00</div>
+      <div class="time-lbl">Manhã cedo</div>
+    </div>
+    <div class="time-preset" onclick="selectTime('08:30', this)">
+      <div class="time-val">08:30</div>
+      <div class="time-lbl">Antes do consultório</div>
+    </div>
+    <div class="time-preset selected" onclick="selectTime('09:00', this)">
+      <div class="time-val">09:00</div>
+      <div class="time-lbl">Início do dia</div>
+    </div>
+    <div class="time-preset" onclick="selectTime('12:00', this)">
+      <div class="time-val">12:00</div>
+      <div class="time-lbl">Intervalo do almoço</div>
+    </div>
+  </div>
+
+  <div id="notif-status" style="font-size:13px; color:var(--text2); margin-bottom:16px; line-height:1.6; min-height:40px;"></div>
+
+  <button class="notif-btn-activate" onclick="activateNotif()">
+    Ativar lembretes diários
+  </button>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ============ DATA ============
+const TASKS_KEY = 'andrezza_tasks_' + new Date().toDateString();
+const NOTIF_KEY = 'andrezza_notif_time';
+
+const DAILY_TASKS = [
+  { cat: 'Preço', txt: 'Treinar o script de objeção de preço em voz alta — ancorar valor, não baixar' },
+  { cat: 'Captação', txt: 'Postar 1 conteúdo pensado para ATRAIR paciente novo (não só informar)' },
+  { cat: 'Redes', txt: 'Interagir com 10 pacientes potenciais nas redes — transformar seguidor em paciente' },
+  { cat: 'Indicação', txt: 'Pedir indicação a 1 paciente satisfeita — potencializar o que já funciona' },
+  { cat: 'Prova', txt: 'Documentar 1 resultado (antes/depois, depoimento) para usar como conteúdo' },
+  { cat: 'Valor', txt: 'Em 1 atendimento, comunicar o valor com clareza antes de dizer o preço' },
+];
+
+const FLOW_DETAILS = [
+  { t: '01 · Ampliar a captação', d: 'Hoje quase tudo vem de indicação — o que é ótimo (prova que você encanta), mas te deixa dependente de um só canal. As redes sociais são o segundo motor de atração. Conteúdo pensado para atrair paciente novo abre uma torneira que a indicação sozinha não abre.' },
+  { t: '02 · Atrair pelas redes', d: 'Indicação traz quem já confia. As redes trazem quem ainda não te conhece — e é aí que está o crescimento. Poste para atrair: resultados, autoridade, conexão. Transforme seguidor em paciente com constância e conteúdo que gera desejo.' },
+  { t: '03 · Consulta que já funciona', d: 'Essa parte você domina. Você conduz bem, quebra a objeção de artificialidade, encanta. Mantenha o que já é seu forte — a consulta é onde você brilha. O foco não é mudar isso, é melhorar o que vem antes (captação) e o momento do preço.' },
+  { t: '04 · Ancorar o valor no preço', d: 'Aqui está a peça que falta. Você reverte a artificialidade, mas nem sempre o preço. A chave: comunicar o VALOR completo (segurança, resultado, sua experiência) ANTES de dizer o número, e nunca baixar o preço — ancorar no que o paciente ganha. Veja os scripts.' },
+  { t: '⚠ Objeção de preço', d: 'Sua objeção mais difícil. Não é sobre o número ser alto — é sobre o paciente ainda não ter percebido valor suficiente. Reforce resultado, segurança e a sua autoridade. Ofereça parcelamento sem desvalorizar. Veja os scripts prontos na aba Scripts.' },
+  { t: '05 · Multiplicar a indicação', d: 'A indicação já é seu ponto forte — potencialize com método. Pós-venda ativo, pedido de indicação estruturado e resultados documentados fazem sua maior fonte de pacientes crescer ainda mais, enquanto as redes trazem o público novo.' },
+];
+
+// ============ INIT ============
+window.addEventListener('load', () => {
+  setGreeting();
+  setDate();
+  loadTasks();
+  updateProgress();
+  registerSW();
+});
+
+function setGreeting() {
+  const h = new Date().getHours();
+  const el = document.getElementById('greeting');
+  if (h < 12) el.textContent = 'Bom dia';
+  else if (h < 18) el.textContent = 'Boa tarde';
+  else el.textContent = 'Boa noite';
+}
+
+function setDate() {
+  const d = new Date();
+  const opts = { weekday:'long', day:'numeric', month:'long' };
+  document.getElementById('hero-date').textContent = d.toLocaleDateString('pt-BR', opts);
+}
+
+// ============ TASKS ============
+function loadTasks() {
+  const saved = JSON.parse(localStorage.getItem(TASKS_KEY) || '[]');
+  const list = document.getElementById('task-list');
+  list.innerHTML = '';
+  DAILY_TASKS.forEach((t, i) => {
+    const done = saved.includes(i);
+    const el = document.createElement('div');
+    el.className = 'task-item' + (done ? ' done' : '');
+    el.id = 'task-' + i;
+    el.onclick = () => toggleTask(i);
+    el.innerHTML = `
+      <div class="task-check">${done ? '✓' : ''}</div>
+      <div class="task-body">
+        <div class="task-cat">${t.cat}</div>
+        <div class="task-txt">${t.txt}</div>
+      </div>
+    `;
+    list.appendChild(el);
+  });
+}
+
+function toggleTask(i) {
+  const saved = JSON.parse(localStorage.getItem(TASKS_KEY) || '[]');
+  const idx = saved.indexOf(i);
+  if (idx === -1) saved.push(i);
+  else saved.splice(idx, 1);
+  localStorage.setItem(TASKS_KEY, JSON.stringify(saved));
+  loadTasks();
+  updateProgress();
+}
+
+function resetTasks() {
+  localStorage.removeItem(TASKS_KEY);
+  loadTasks();
+  updateProgress();
+  showToast('Tarefas reiniciadas ✓');
+}
+
+function updateProgress() {
+  const saved = JSON.parse(localStorage.getItem(TASKS_KEY) || '[]');
+  const pct = Math.round((saved.length / DAILY_TASKS.length) * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-pct').textContent = pct + '%';
+}
+
+// ============ NAVIGATION ============
+function goPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  document.getElementById('nav-' + id).classList.add('active');
+  document.getElementById('scroll').scrollTop = 0;
+}
+
+// ============ ACCORDIONS ============
+function togglePlano(i) {
+  const el = document.getElementById('pi-' + i);
+  el.classList.toggle('open');
+}
+
+function toggleScript(i) {
+  const el = document.getElementById('si-' + i);
+  el.classList.toggle('open');
+}
+
+// ============ FLOW DETAIL ============
+function showFlowDetail(i) {
+  const d = FLOW_DETAILS[i];
+  document.getElementById('fd-title').textContent = d.t;
+  document.getElementById('fd-text').textContent = d.d;
+  const box = document.getElementById('flow-detail');
+  box.style.display = 'block';
+  box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ============ COPY SCRIPTS ============
+const SCRIPTS = [
+  '"Eu entendo perfeitamente. E é justamente porque é um investimento importante que eu não faria você gastar com algo que não trouxesse um resultado seguro e natural. O que eu te entrego é a minha experiência, produtos de qualidade e o acompanhamento em cada etapa. Me diz: o que pesa mais pra você, o valor em si ou a forma de pagamento? Vamos encontrar o melhor caminho juntas."',
+  '"Sei que parece um valor alto à primeira vista. Mas pensa comigo: esse é um resultado que você vai ver e sentir todos os dias, com naturalidade e segurança. Não é um gasto, é um investimento em você — feito por alguém em quem você pode confiar. Posso te mostrar as formas de pagamento pra ver qual cabe melhor?"',
+  '"(Para conteúdo de captação nas redes) Mostre a transformação real, conte a história da paciente, explique o cuidado por trás. Conteúdo que atrai não é o que fala de você — é o que faz a pessoa se imaginar com aquele resultado. Termine sempre com um convite: \'me chama pra avaliar seu caso\'."',
+  '"Oi [nome]! Que alegria seu interesse 🤍 Trabalho com harmonização focada em resultado natural e seguro — do jeito que combina com você. Vamos marcar sua avaliação pra eu entender seu rosto e te mostrar o que dá pra fazer? Aí você decide com toda a tranquilidade."',
+];
+
+function copyScript(i) {
+  navigator.clipboard.writeText(SCRIPTS[i]).then(() => {
+    showToast('Script copiado! ✓');
+  }).catch(() => {
+    showToast('Copie manualmente o texto acima');
+  });
+}
+
+// ============ NOTIFICATIONS ============
+let selectedTime = '09:00';
+
+function openNotif() {
+  document.getElementById('notif-panel').classList.add('open');
+  const saved = localStorage.getItem(NOTIF_KEY);
+  if (saved) {
+    document.getElementById('notif-status').textContent = '✅ Lembretes ativos para ' + saved + ' todos os dias.';
+    selectedTime = saved;
+  }
+}
+
+function closeNotif() {
+  document.getElementById('notif-panel').classList.remove('open');
+}
+
+function selectTime(t, el) {
+  selectedTime = t;
+  document.querySelectorAll('.time-preset').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+async function activateNotif() {
+  if (!('Notification' in window)) {
+    document.getElementById('notif-status').textContent = '⚠️ Seu navegador não suporta notificações. Adicione o app à tela inicial para ativar.';
+    return;
+  }
+
+  const perm = await Notification.requestPermission();
+
+  if (perm === 'granted') {
+    localStorage.setItem(NOTIF_KEY, selectedTime);
+    document.getElementById('notif-dot').style.display = 'block';
+    document.getElementById('notif-status').textContent = '✅ Lembretes ativados para ' + selectedTime + ' todos os dias!';
+    scheduleDaily(selectedTime);
+    showToast('Lembrete ativado para ' + selectedTime + ' ✓');
+    setTimeout(closeNotif, 1500);
+  } else {
+    document.getElementById('notif-status').textContent = '⚠️ Permissão negada. Ative as notificações nas configurações do celular.';
+  }
+}
+
+function scheduleDaily(timeStr) {
+  if (!navigator.serviceWorker.controller) return;
+  const [h, m] = timeStr.split(':').map(Number);
+  const now = new Date();
+  const target = new Date();
+  target.setHours(h, m, 0, 0);
+  if (target <= now) target.setDate(target.getDate() + 1);
+  const delay = target - now;
+
+  navigator.serviceWorker.controller.postMessage({
+    type: 'SCHEDULE_NOTIFICATION',
+    title: '✨ Seu plano HOF te espera',
+    body: 'Bom dia, Andrezza! Revise suas tarefas e scripts de hoje.',
+    delay
+  });
+}
+
+// ============ SERVICE WORKER ============
+
+const swCode = `
+self.addEventListener('install', e => self.skipWaiting());
+self.addEventListener('activate', e => self.clients.claim());
+self.addEventListener('notificationclick', e => {
+  e.notification.close();
+  e.waitUntil(clients.matchAll({type:'window'}).then(cl => {
+    for (const c of cl) { if ('focus' in c) return c.focus(); }
+    if (clients.openWindow) return clients.openWindow('./');
+  }));
+});
+self.addEventListener('message', e => {
+  if (e.data && e.data.type === 'SCHEDULE_NOTIFICATION') {
+    const { title, body, delay } = e.data;
+    setTimeout(() => {
+      self.registration.showNotification(title, { body, vibrate:[200,100,200], tag:'andrezza-daily', renotify:true });
+    }, delay || 0);
+  }
+});
+`;
+
+function registerSW() {
+  if ('serviceWorker' in navigator) {
+    const blob = new Blob([swCode], {type:'application/javascript'});
+    const url = URL.createObjectURL(blob);
+    navigator.serviceWorker.register(url).then(reg => {
+      const saved = localStorage.getItem(NOTIF_KEY);
+      if (saved && Notification.permission === 'granted') {
+        document.getElementById('notif-dot').style.display = 'block';
+      }
+    }).catch(err => console.log('SW error', err));
+  }
+}
+
+// ============ TOAST ============
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+</script>
+</body>
+</html>
