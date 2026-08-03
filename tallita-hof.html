@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#0f0e17"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="HOF Tallita"/>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlRhbGxpdGEgXHUwMGI3IFBsYW5vIEhPRiIsICJzaG9ydF9uYW1lIjogIkhPRiBUYWxsaXRhIiwgImRlc2NyaXB0aW9uIjogIlBsYW5vIGRlIHZlbmRhcyBlIHRhcmVmYXMgZGlcdTAwZTFyaWFzIFx1MjAxNCBNXHUwMGU5dG9kbyBGdWxsIEZhY2UgM0QiLCAic3RhcnRfdXJsIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiIzBmMGUxNyIsICJ0aGVtZV9jb2xvciI6ICIjMGYwZTE3IiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBWUFBQUJTM0d3SEFBQUdrMGxFUVZSNG5PM2RMYXhjWlJERzhTbHArRENnQ0FLUEJBMEtpN3lpR2ttQ2FvSWxlQVFCUVdxUkpKRFFJSm9HaGNEWGtFQk5nNFpBQllKQUlZQWdoOTdkN25iMzdMNGZ6OHp6L3lWMU56ZDdaK1k1OCs1dWQ4K1Y1NTU5NFo4QVREMHgrd0VBTXhFQVdDTUFzRVlBWUkwQXdCb0JnRFVDQUdzRUFOWUlBS3dSQUZnakFMQkdBR0NOQU1BYUFZQTFBZ0JyQkFEV0NBQ3NFUUJZdXpyN0FWUjIrOGExSnIvbmpiYy9iL0o3OEtncmZDYjRmSzBHZlMyQ2NUNENjSUpaQTM4SWdWaVBBQnhCZGVBUElSQ0hFWUE5c2c3OVBvUmhOd0t3cGRyZ2J5TUltd2hBMUIvNmZRaURlUUJjQjMrYmN4QXNBOERnNytZWUJLc0FNUGpIY1FxQ1JRQVkvTk00QktIOC93VmkrRS9uVUx1eUc4Q2hlU05WM1FZbE53REQzMTdWbXBiYUFGV2JwS2JTTmlnVEFOWGhQM2RZcXY1ZEtrb0VRR1ZJUmcyRjI5L2JVK29BekI0RWxRR2dEcWRMR3dBK2hMSWJkVmtuWlFCR056bHJjNm5UWWVrQ01MS3BHUnU2Q3pYYkwxVUFSalF5V3dQWG9vYWIwcndSUnVQYUdQRTN6bjVTdmthS0RkQzdvQTZEdnd0MVRSQ0FuazNLMEtBUm5Hc3NmUVJ5YnN4SVBXdWhmaHlTM1FDOUNzZmdQNTViM1NVM2dGc1RsUFNxa2VvbWtBc0F3eitmVXdqS2Z6a3VnMythcFc2S1E5dVMxQVpvWFd5Ry8zeXRhNmdXS0prQU1QeTZLb2RBSWdBTXY3NnFJWkFJUUVzTWZ6OFZhenM5QUMydkJCVWJwS1psalJXMndOUUFNUHc1VlFyQjlBM1FBc00vWHBXYVR3c0FONURMcjFYdFoyNkJLUUdZdmZhZ1o5Wk1wRDRDY2ZXZkwzc1BoZ2VBbzA4OW1ZOUNLVGNBdzY4bmEwK0dCb0N6UHc0WlBTUHBOa0RXSzQyRGpMMFpGb0FXeWM1WVlEY3RlalJ5QzZUYkFFQkxRd0xBMWQ5THBpM0FCb0MxRkFIZzZwOVBscDUxRDhDNXF5eExJZkdvREhmSFNiRUJnRjY2Qm9BM3ZuQ3Uzak1rdlFFNC91U24za1BwQUFDOWRmdHUwRXBQZmw5OTVjVjQ3NjNYWmorTW8zMTM3K2Q0NTRPdlp6K01EYXJ6d0FhQU5RSUFhNUlCVURyK29BM1ZubmI1Y3R6cUwzK3VQV00vODlUVitPTERpNk4vL3BNdnY0M1B2cnA3OU0rLy9OTHo4ZjcxMTQvKytZeHUzN2pXSlVTU0d3QVlSUzRBcXFzUzUxUHNyVndBZ0pHYUI2RDYrUi96OUpndE5nQ3NTUVZBOFl3WUVmSEhnNy9pcC91Ly9mL3YvcSsvejM1SUd4NzgrYmYwNDd0TXJjZmw3eEhXd3AzdmY0dzMzNzAxKzJIc2RmZUhYNlFmbnpLcERRQ01SZ0JncldrQWVBVUl2YldlTVprTm9QYmtDUDBvOVZvbUFNQU1CQURXQ0FDc0VRQllJd0N3UmdCZ2pRREFHZ0dBTlFJQWF3UUExZ2dBckJFQVdDTUFzRVlBWUkwQXdKcE1BUGd3alErbFhqY05nTklISFZCVDZ4bVQyUURBREFRQTFnZ0FyRWtGUU9uSkVmcFE2N0ZVQUlEUm1nZUFWNExRQzNlSUFScnJjcDlnMVh2Q2puRHpvNHQ0K3NrKzN6bjg4YWQzNHRZMzk3cjg3aEVVNTRJTkFHdGRBcEQ1Q2c1TlZuZUtWM3VwRE9kVDdTazN5R2pzNHZyTjJROEJLMGh1QUdDVWJnRTQ5OHltdWpLeG51S3JQd3MyQUt4SkI0QXRrSjk2RDdzR2dKZERjYTdlTXlTOUFZRGV1Z2VBSjhPK2xKLzhMbEpzQUVLUVQ1YWVwUWdBME11UUFMUllaVm11S0dqVHExRXZvTEFCWUcxWUFOZ0NIakpkL1NNU2JnQkNvQ3RqYjRZR2dEZkdjTWpvR1VtM0FTSnlYbW1xeTlxVDRRRm9sZkNzQmErb1ZTOW1uQkJTYm9BRklaZ3ZldyttQklEbkF0ZzJheWFtYlFDT1F2bGxQdm9zVWgrQkZvUmd2Q28xbnhxQWxzbXYwcEFNV3RaNjluRjQrZ1lnQkxsVUd2NElnUUMwUmdqNnFWaGJpUUMwdmhKVWJOUnNyV3VxY1BXUEVBbEFCQ0ZRVm5YNEk0UUNFRUVJRkZVZS9naURyMFpjR3FoV2VIVXVGdytwRFJEUmIxQmRHdHBDcjFvcFhvVGtBaEJCQ0daeUd2NklUbmVJYWFYbndLbzJaQmJYV2t0dWdFWFB3ckVOSG5JZC9nanhEYkRvUGF6cVRlcUZ1aVlKUU1TWUszYUdoclZBTFIrU1BnSmROcUtnRHNjaWhuOVRtZzJ3R0Rta21ScjVPTlJzdjNRQmlCaC9wYzdXMUFWMU9peGxBQ0xtSFZmVW0weGQxa2tiZ0lqNVozYVZwbE9IMDZVT3dHTDJBQ3hHRFlMYjM5dFRpUUJFNkF6RnRxbzNDS2t3L0JHRkFoQ2hPeXpWVkJuK2lHSUJXQkNFUGlvTi9pTE5HMkZyVkd6VWJGVnJXbklEWE1ZMk9FL1Z3VitVM0FDWFZXOWdUdzYxSzc4QkxtTWJITWRoOEJkV0FWZ1FoTjJjQm45aEdZQUZRZmlQNCtBdnJBT3djQTJDOCtBdkNNQ1c2bUZnNkRjUmdEMnFCWUhCMzQwQUhDRnJHQmo2d3dqQUNWUUR3Y0N2UndBYTRFTW9lUkdBamlyY1E2czZBZ0JyNWY4dkVQQTRCQURXQ0FDc0VRQllJd0N3UmdCZ2pRREFHZ0dBTlFJQWF3UUExZ2dBckJFQVdDTUFzRVlBWUkwQXdCb0JnRFVDQUdzRUFOYitCVVJ6YkUyYmY2S21BQUFBQUVsRlRrU3VRbUNDIiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FZQUFBRDBlTlQ2QUFBVHpVbEVRVlI0bk8zY1A2aGw2MTNHOFhXSDJ3bDNDb3NSSzBzUnJGTGJLaEZDcWhpd3N3MjJRZ0oyc2JDeFNCTmJzVWlSVk1FaUJHelNCV3hTSm1DaE5tSWdYTGdRVEtKeUxTWTNaODZjZmM1ZWU2OC83L3Y3UFo5UG5UQWJzdDduL2M3YU8vUEI2NC9lZkxvQUFGRmVqZjRBQU1ENUJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJQcHc5QWNBdHZ2ZU43OTA2cC8zK2E5ODU5US9EOWpmQjY4L2V2UHA2QThCUEhYMnBYNFVzUUJ6RWdBd1VKZEwvbDdpQU1ZUkFIQ0M5SXYrVnNJQWppY0FZR2N1KzJPSUF0aVhBSUNOWFBoakNBTFlSZ0RBalZ6NGN4SUVjQnNCQUZlNDhHc1NCUEF5QVFBWHVQUjdFUVB3bEFDQXhZV2ZSaENBQUNDWVM1OWxFUVBrRWdCRWNlbnpFakZBRWdGQUJCYy90eEFDSkJBQXRPWFNadzlpZ0s0RUFLMjQ5RG1TR0tBVEFVQUxMbjdPSkFUb1FBQlFtb3Vma1lRQWxRa0F5bkhwTXlNeFFEVUNnREpjL0ZRZ0JLaENBREE5Rno4VkNRRm1Kd0NZbG91ZkRvUUFzeElBVE1mRlQwZENnTmtJQUtiaDRpZUJFR0FXQW9EaFhQd2tFZ0tNSmdBWXhzVVBRb0J4QkFDbmMvSERVMEtBc3drQVR1UGloK3VFQUdkNU5mb0RrTUhsRCtzNEs1ekZHd0FPWmN6Z2Z0NEdjQ1FCd0NGYy9MQWZJY0FSZkFYQTdseitzQzluaWlONEE4QnVqQlFjejlzQTlpSUEyTXpGRCtjVEFtemxLd0EyY2ZuREdNNGVXM2tEd0YyTUQ4ekQyd0R1NFEwQU4zUDV3MXljU2U3aERRQ3JHUm1ZbjdjQnJPVU5BS3U0L0tFR1o1VzFCQUJYR1JTb3habGxEVjhCOEN3akF2WDVTb0RuZUFQQVJTNS82TUZaNWpuZUFQQ0V3YWpwckwvcGVUNXE4aWFBOXdrQWZzT3d6NnZhZUh1VzVsWHRXZUk0QW9CbFdRejJMTHFQcytkc0R0MmZNOVlSQUJqbEFRendZNTdCODNrR0VRREJqTzU1ak8xdFBKdm44V3ptRWdDaERPeXhqT3ErUEsvSDhyeG1FZ0NCak9uK0RPaTVQTVA3OHd6bkVRQmhET2QrRE9ZY1BOUDc4VXhuRVFCQkRPVjJCbkp1bnZIdFBPTTVCRUFBbzdpTlFhekpjNytONTc0L0FkQ2NFYnlQOGV2Rk9iaVBjOUNiQUdqTTZOM080UFhtVE56T21laExBRFJsNk5ZemNKbWNrZldja1o0RVFFT0diUjJqeHJJNEwyczVMLzBJZ0dhTTJYV0dqRXVjbmV1Y25WNEVRQ01HN0dYR2l6V2NvNWM1UjMwSWdDYU0xbVhHaWkyY3E4dWNxeDRFUUFORzZpa0R4WjZjc2FlY3Nmb0VRSEdHNlRHanhKR2N0OGVjdDlwZWpmNEEzTThZUFdhTU9KcG43REViVkpzM0FFVTVlQStNTWlNNGd3K2N3Wm9FUUVHRzV5Mmp3d3ljeDdlY3gzb0VRREhHeHRBd0oyZlQyYXpHYndBS01UQUdobmw1Tm0xVU5kNEFGSkYrc0l3cmxUaXZ6bXNGQXFDQTVERXhKRlRtN0RJelh3Rk16b0JBWGNuUGNQSjJWZUVOd01SU0QxRHlhTktYODh4c3ZBR1lsTEdBWGxLZjdkUXRxOEFiZ0FrbEhwalVjU1NUTTg0TXZBRmdPTU5BR3M4OE14QUFrMG43bTRFaEpGWGFzNSsyYlJYNENtQWlTUWNrYmZ6Z0pjNCtJM2dETUFrREFMbVN6a1RTMXMxT0FFd2c2VUFrRFIzY0l1bHNKRzNlekh3Rk1GaktRVWdhTjlqS0xuQUdid0E0bkVNT3QzRm1PSU1BR0NpaDhnMFozQ2ZoN0NSczRNd0V3Q0FKRDM3Q2dNR1JFczVRd2hiT3ltOEFCdWord0NlTUZwek5ickEzYndEWWxVTU14M0MyMkpzQU9Gbm5pamRRY0t6T1o2enpOczVLQUp5bzh3UGVlWmhnSnAzUFd1ZU5uSkVBT0VubkI3dnpJTUdNT3ArNXpsczVHd0hBSnAySENHYm03TEdWQURoQjE2STFRREJXMXpQWWRUTm5Jd0FPMXZWQjdqbzhVRTNYczloMU8yY2lBQTdVOVFIdU9qaFFWZGN6MlhWRFp5RUF1RW5Yb1lIcW5FMXVKUUFPMHJGY0RRek1yZU1aN2JpbHN4QUFCK2o0d0hZY0Z1aW80MW50dUtrekVBQmMxWEZRb0RObmxqVUV3TTY2bGFvaGdacTZuZDF1MnpvREFiQ2piZzlvdHdHQk5OM09jTGVOSFUwQWNGRzM0WUJVempMUEVRQTc2VlNtQmdONjZYU21PMjN0YUFLQVJ6b05CZkRBMmVaOUFtQUhYWXJVUUVCdlhjNTRsODBkVFFCczVFRUVPSi90M1U0QXNDeExuNzhaQUM5ejF2bU1BTmlnUzRFYUJNalM1Y3gzMmVCUkJFQzRMa01BM01iWlJ3RGNxVU41R2dESTFtRURPbXp4S0FMZ0RoNDRnSG5ZNVBzSWdGQWR5aC9Zemhia0VnQTM2bENhRGp6d3JnNmIwR0dienlZQXduUTQ2TUQrYkVNZUFYQURoUWt3THh0OUd3RVFST0VETDdFUldRVEFTdFhMMHNFRzFxaStGZFczK2t3Q0lFRDFBdzJjeTJaa0VBQXJLRXFBT216Mk9nS2dPU1VQM01OMjlDY0FycWhja2c0d3NFWGxEYW04M1djUkFBQVFTQUM4b0hKQlZpNTNZQjZWdDZUeWhwOUJBRFJVK2NBQzg3RXBQUW1BWnloSGdQcHMrZk1FUUROS0hUaUNiZWxIQUZ5Z0dBSDZzT21YQ1lCR0ZEcHdKQnZUaXdCNFQ5VlNkRENCTTFUZG1xcmJmaVFCQUFDQkJFQURWWXNjcU1ubTlDQUEzdUVWRVVCZk52NHhBVkNjRWdkR3NEMzFDWUJmVTRZQS9kbjZCd0tnTUFVT2pHU0RhaE1BUzgwaWRQQ0FHVlRjb29xYmZ3UUJBQUNCQkVCQkZZc2I2TXNtMVJRZkFGNEZBZVN4L1FLZ0hLVU56TWcyMVNNQUFDQlFkQUI0QlFTUUsvME9pQTZBYXJ4aUEyWm1vMnFKRFlEMDhnTWcreTZJRFlCcWxEVlFnYTJxUXdBQVFLQVBYbi8wNXRQUkgrSnMxVjc1S09yei9ON3Z2bDcrL3EvL2VQVEhZR2YvL01OL1cvN3VILzlsOU1lSVltZm41dzBBQUFRU0FKTkxyRktnUHRzMXY3Z0FxUFphQ29EakpkNE5jUUVBQUFpQXFYbUZCbFJtdytZbUFBQWdVRlFBVlBxT1J6a0RIVlRhc2twM3hCNmlBZ0FBZUVzQUFFQ2dtQUNvOUdxbjBpc3pnR3NxYlZxbHUyS3JEMGQvQUtqcVJ6LzU2ZksxYi94ZzZHZjRtNy84bytWemYvQTdRLzdzUC8vcVB5MGZmL0tMSVgvMnNpekxtOS8rcmVVZnZ2Nm53LzU4cUM3bURRQUE4RUFBVEtiU3F6S0F0V3piZkNJQ0lPazdIUUMyU2JreklnSUFBSGhNQUV6RUt6S2dNeHMzRndFQUFJSGFCMERLZHprQTdDZmg3bWdmQUZWNE5RWWtzSFh6RUFBQUVFZ0FBRUNnMWdHUThCME9BTWZvZm9lMERvQXFmQ2NHSkxGNWN4QUFBQkJJQUFCQUlBRUFBSUhhQmtDVkgyLzRMZ3hJVkdYN3F0d2w5MmdiQUFEQTh6NGMvUUZnSnYvOXkvOWRmdlNUbjY3NnovN3JmM3g4OEtmaEpiLzZuLzliL2IvVnYvL25Kd2QvR3FoSEFNQTcvdXRuUDErKzlvMGZqUDRZclBEeEo3L3d2eFZzNEN1QWdhcDhCd1p3QkJzNGxnQUFnRUF0QTZEenJ6WUJPRmZYTzZWbEFBQUFMeE1BQUJCSUFBQkFJQUV3aUYrL0F0akNrUVFBQUFRU0FBQVFxRjBBZFAyL2F3QXdUc2U3cFYwQUFBRFhDUUFBQ0NRQUJ2Q3JWNEFITm5FTUFRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQ29WUUIwL0tjYUFaaER0enVtVlFCVTRCKzhBSGpLTnA1UEFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFGd3N1OTk4MHVqUHdMQWRHemorVm9Gd09lLzhwM1JId0dBcHJyZE1hMENBQUJZUndBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFd0FEK3dRdUFCelp4REFFQUFJRUVBQUFFYWhjQTNmNnBSZ0RHNjNpM3RBc0FBT0E2QVFBQWdRVEFJSDcxQ21BTFJ4SUFBQkJJQUFCQUlBRUFBSUZhQmtESC83c0dBR04wdlZOYUJnQUE4RElCTUpCZnZ3TEpiT0JZQWdBQUFna0FBQWdrQUFBZ1VOc0FxUEtyVGQrQkFZbXFiRitWdStRZWJRTUFBSGllQUFDQVFBSUFBQUlKZ0FsVStTNE1ZQTgyYnc2dEE2RHpqemNBT0ZiM08rVEQwUjhBa3YzWm4veis4aGRmL01QUkgrTXUzL3JiTDl6OTMvM2s1NzlhdnZ4WDM5M3gwd0MzYXYwR0FBQzRUQUJNd25kaVFBSmJONC8yQWREOU94d0E5cGR3ZDdRUEFBRGdLUUV3RWEvR2dNNXMzRndFQUFBRWlnaUFoTzl5QU5oSHlwMFJFUUNWZUVVR2RHVGI1aU1BQUNDUWZ3a1FCdnIyOTMrOGZQdjdQeDc5TVlCQU1XOEFLbjJuNDFVWjBFbWxUYXQwVjJ3VkV3QUF3QU1CQUFDQm9nS2cwcXVkU3EvTUFKNVRhY3NxM1JGN2lBb0FBT0F0QVRDeFN1VU04RDRiTmpjQkFBQ0I0Z0lnN1RzZUFLNUx2QnZpQXFBYXI5Q0FpbXpYL0FRQUFBU0tESUJxcjNxVU5GQkp0YzJxZGlmc0pUSUFBQ0NkQUNpaVdsRURtV3hWSGJFQmtQcktCNEFIeVhkQmJBQlVwS3lCbWRtb1dxSURJTG44QU5LbDN3SFJBUUFBcVFSQU1WNnhBVE95VGZYRUIwRDZLeUNBUkxaZkFKU2t0SUdaMktTYUJBQUFCQklBUzgxWFFZb2JtRUhGTGFxNCtVY1FBSVZWUEhoQUh6YW9OZ0h3YTRvUW9EOWIvMEFBRktmQWdSRnNUMzBDNEIzS0VLQXZHLytZQUdoQWlRTm5zams5Q0FBQUNDUUEzbFAxRlpFaUI4NVFkV3VxYnZ1UkJFQWpWUThtVUlPTjZVVUFYS0FVQWZxdzZaY0pnR1lVT25BRTI5S1BBSGlHWWdTb3o1WS9Ud0EwcE5TQlBkbVVuZ1RBQ3lxWG93TUw3S0h5bGxUZThETUlBQUFJSkFDdXFGeVFsY3NkR0sveWhsVGU3ck1JZ09ZcUgyQmdITnZSbndCWVFVa0MxR0d6MXhFQUFaUThjQXVia1VFQXJGUzlLQjFvWUkzcVcxRjlxODhrQUlKVVA5akFzV3hFRmdGd0EyVUpNQzhiZlJzQkVFYmhBNWZZaGp3QzRFWWRDdE5CQjk3VllSTTZiUFBaQkVDb0RnY2UyTTRXNUJJQWQxQ2FBUE93eWZjUkFIZnE4TUFwZjhqV1lRTTZiUEVvQWlCY2h3RUFidWZzSXdBMjZGS2VoZ0N5ZERuelhUWjRGQUhBc2l4OUJnRjRtYlBPWndUQVJnb1U0SHkyZHpzQnNJTXVENksvR1VCdlhjNTRsODBkVFFEd1NKZUJBQjV6dG5tZkFOaEpweUkxRk5CTHB6UGRhV3RIRXdCYzFHa3dJSm16ekhNRXdJNjZsYW5oZ05xNm5lRnVHenVhQU5oWnR3ZTAyNEJBaW01bnQ5dTJ6a0FBY0ZXM0lZSHVuRm5XRUFBSDZGaXFCZ1ZxNkhoV08yN3FEQVRBUVRvK3NCMkhCVHJwZUVZN2J1a3NCQUEzNlRndzBJR3p5YTBFd0lHNmxxdWhnYmwwUFpOZE4zUVdBdUJnWFIvZ3JvTUQxWFE5aTEyM2N5WUM0QVJkSCtTdXd3TlZkRDJEWFRkek5nS0FUYm9PRU16TzJXTXJBWENTemtWcmlPQmNuYzljNTYyY2pRQTRVZWNIdS9NZ3dVdzZuN1hPR3prakFYQ3l6Zzk0NTJHQ0dYUStZNTIzY1ZZQ2dGMTFIaWdZeWRsaWJ4KzgvdWpOcDZNL1JLS0V3NnpvWVR0YndWRzhBUmdrNFlGUEdDNDRVc0laU3RqQ1dRbUFnUkllL0lRQmd5TWtuSjJFRFp5WkFPQndDVU1HZTNKbU9JUGZBRXdnNmJBcmZuaWVMZUJNM2dCTUlPa2dKQTBjM0NMcGJDUnQzc3dFd0NTU0RrVFMwTUVhU1djaWFldG01eXVBeVNRTndiSVlBN0k1NzR6a0RjQmswZzVJMmdEQ1o5S2UvYlJ0cTBBQU1GemFFSUpubmhuNENtQlNxUVBoYndsMDVsd3pFMjhBSnBWNllGSUhrdjVTbiszVUxhdkFHNERKcFk3R3NoZ09lbkNHbVpVM0FKTkxQa0RKdzBrUHljOXc4blpWNFExQUVjbERzaXpHaEZxY1YrZTFBZ0ZRU1Bxb0xJdGhZVzdPcUROYWlhOEFDbkd3REN6ejhtemFxR3E4QVNqSTBMeGxiSmlCOC9pVzgxaVBBQ2pLNkR3d1BJemdERDV3Qm1zU0FJVVpvTWVNRUdkdzdoNXo3dXJ5RzREQ0hMekhERE5IODR3OVpvTnE4d2FnQWFQMGxHRmlUODdZVTg1WWZRS2dDUU4xbVpGaUMrZnFNdWVxQndIUWlMRjZtZEZpRGVmb1pjNVJId0tnR2VOMW5RSGpFbWZuT21lbkZ3SFFrQ0ZieDVpeExNN0xXczVMUHdLZ0thTzJubUhMNUl5czU0ejBKQUFhTTNDM00zUzlPUk8zY3liNkVnRE5HYno3R0wxZW5JUDdPQWU5Q1lBQXhtOGJJMWlUNTM0YnozMS9BaUNJUWR6T0tNN05NNzZkWnp5SEFBaGpJUGRqS09mZ21kNlBaenFMQUFoa01QZG5PTS9sR2Q2Zlp6aVBBQWhsUUk5bFRQZmxlVDJXNXpXVEFBaG1WTTlqWUcvajJUeVBaek9YQU1EWURtQjBIL01NbnM4emlBQmdXUllEUEl2dW8rdzVtMFAzNTR4MUJBQy9ZWnpuVlcyd1BVdnpxdllzY1J3QndCUEd1NmF6aHQzelVaT0xuL2NKQUM0eTh0Q0h5NTlMWG8zK0FNekpZRUFQempMUDhRYUFxN3dOZ0hwYy9GempEUUJYR1JLb3habGxEUUhBS2dZRmFuQldXY3RYQU56TVZ3SXdIeGMvdC9JR2dKc1pHcGlMTThrOXZBRmdFMjhEWUJ3WFAxdDRBOEFtQmdqR2NQYll5aHNBZHVOdEFCelB4YzllQkFDN0V3S3dQeGMvZS9NVkFMc3pWTEF2WjRvamVBUEFvYndOZ1B1NStEbVNBT0FVUWdEV2MvRnpCbDhCY0FxREJ1czRLNXpGR3dCTzUyMEFQT1hpNTJ3Q2dHR0VBTGo0R1VjQU1Kd1FJSkdMbjlFRUFOTVFBaVJ3OFRNTEFjQjBoQUFkdWZpWmpRQmdXa0tBRGx6OHpFb0FNRDBoUUVVdWZtWW5BQ2hEQ0ZDQmk1OHFCQURsQ0FGbTVPS25HZ0ZBYVdLQWtWejZWQ1lBYUVFSWNDWVhQeDBJQUZvUkFoekp4VThuQW9DMnhBQjdjT25UbFFBZ2doamdGaTU5RWdnQW9nZ0JYdUxpSjRrQUlKWVlZRmxjK3VRU0FMQ0lnVFF1ZlJBQWNKRWc2TVdGRDA4SkFMaENETlRrMG9lWENRQzRrU0NZa3dzZmJpTUFZQ05CTUlZTEg3WVJBTEF6UVhBTUZ6N3NTd0RBQ1VUQmJWejJjRHdCQUFPbGg0R0xIc1lSQURDcExuSGdrb2M1Q1FCbzRPeFljS2xEZlFJQUFBSzlHdjBCQUlEekNRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNQVC8rMzNwdkhOd291SUFBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19"/>
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAGk0lEQVR4nO3dLaxcZRDG8Slp+DCgCAKPBA0Ki7yiGkmCaoIleAQBQWqRJJDQIJoGhcDXkEBNg4ZABYJAIYAgh97d7nb37L4fz8zz/yV1Nzd7Z+Y58+5ud8+V55594Z8ATD0x+wEAMxEAWCMAsEYAYI0AwBoBgDUCAGsEANYIAKwRAFgjALBGAGCNAMAaAYA1AgBrBADWCACsEQBYuzr7AVR2+8a1Jr/njbc/b/J78KgrfCb4fK0GfS2CcT4CcIJZA38IgViPABxBdeAPIRCHEYA9sg79PoRhNwKwpdrgbyMImwhA1B/6fQiDeQBcB3+bcxAsA8Dg7+YYBKsAMPjHcQqCRQAY/NM4BKH8/wVi+E/nULuyG8CheSNV3QYlNwDD317VmpbaAFWbpKbSNigTANXhP3dYqv5dKkoEQGVIRg2F29/bU+oAzB4ElQGgDqdLGwA+hLIbdVknZQBGNzlrc6nTYekCMLKpGRu6CzXbL1UARjQyWwPXooab0rwRRuPaGPE3zn5SvkaKDdC7oA6Dvwt1TRCAnk3K0KARnGssfQRybsxIPWuhfhyS3QC9CsfgP55b3SU3gFsTlPSqkeomkAsAwz+fUwjKfzkug3+apW6KQ9uS1AZoXWyG/3yta6gWKJkAMPy6KodAIgAMv76qIZAIQEsMfz8Vazs9AC2vBBUbpKZljRW2wNQAMPw5VQrB9A3QAsM/XpWaTwsAN5DLr1XtZ26BKQGYvfagZ9ZMpD4CcfWfL3sPhgeAo089mY9CKTcAw68na0+GBoCzPw4ZPSPpNkDWK42DjL0ZFoAWyc5YYDctejRyC6TbAEBLQwLA1d9Lpi3ABoC1FAHg6p9Plp51D8C5qyxLIfGoDHfHSbEBgF66BoA3vnCu3jMkvQE4/uSn3kPpAAC9dftu0EpPfl995cV4763XZj+Mo3137+d454OvZz+MDarzwAaANQIAa5IBUDr+oA3Vnnb5ctzqL3+uPWM/89TV+OLDi6N//pMvv43Pvrp79M+//NLz8f7114/++Yxu37jWJUSSGwAYRS4AqqsS51PsrVwAgJGaB6D6+R/z9JgtNgCsSQVA8YwYEfHHg7/ip/u//f/v/q+/z35IGx78+bf047tMrcfl7xHWwp3vf4w33701+2HsdfeHX6QfnzKpDQCMRgBgrWkAeAUIvbWeMZkNoPbkCP0o9VomAMAMBADWCACsEQBYIwCwRgBgjQDAGgGANQIAawQA1ggArBEAWCMAsEYAYI0AwJpMAPgwjQ+lXjcNgNIHHVBT6xmT2QDADAQA1ggArEkFQOnJEfpQ67FUAIDRmgeAV4LQC3eIARrrcp9g1XvCjnDzo4t4+sk+3zn88ad34tY397r87hEU54INAGtdApD5Cg5NVneKV3upDOdT7Sk3yGjs4vrN2Q8BK0huAGCUbgE498ymujKxnuKrPws2AKxJB4AtkJ96D7sGgJdDca7eMyS9AYDeugeAJ8O+lJ/8LlJsAEKQT5aepQgA0MuQALRYZVmuKGjTq1EvoLABYG1YANgCHjJd/SMSbgBCoCtjb4YGgDfGcMjoGUm3ASJyXmmqy9qT4QFolfCsBa+oVS9mnBBSboAFIZgvew+mBIDnAtg2ayambQCOQvllPvosUh+BFoRgvCo1nxqAlsmv0pAMWtZ69nF4+gYgBLlUGv4IgQC0Rgj6qVhbiQC0vhJUbNRsrWuqcPWPEAlABCFQVnX4I4QCEEEIFFUe/giDr0ZcGqhWeHUuFw+pDRDRb1BdGtpCr1opXoTkAhBBCGZyGv6ITneIaaXnwKo2ZBbXWktugEXPwrENHnId/gjxDbDoPazqTeqFuiYJQMSYK3aGhrVALR+SPgJdNqKgDscihn9Tmg2wGDmkmRr5ONRsv3QBiBh/pc7W1AV1OixlACLmHVfUm0xd1kkbgIj5Z3aVplOH06UOwGL2ACxGDYLb39tTiQBE6AzFtqo3CKkw/BGFAhChOyzVVBn+iGIBWBCEPioN/iLNG2FrVGzUbFVrWnIDXMY2OE/VwV+U3ACXVW9gTw61K78BLmMbHMdh8BdWAVgQhN2cBn9hGYAFQfiP4+AvrAOwcA2C8+AvCMCW6mFg6DcRgD2qBYHB340AHCFrGBj6wwjACVQDwcCvRwAa4EMoeRGAjircQ6s6AgBr5f8vEPA4BADWCACsEQBYIwCwRgBgjQDAGgGANQIAawQA1ggArBEAWCMAsEYAYI0AwBoBgDUCAGsEANb+BURzbE2bf6KmAAAAAElFTkSuQmCC"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<title>Tallita · Plano HOF</title>
+<style>
+:root {
+  --gold: #C6A46C;
+  --gold-light: #D4B882;
+  --gold-dim: rgba(198,164,108,0.18);
+  --gold-border: rgba(198,164,108,0.28);
+  --bg: #0f0e17;
+  --bg2: #16151f;
+  --bg3: #1e1d2a;
+  --bg4: #252433;
+  --text: #f0ede6;
+  --text2: #a09d96;
+  --text3: #6b6862;
+  --danger: #e05c5c;
+  --success: #5cba8a;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  height: 100%; overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Jost', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* APP SHELL */
+.app {
+  display: flex; flex-direction: column;
+  height: 100%;
+  padding-top: var(--safe-top);
+  padding-bottom: var(--safe-bottom);
+}
+
+/* HEADER */
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px 10px;
+  background: var(--bg);
+  border-bottom: 0.5px solid rgba(198,164,108,0.1);
+  flex-shrink: 0;
+}
+
+.topbar-left { display: flex; flex-direction: column; }
+.topbar-greeting { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); }
+.topbar-name { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); margin-top: 1px; }
+
+.notif-btn {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--bg3); border: 0.5px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; position: relative;
+  font-size: 18px;
+}
+.notif-dot {
+  position: absolute; top: 7px; right: 7px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold); border: 2px solid var(--bg);
+}
+
+/* SCROLL AREA */
+.scroll {
+  flex: 1; overflow-y: auto; overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 100px;
+}
+
+/* BOTTOM NAV */
+.nav {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  padding-bottom: var(--safe-bottom);
+  background: var(--bg2);
+  border-top: 0.5px solid rgba(198,164,108,0.12);
+  display: flex;
+  z-index: 100;
+}
+
+.nav-item {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; gap: 3px;
+  padding: 10px 4px 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.nav-icon { font-size: 22px; }
+.nav-label { font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text3); }
+.nav-item.active .nav-icon { filter: drop-shadow(0 0 4px var(--gold)); }
+.nav-item.active .nav-label { color: var(--gold); }
+
+/* PAGES */
+.page { display: none; padding: 0; }
+.page.active { display: block; }
+
+/* ============ HOME PAGE ============ */
+.hero {
+  background: linear-gradient(160deg, #1a1828 0%, #0f0e17 60%);
+  padding: 20px 20px 16px;
+  border-bottom: 0.5px solid rgba(198,164,108,0.1);
+  position: relative; overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute; top: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  border: 1px solid rgba(198,164,108,0.08);
+}
+
+.hero::after {
+  content: '';
+  position: absolute; top: -10px; right: -10px;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(198,164,108,0.06);
+}
+
+.hero-date { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text3); margin-bottom: 6px; }
+.hero-title { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--text); line-height: 1.3; }
+.hero-title span { color: var(--gold); font-style: italic; }
+
+.progress-wrap { margin-top: 16px; }
+.progress-label { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 12px; color: var(--text3); }
+.progress-bar { height: 4px; background: var(--bg4); border-radius: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; transition: width 0.5s ease; }
+
+/* Alert banner */
+.alert-banner {
+  margin: 16px 16px 0;
+  background: rgba(198,164,108,0.08);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+
+.alert-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.alert-text { font-size: 13px; line-height: 1.6; color: var(--text2); }
+.alert-text strong { color: var(--gold); font-weight: 500; }
+
+/* Section header */
+.sec-hd {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 16px 10px;
+}
+
+.sec-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text3); }
+.sec-link { font-size: 12px; color: var(--gold); cursor: pointer; }
+
+/* Daily tasks */
+.task-list { padding: 0 16px; display: flex; flex-direction: column; gap: 8px; }
+
+.task-item {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 13px 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.task-item:active { background: var(--bg3); }
+
+.task-check {
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 1.5px solid var(--text3);
+  flex-shrink: 0; margin-top: 1px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+  font-size: 12px;
+}
+
+.task-item.done .task-check {
+  background: var(--gold); border-color: var(--gold);
+  color: var(--bg);
+}
+
+.task-item.done { opacity: 0.5; }
+
+.task-body { flex: 1; }
+.task-cat { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.task-txt { font-size: 14px; color: var(--text); line-height: 1.4; }
+.task-item.done .task-txt { text-decoration: line-through; color: var(--text3); }
+
+/* Stats row */
+.stats-row {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 8px; padding: 0 16px;
+}
+
+.stat-card {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 13px 10px;
+  text-align: center;
+}
+
+.stat-val { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold); }
+.stat-lbl { font-size: 10px; color: var(--text3); margin-top: 2px; line-height: 1.3; }
+
+/* ============ DIAGNÓSTICO PAGE ============ */
+.page-pad { padding: 16px; }
+
+.diag-header {
+  background: linear-gradient(135deg, #1a1828, #0f1a2e);
+  border-radius: var(--radius);
+  padding: 18px;
+  margin-bottom: 14px;
+  border: 0.5px solid var(--gold-border);
+}
+
+.diag-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.diag-title { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); margin-bottom: 10px; }
+
+.badge-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.badge {
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 20px; padding: 4px 12px;
+  font-size: 11px; color: var(--gold);
+}
+
+.card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+
+.info-card {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 13px;
+}
+
+.info-card.full { grid-column: 1/-1; }
+.info-card.highlight { border-left: 2.5px solid var(--gold); }
+
+.info-lbl { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text3); margin-bottom: 5px; }
+.info-val { font-size: 13px; color: var(--text); line-height: 1.5; }
+.info-val.gold { color: var(--gold); font-weight: 500; }
+
+.insight-box {
+  background: rgba(198,164,108,0.06);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.insight-title { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.insight-text { font-size: 14px; color: var(--text2); line-height: 1.7; }
+.insight-text em { color: var(--gold); font-style: normal; font-weight: 500; }
+
+/* ============ FLUXOGRAMA PAGE ============ */
+.fluxo-container {
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.fluxo-card {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 16px;
+  min-width: 300px;
+}
+
+/* Flowchart vertical */
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.flow-step {
+  width: 100%;
+  max-width: 320px;
+  background: var(--bg3);
+  border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.flow-step:active { border-color: var(--gold); }
+.flow-step.active-step { border-color: var(--gold); background: rgba(198,164,108,0.07); }
+
+.flow-num { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; }
+.flow-title { font-size: 14px; font-weight: 500; color: var(--text); }
+.flow-sub { font-size: 12px; color: var(--text3); margin-top: 2px; line-height: 1.4; }
+
+.flow-arrow {
+  width: 1px; height: 28px;
+  background: rgba(198,164,108,0.3);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.flow-arrow::after {
+  content: '▾';
+  position: absolute; bottom: -3px; left: 50%; transform: translateX(-50%);
+  color: var(--gold); font-size: 10px;
+}
+
+/* Split arrow */
+.flow-split {
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  gap: 10px;
+}
+
+.flow-branch {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.flow-branch-line {
+  width: 1px; height: 20px;
+  background: rgba(198,164,108,0.3);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.flow-step.green { border-color: rgba(92,186,138,0.3); }
+.flow-step.green .flow-num { color: var(--success); }
+
+.flow-step.red { border-color: rgba(224,92,92,0.3); }
+.flow-step.red .flow-num { color: var(--danger); }
+
+.flow-split-bar {
+  width: 100%;
+  max-width: 320px;
+  height: 1px;
+  background: rgba(198,164,108,0.3);
+  position: relative;
+}
+
+/* ============ PLANO PAGE ============ */
+.plano-pad { padding: 16px; }
+
+.plano-item {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.plano-header {
+  display: flex; gap: 12px; align-items: center;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.plano-num {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--bg4);
+  border: 1px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 500; color: var(--gold);
+  flex-shrink: 0;
+}
+
+.plano-meta { flex: 1; }
+.plano-prazo { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.plano-title { font-size: 14px; font-weight: 500; color: var(--text); }
+
+.plano-chevron { font-size: 12px; color: var(--text3); transition: transform 0.2s; }
+.plano-item.open .plano-chevron { transform: rotate(180deg); }
+
+.plano-body {
+  display: none;
+  padding: 0 16px 14px;
+  border-top: 0.5px solid rgba(255,255,255,0.04);
+}
+
+.plano-item.open .plano-body { display: block; }
+
+.plano-desc { font-size: 13px; color: var(--text2); line-height: 1.6; margin: 10px 0 12px; }
+
+.plano-actions { display: flex; flex-direction: column; gap: 7px; }
+
+.plano-action {
+  display: flex; gap: 8px; align-items: flex-start;
+  font-size: 13px; color: var(--text2); line-height: 1.5;
+}
+
+.plano-action::before {
+  content: '→';
+  color: var(--gold); font-size: 11px; flex-shrink: 0; margin-top: 2px;
+}
+
+/* ============ SCRIPTS PAGE ============ */
+.script-pad { padding: 16px; }
+
+.script-item {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.script-header {
+  padding: 14px 16px;
+  cursor: pointer;
+  display: flex; gap: 12px; align-items: flex-start;
+}
+
+.script-tag-wrap { flex-shrink: 0; margin-top: 2px; }
+.script-tag {
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 20px; padding: 3px 10px;
+  font-size: 10px; color: var(--gold);
+}
+
+.script-meta { flex: 1; }
+.script-objecao { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px; line-height: 1.4; }
+.script-preview { font-size: 12px; color: var(--text3); }
+
+.script-body {
+  display: none;
+  padding: 0 16px 16px;
+  border-top: 0.5px solid rgba(255,255,255,0.04);
+}
+
+.script-item.open .script-body { display: block; }
+
+.script-label { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text3); margin: 12px 0 6px; }
+
+.script-text {
+  background: rgba(198,164,108,0.05);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 12px;
+  font-size: 13px; color: var(--text); line-height: 1.7;
+  font-style: italic;
+}
+
+.copy-btn {
+  display: flex; align-items: center; gap: 6px;
+  margin-top: 10px;
+  background: var(--gold-dim); border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 12px; color: var(--gold);
+  cursor: pointer; width: 100%; justify-content: center;
+  transition: background 0.2s;
+}
+
+.copy-btn:active { background: rgba(198,164,108,0.3); }
+
+/* ============ NOTIFICATION SETUP ============ */
+.notif-panel {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15,14,23,0.95);
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  padding: 40px 20px 20px;
+}
+
+.notif-panel.open { display: flex; }
+
+.notif-close {
+  position: absolute; top: 16px; right: 20px;
+  font-size: 24px; color: var(--text2);
+  cursor: pointer;
+  padding: 8px;
+}
+
+.notif-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--text); margin-bottom: 6px; }
+.notif-sub { font-size: 13px; color: var(--text2); margin-bottom: 30px; line-height: 1.6; }
+
+.notif-time-label { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text3); margin-bottom: 10px; }
+
+.time-presets { display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; margin-bottom: 20px; }
+
+.time-preset {
+  background: var(--bg2);
+  border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.time-preset:active,
+.time-preset.selected { border-color: var(--gold); background: var(--gold-dim); }
+
+.time-val { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold); }
+.time-lbl { font-size: 11px; color: var(--text3); margin-top: 2px; }
+
+.notif-btn-activate {
+  background: var(--gold);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px; font-weight: 500;
+  color: var(--bg);
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+  letter-spacing: 0.5px;
+}
+
+/* Toast */
+.toast {
+  position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
+  background: var(--bg3); border: 1px solid var(--gold-border);
+  border-radius: 20px; padding: 10px 20px;
+  font-size: 13px; color: var(--gold);
+  z-index: 9999;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.toast.show { opacity: 1; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--text3); border-radius: 1px; }
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page.active > * { animation: fadeUp 0.3s ease forwards; }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="topbar-greeting" id="greeting">Bom dia</div>
+      <div class="topbar-name">Tallita</div>
+    </div>
+    <div class="notif-btn" onclick="openNotif()">
+      🔔
+      <div class="notif-dot" id="notif-dot"></div>
+    </div>
+  </div>
+
+  <!-- SCROLL AREA -->
+  <div class="scroll" id="scroll">
+
+    <!-- HOME -->
+    <div class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-date" id="hero-date"></div>
+        <div class="hero-title">Seu <span>plano HOF</span><br/>de hoje</div>
+        <div class="progress-wrap">
+          <div class="progress-label">
+            <span>Tarefas concluídas</span>
+            <span id="progress-pct">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert-banner">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-text">
+          <strong>Gargalo identificado:</strong> Você confunde empatia com desconto. Ajudar de verdade não é baixar seu valor — é fazer o paciente enxergar que vale a pena, com condições dignas que respeitam o seu trabalho.
+        </div>
+      </div>
+
+      <div class="sec-hd">
+        <div class="sec-title">Tarefas de hoje</div>
+        <div class="sec-link" onclick="resetTasks()">Reiniciar</div>
+      </div>
+
+      <div class="task-list" id="task-list"></div>
+
+      <div class="sec-hd" style="margin-top:10px">
+        <div class="sec-title">Suas metas</div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-val">↑</div>
+          <div class="stat-lbl">Preço mantido (sem ceder)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">≥70%</div>
+          <div class="stat-lbl">Insegurança resolvida com valor</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">0</div>
+          <div class="stat-lbl">Descontos dados por dó</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIAGNÓSTICO -->
+    <div class="page" id="page-diag">
+      <div class="page-pad">
+        <div class="diag-header">
+          <div class="diag-tag">Diagnóstico · Clínica &amp; Vendas</div>
+          <div class="diag-title">Onde está o erro real</div>
+          <div class="badge-row">
+            <span class="badge">Valor &amp; Empatia</span>
+            <span class="badge">Prioridade: Alta</span>
+          </div>
+        </div>
+
+        <div class="insight-box">
+          <div class="insight-title">⚡ Insight principal</div>
+          <div class="insight-text">
+            A Tallita é a mais autoconsciente do seu próprio gargalo: ela <em>cede no preço por empatia</em>. Quando o paciente quer mas diz que não pode pagar, ela reduz o valor ou parcela no Pix "por sentir que está ajudando" — e sabe que isso corrói a rentabilidade (produtos, equipe, estrutura). O ponto é que ela <em>confunde empatia com desconto</em>. Empatia de verdade não é reduzir o próprio valor — é ajudar o paciente a enxergar que vale a pena e oferecer um caminho digno, sem sacrificar a clínica.
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <div class="info-card highlight">
+            <div class="info-lbl">Objetivos</div>
+            <div class="info-val">Melhorar conversão + organizar processo de vendas</div>
+          </div>
+          <div class="info-card highlight">
+            <div class="info-lbl">Gargalo real</div>
+            <div class="info-val gold">Cede no preço por empatia (empatia = desconto)</div>
+          </div>
+          <div class="info-card">
+            <div class="info-lbl">Dificuldades</div>
+            <div class="info-val">Apresentação do orçamento + Quebra de objeções</div>
+          </div>
+          <div class="info-card">
+            <div class="info-lbl">Equipe</div>
+            <div class="info-val">Tem equipe — precisa melhorar o preparo para vender</div>
+          </div>
+          <div class="info-card full">
+            <div class="info-lbl">Objeção dominante</div>
+            <div class="info-val">"Não sei se vai dar certo pra mim" + "Quero pensar, posso levar o orçamento?"</div>
+          </div>
+        </div>
+
+        <div class="sec-hd" style="padding: 4px 0 12px">
+          <div class="sec-title">Os 3 pontos a trabalhar</div>
+        </div>
+
+        <div class="insight-box" style="margin-bottom:8px">
+          <div class="insight-title">01 · Empatia virou desconto</div>
+          <div class="insight-text">Baixar o preço por dó não é ajudar — é abrir mão do seu valor e corroer a rentabilidade. Empatia verdadeira é encontrar um caminho digno, não sacrificar o próprio trabalho.</div>
+        </div>
+        <div class="insight-box" style="margin-bottom:8px">
+          <div class="insight-title">02 · Desconto improvisado, não estruturado</div>
+          <div class="insight-text">Reduzir preço ou parcelar no Pix na hora, por impulso, é improviso emocional. A saída é ter condições de pagamento PRONTAS e estruturadas — acolhe o paciente sem prejuízo.</div>
+        </div>
+        <div class="insight-box" style="margin-bottom:14px">
+          <div class="insight-title">03 · Responde insegurança com preço</div>
+          <div class="insight-text">"Não sei se vai dar certo" é dúvida, não questão de dinheiro. Baixar o preço não resolve a insegurança — prova, resultado e confiança sim. Valor primeiro, nunca desconto.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLUXOGRAMA -->
+    <div class="page" id="page-fluxo">
+      <div class="fluxo-container">
+        <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text3); margin-bottom:14px;">Manter o valor com empatia e firmeza</div>
+
+        <div class="flow">
+
+          <div class="flow-step active-step" onclick="showFlowDetail(0)">
+            <div class="flow-num">01 · Base</div>
+            <div class="flow-title">Definir e manter seu valor</div>
+            <div class="flow-sub">Seu preço reflete custos e trabalho — é justo</div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(1)">
+            <div class="flow-num">02 · Preparar</div>
+            <div class="flow-title">Estruturar as condições</div>
+            <div class="flow-sub">Parcelamento pronto — não improvisar desconto</div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(2)">
+            <div class="flow-num">03 · Consulta</div>
+            <div class="flow-title">Valor antes do preço</div>
+            <div class="flow-sub">Prova e confiança resolvem a insegurança</div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(3)">
+            <div class="flow-num">04 · Momento-chave</div>
+            <div class="flow-title">Manter o preço com empatia</div>
+            <div class="flow-sub">Acolher + condições, sem baixar o valor</div>
+          </div>
+
+          <div class="flow-arrow" style="height:16px;"></div>
+
+          <!-- Split -->
+          <div class="flow-split-bar"></div>
+          <div class="flow-split">
+            <div class="flow-branch">
+              <div class="flow-branch-line"></div>
+              <div class="flow-step green">
+                <div class="flow-num">✓ FECHA</div>
+                <div class="flow-title">Fechamento</div>
+                <div class="flow-sub">Valor mantido, rentabilidade preservada</div>
+              </div>
+            </div>
+            <div class="flow-branch">
+              <div class="flow-branch-line"></div>
+              <div class="flow-step red" onclick="showFlowDetail(4)">
+                <div class="flow-num">⚠ "Não consigo pagar"</div>
+                <div class="flow-title">Condições, não desconto</div>
+                <div class="flow-sub">Acolher sem baixar — toque</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-arrow"></div>
+
+          <div class="flow-step" onclick="showFlowDetail(5)">
+            <div class="flow-num">05 · Estrutura</div>
+            <div class="flow-title">Organizar o processo</div>
+            <div class="flow-sub">Fluxo claro protege valor e empatia</div>
+          </div>
+
+        </div>
+
+        <!-- Flow detail -->
+        <div id="flow-detail" style="display:none; margin-top:16px; background:var(--gold-dim); border:1px solid var(--gold-border); border-radius:var(--radius-sm); padding:14px;">
+          <div style="font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); margin-bottom:6px;" id="fd-title"></div>
+          <div style="font-size:13px; color:var(--text); line-height:1.7;" id="fd-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLANO 30 DIAS -->
+    <div class="page" id="page-plano">
+      <div class="plano-pad">
+        <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text3); margin-bottom:14px;">Plano de ação · 30 dias</div>
+
+        <div class="plano-item" id="pi-0">
+          <div class="plano-header" onclick="togglePlano(0)">
+            <div class="plano-num">1</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 1 · Fundamental</div>
+              <div class="plano-title">Ter clareza do seu valor</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Você só mantém o preço se souber, com convicção, que ele é justo. Comece entendendo seus números.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Calcular o custo real de cada tratamento (produtos, equipe, estrutura) — ver quanto sobra</div>
+              <div class="plano-action">Enxergar na prática o quanto o desconto por dó corrói a rentabilidade da clínica</div>
+              <div class="plano-action">Reafirmar: seu preço reflete qualidade, segurança e resultado — é justo</div>
+              <div class="plano-action">Decidir ANTES do atendimento que o valor será mantido — decisão tomada não se negocia na pressão</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-1">
+          <div class="plano-header" onclick="togglePlano(1)">
+            <div class="plano-num">2</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 1–2 · Crítico</div>
+              <div class="plano-title">Estruturar condições de pagamento</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">A saída para o "não consigo pagar" não é improvisar desconto — é ter opções prontas que acolhem sem prejuízo.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Definir formas de pagamento e parcelamento oficiais (cartão, Pix parcelado com regra clara)</div>
+              <div class="plano-action">Criar talvez um plano de entrada ou tratamento por etapas — opção digna, não desconto</div>
+              <div class="plano-action">Ter essas condições escritas e prontas para apresentar na hora, sem improviso emocional</div>
+              <div class="plano-action">Alinhar as condições com a equipe para todos seguirem o mesmo padrão</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-2">
+          <div class="plano-header" onclick="togglePlano(2)">
+            <div class="plano-num">3</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 2 · Alta prioridade</div>
+              <div class="plano-title">Responder à insegurança com valor</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">"Não sei se vai dar certo pra mim" é dúvida, não dinheiro. Resolve-se com prova e confiança — nunca com desconto.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Mostrar resultados de pacientes parecidas antes de falar o preço</div>
+              <div class="plano-action">Explicar o processo e o acompanhamento — a segurança reduz o medo</div>
+              <div class="plano-action">Comunicar o valor completo do que ela recebe ANTES do número</div>
+              <div class="plano-action">Perguntar "o que te deixaria mais tranquila para decidir?" — e resolver a dúvida real</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-3">
+          <div class="plano-header" onclick="togglePlano(3)">
+            <div class="plano-num">4</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 2–3 · Transformador</div>
+              <div class="plano-title">Manter o preço com empatia</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">O ponto que muda tudo pra você: ser gentil E firme ao mesmo tempo. Empatia não é ceder — é acolher com dignidade.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Quando ouvir "não consigo pagar": acolher, mas oferecer as condições estruturadas — nunca baixar o preço na hora</div>
+              <div class="plano-action">Lembrar: ceder por dó desvaloriza seu trabalho e prejudica a clínica que sustenta você e a equipe</div>
+              <div class="plano-action">Treinar os scripts de "não consigo pagar" da aba Scripts em voz alta</div>
+              <div class="plano-action">Praticar dizer "não" com carinho — manter o valor também é um ato de respeito por você</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-item" id="pi-4">
+          <div class="plano-header" onclick="togglePlano(4)">
+            <div class="plano-num">5</div>
+            <div class="plano-meta">
+              <div class="plano-prazo">Semana 3–4 · Estrutural</div>
+              <div class="plano-title">Organizar o processo de vendas</div>
+            </div>
+            <div class="plano-chevron">▾</div>
+          </div>
+          <div class="plano-body">
+            <div class="plano-desc">Um processo claro protege sua rentabilidade E sua empatia — a decisão de preço deixa de ser improviso emocional.</div>
+            <div class="plano-actions">
+              <div class="plano-action">Definir o fluxo padrão: apresentação → valor → condições → fechamento</div>
+              <div class="plano-action">Treinar a equipe para seguir o mesmo padrão e manter o valor com acolhimento</div>
+              <div class="plano-action">Acompanhar a taxa de conversão e quantas vezes o preço foi mantido vs. reduzido</div>
+              <div class="plano-action">Revisar o processo mensalmente — ajustar o que melhora conversão sem sacrificar rentabilidade</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <div class="page" id="page-scripts">
+      <div class="script-pad">
+        <div style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--text3); margin-bottom:14px;">Scripts prontos para usar</div>
+
+        <div class="script-item" id="si-0">
+          <div class="script-header" onclick="toggleScript(0)">
+            <div class="script-tag-wrap"><div class="script-tag">Preço</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">"Não consigo pagar" (o principal)</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como responder (sem baixar o preço)</div>
+            <div class="script-text">"Eu entendo, e fico feliz que você queira fazer 🤍 Justamente porque quero que dê certo pra você, deixa eu te mostrar as formas de pagamento que eu tenho — assim a gente encontra um jeito de você começar sem abrir mão da qualidade. Qual formato caberia melhor no seu momento?" (Ofereça condições ESTRUTURADAS, não desconto improvisado.)</div>
+            <button class="copy-btn" onclick="copyScript(0)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div class="script-item" id="si-1">
+          <div class="script-header" onclick="toggleScript(1)">
+            <div class="script-tag-wrap"><div class="script-tag">Insegurança</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">"Não sei se vai dar certo pra mim"</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como responder</div>
+            <div class="script-text">"Eu entendo sua insegurança, é super natural. Deixa eu te mostrar resultados de pacientes que sentiram exatamente isso antes de começar. O meu trabalho é justamente cuidar pra que o resultado seja natural e seguro pra você. O que te deixaria mais tranquila para decidir?"</div>
+            <button class="copy-btn" onclick="copyScript(1)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div class="script-item" id="si-2">
+          <div class="script-header" onclick="toggleScript(2)">
+            <div class="script-tag-wrap"><div class="script-tag">Adiamento</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">"Quero pensar, posso levar o orçamento?"</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como responder</div>
+            <div class="script-text">"Claro, você pode levar o orçamento! Só me deixa entender uma coisa, pra eu te ajudar melhor: o que ainda te deixa em dúvida? É sobre o resultado ou sobre o investimento? Às vezes consigo esclarecer agora pra você decidir com mais tranquilidade."</div>
+            <button class="copy-btn" onclick="copyScript(2)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div class="script-item" id="si-3">
+          <div class="script-header" onclick="toggleScript(3)">
+            <div class="script-tag-wrap"><div class="script-tag">Valor</div></div>
+            <div class="script-meta">
+              <div class="script-objecao">Quando pedem desconto direto</div>
+              <div class="script-preview">Toque para ver o script completo</div>
+            </div>
+          </div>
+          <div class="script-body">
+            <div class="script-label">Como responder</div>
+            <div class="script-text">"Eu sei que às vezes o valor pesa, e eu te entendo de verdade. Mas se eu reduzo o que cobro, eu também reduziria a qualidade do que te entrego — e isso eu não faço, porque a sua segurança vem em primeiro lugar. O que eu POSSO fazer é te ajudar com a forma de pagamento. Vamos ver juntas?"</div>
+            <button class="copy-btn" onclick="copyScript(3)">📋 Copiar script</button>
+          </div>
+        </div>
+
+        <div style="background: var(--bg2); border-radius: var(--radius); padding: 16px; margin-top: 6px; border: 0.5px solid rgba(255,255,255,0.05);">
+          <div style="font-size:12px; color:var(--gold); font-weight:500; margin-bottom:8px;">💡 Regra de ouro</div>
+          <div style="font-size:13px; color:var(--text2); line-height:1.7;">
+            Empatia de verdade <strong style="color:var(--text)">não é baixar o preço</strong> — é ajudar o paciente a enxergar que vale a pena e oferecer um caminho digno. Você pode ser gentil <strong style="color:var(--text)">e</strong> firme ao mesmo tempo. Manter seu valor é respeitar seu trabalho, sua equipe e sua clínica.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /scroll -->
+
+  <!-- BOTTOM NAV -->
+  <div class="nav">
+    <div class="nav-item active" id="nav-home" onclick="goPage('home')">
+      <div class="nav-icon">🏠</div>
+      <div class="nav-label">Início</div>
+    </div>
+    <div class="nav-item" id="nav-diag" onclick="goPage('diag')">
+      <div class="nav-icon">🔍</div>
+      <div class="nav-label">Diagnóstico</div>
+    </div>
+    <div class="nav-item" id="nav-fluxo" onclick="goPage('fluxo')">
+      <div class="nav-icon">🗺️</div>
+      <div class="nav-label">Fluxo</div>
+    </div>
+    <div class="nav-item" id="nav-plano" onclick="goPage('plano')">
+      <div class="nav-icon">📋</div>
+      <div class="nav-label">Plano</div>
+    </div>
+    <div class="nav-item" id="nav-scripts" onclick="goPage('scripts')">
+      <div class="nav-icon">💬</div>
+      <div class="nav-label">Scripts</div>
+    </div>
+  </div>
+</div>
+
+<!-- NOTIFICATION PANEL -->
+<div class="notif-panel" id="notif-panel">
+  <div class="notif-close" onclick="closeNotif()">✕</div>
+  <div class="notif-title">Lembrete diário 🔔</div>
+  <div class="notif-sub">Escolha o horário para ser lembrada de revisar seu plano e tarefas do dia.</div>
+
+  <div class="notif-time-label">Selecione o horário</div>
+  <div class="time-presets">
+    <div class="time-preset" onclick="selectTime('07:00', this)">
+      <div class="time-val">07:00</div>
+      <div class="time-lbl">Manhã cedo</div>
+    </div>
+    <div class="time-preset" onclick="selectTime('08:30', this)">
+      <div class="time-val">08:30</div>
+      <div class="time-lbl">Antes do consultório</div>
+    </div>
+    <div class="time-preset selected" onclick="selectTime('09:00', this)">
+      <div class="time-val">09:00</div>
+      <div class="time-lbl">Início do dia</div>
+    </div>
+    <div class="time-preset" onclick="selectTime('12:00', this)">
+      <div class="time-val">12:00</div>
+      <div class="time-lbl">Intervalo do almoço</div>
+    </div>
+  </div>
+
+  <div id="notif-status" style="font-size:13px; color:var(--text2); margin-bottom:16px; line-height:1.6; min-height:40px;"></div>
+
+  <button class="notif-btn-activate" onclick="activateNotif()">
+    Ativar lembretes diários
+  </button>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ============ DATA ============
+const TASKS_KEY = 'tallita_tasks_' + new Date().toDateString();
+const NOTIF_KEY = 'tallita_notif_time';
+
+const DAILY_TASKS = [
+  { cat: 'Valor', txt: 'Repetir antes de atender: "Manter meu preço é respeitar meu trabalho e minha clínica"' },
+  { cat: 'Empatia', txt: 'Lembrar: empatia é ajudar o paciente a decidir, não reduzir o meu valor' },
+  { cat: 'Condições', txt: 'Ter opções de pagamento ESTRUTURADAS prontas — não improvisar desconto por dó' },
+  { cat: 'Confiança', txt: 'Responder à insegurança do paciente com prova e resultado, não com preço' },
+  { cat: 'Postura', txt: 'Em 1 atendimento, manter o valor com firmeza e acolhimento ao mesmo tempo' },
+  { cat: 'Script', txt: 'Treinar o script de "não consigo pagar" em voz alta — 2 minutos' },
+];
+
+const FLOW_DETAILS = [
+  { t: '01 · Definir seu valor (e mantê-lo)', d: 'Antes do atendimento, a decisão já precisa estar tomada: seu preço é justo e reflete seus custos (produtos, equipe, estrutura) e seu trabalho. Quando VOCÊ tem clareza do seu valor, fica muito mais fácil mantê-lo na hora da pressão. Preço definido com convicção não se negocia por dó.' },
+  { t: '02 · Estruturar as condições', d: 'A saída para o "não consigo pagar" não é improvisar desconto — é ter condições PRONTAS e estruturadas: parcelamento definido, formas de pagamento, talvez um plano de entrada. Assim você acolhe o paciente sem sacrificar a rentabilidade. Empatia com estrutura, não com prejuízo.' },
+  { t: '03 · Apresentar valor antes do preço', d: 'A objeção "não sei se vai dar certo pra mim" é insegurança — e se resolve com prova, não com desconto. Mostre resultados, explique o processo, transmita confiança. Quando o paciente confia no resultado, o preço deixa de ser o obstáculo. Valor primeiro, sempre.' },
+  { t: '04 · Manter o preço com empatia', d: 'O momento-chave. Quando o paciente diz que quer mas não pode pagar, resista à vontade de baixar. Em vez disso: acolha, ofereça as condições estruturadas, e reforce o valor. Você pode ser gentil E firme ao mesmo tempo. Manter seu preço é um ato de respeito — por você e pela sua clínica.' },
+  { t: '⚠ "Vou pensar / levo o orçamento"', d: 'Adiamento clássico. Não deixe o paciente sair sem entender o real motivo. Pergunte com leveza o que falta para a decisão. Muitas vezes é insegurança que você resolve na hora — sem precisar mexer no preço. Veja os scripts na aba Scripts.' },
+  { t: '05 · Organizar o processo de vendas', d: 'Você quer organizar o processo — e é isso que sustenta tudo. Ter um fluxo claro (apresentação → condições → fechamento), condições padronizadas e a equipe alinhada evita que a decisão de preço vire improviso emocional. Processo protege sua rentabilidade e sua empatia.' },
+];
+
+// ============ INIT ============
+window.addEventListener('load', () => {
+  setGreeting();
+  setDate();
+  loadTasks();
+  updateProgress();
+  registerSW();
+});
+
+function setGreeting() {
+  const h = new Date().getHours();
+  const el = document.getElementById('greeting');
+  if (h < 12) el.textContent = 'Bom dia';
+  else if (h < 18) el.textContent = 'Boa tarde';
+  else el.textContent = 'Boa noite';
+}
+
+function setDate() {
+  const d = new Date();
+  const opts = { weekday:'long', day:'numeric', month:'long' };
+  document.getElementById('hero-date').textContent = d.toLocaleDateString('pt-BR', opts);
+}
+
+// ============ TASKS ============
+function loadTasks() {
+  const saved = JSON.parse(localStorage.getItem(TASKS_KEY) || '[]');
+  const list = document.getElementById('task-list');
+  list.innerHTML = '';
+  DAILY_TASKS.forEach((t, i) => {
+    const done = saved.includes(i);
+    const el = document.createElement('div');
+    el.className = 'task-item' + (done ? ' done' : '');
+    el.id = 'task-' + i;
+    el.onclick = () => toggleTask(i);
+    el.innerHTML = `
+      <div class="task-check">${done ? '✓' : ''}</div>
+      <div class="task-body">
+        <div class="task-cat">${t.cat}</div>
+        <div class="task-txt">${t.txt}</div>
+      </div>
+    `;
+    list.appendChild(el);
+  });
+}
+
+function toggleTask(i) {
+  const saved = JSON.parse(localStorage.getItem(TASKS_KEY) || '[]');
+  const idx = saved.indexOf(i);
+  if (idx === -1) saved.push(i);
+  else saved.splice(idx, 1);
+  localStorage.setItem(TASKS_KEY, JSON.stringify(saved));
+  loadTasks();
+  updateProgress();
+}
+
+function resetTasks() {
+  localStorage.removeItem(TASKS_KEY);
+  loadTasks();
+  updateProgress();
+  showToast('Tarefas reiniciadas ✓');
+}
+
+function updateProgress() {
+  const saved = JSON.parse(localStorage.getItem(TASKS_KEY) || '[]');
+  const pct = Math.round((saved.length / DAILY_TASKS.length) * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-pct').textContent = pct + '%';
+}
+
+// ============ NAVIGATION ============
+function goPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  document.getElementById('nav-' + id).classList.add('active');
+  document.getElementById('scroll').scrollTop = 0;
+}
+
+// ============ ACCORDIONS ============
+function togglePlano(i) {
+  const el = document.getElementById('pi-' + i);
+  el.classList.toggle('open');
+}
+
+function toggleScript(i) {
+  const el = document.getElementById('si-' + i);
+  el.classList.toggle('open');
+}
+
+// ============ FLOW DETAIL ============
+function showFlowDetail(i) {
+  const d = FLOW_DETAILS[i];
+  document.getElementById('fd-title').textContent = d.t;
+  document.getElementById('fd-text').textContent = d.d;
+  const box = document.getElementById('flow-detail');
+  box.style.display = 'block';
+  box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ============ COPY SCRIPTS ============
+const SCRIPTS = [
+  '"Eu entendo, e fico feliz que você queira fazer 🤍 Justamente porque quero que dê certo pra você, deixa eu te mostrar as formas de pagamento que eu tenho — assim a gente encontra um jeito de você começar sem abrir mão da qualidade. Qual formato caberia melhor no seu momento?" (Ofereça condições ESTRUTURADAS, não desconto improvisado.)',
+  '"Eu entendo sua insegurança, é super natural. Deixa eu te mostrar resultados de pacientes que sentiram exatamente isso antes de começar. O meu trabalho é justamente cuidar pra que o resultado seja natural e seguro pra você. O que te deixaria mais tranquila para decidir?"',
+  '"Claro, você pode levar o orçamento! Só me deixa entender uma coisa, pra eu te ajudar melhor: o que ainda te deixa em dúvida? É sobre o resultado ou sobre o investimento? Às vezes consigo esclarecer agora pra você decidir com mais tranquilidade."',
+  '"Eu sei que às vezes o valor pesa, e eu te entendo de verdade. Mas se eu reduzo o que cobro, eu também reduziria a qualidade do que te entrego — e isso eu não faço, porque a sua segurança vem em primeiro lugar. O que eu POSSO fazer é te ajudar com a forma de pagamento. Vamos ver juntas?"',
+];
+
+function copyScript(i) {
+  navigator.clipboard.writeText(SCRIPTS[i]).then(() => {
+    showToast('Script copiado! ✓');
+  }).catch(() => {
+    showToast('Copie manualmente o texto acima');
+  });
+}
+
+// ============ NOTIFICATIONS ============
+let selectedTime = '09:00';
+
+function openNotif() {
+  document.getElementById('notif-panel').classList.add('open');
+  const saved = localStorage.getItem(NOTIF_KEY);
+  if (saved) {
+    document.getElementById('notif-status').textContent = '✅ Lembretes ativos para ' + saved + ' todos os dias.';
+    selectedTime = saved;
+  }
+}
+
+function closeNotif() {
+  document.getElementById('notif-panel').classList.remove('open');
+}
+
+function selectTime(t, el) {
+  selectedTime = t;
+  document.querySelectorAll('.time-preset').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+async function activateNotif() {
+  if (!('Notification' in window)) {
+    document.getElementById('notif-status').textContent = '⚠️ Seu navegador não suporta notificações. Adicione o app à tela inicial para ativar.';
+    return;
+  }
+
+  const perm = await Notification.requestPermission();
+
+  if (perm === 'granted') {
+    localStorage.setItem(NOTIF_KEY, selectedTime);
+    document.getElementById('notif-dot').style.display = 'block';
+    document.getElementById('notif-status').textContent = '✅ Lembretes ativados para ' + selectedTime + ' todos os dias!';
+    scheduleDaily(selectedTime);
+    showToast('Lembrete ativado para ' + selectedTime + ' ✓');
+    setTimeout(closeNotif, 1500);
+  } else {
+    document.getElementById('notif-status').textContent = '⚠️ Permissão negada. Ative as notificações nas configurações do celular.';
+  }
+}
+
+function scheduleDaily(timeStr) {
+  if (!navigator.serviceWorker.controller) return;
+  const [h, m] = timeStr.split(':').map(Number);
+  const now = new Date();
+  const target = new Date();
+  target.setHours(h, m, 0, 0);
+  if (target <= now) target.setDate(target.getDate() + 1);
+  const delay = target - now;
+
+  navigator.serviceWorker.controller.postMessage({
+    type: 'SCHEDULE_NOTIFICATION',
+    title: '✨ Seu plano HOF te espera',
+    body: 'Bom dia, Tallita! Revise suas tarefas e scripts de hoje.',
+    delay
+  });
+}
+
+// ============ SERVICE WORKER ============
+
+const swCode = `
+self.addEventListener('install', e => self.skipWaiting());
+self.addEventListener('activate', e => self.clients.claim());
+self.addEventListener('notificationclick', e => {
+  e.notification.close();
+  e.waitUntil(clients.matchAll({type:'window'}).then(cl => {
+    for (const c of cl) { if ('focus' in c) return c.focus(); }
+    if (clients.openWindow) return clients.openWindow('./');
+  }));
+});
+self.addEventListener('message', e => {
+  if (e.data && e.data.type === 'SCHEDULE_NOTIFICATION') {
+    const { title, body, delay } = e.data;
+    setTimeout(() => {
+      self.registration.showNotification(title, {
+        body, vibrate:[200,100,200], tag:'tallita-daily', renotify:true
+      });
+    }, delay || 0);
+  }
+});
+`;
+
+function registerSW() {
+  if ('serviceWorker' in navigator) {
+    const blob = new Blob([swCode], {type:'application/javascript'});
+    const url = URL.createObjectURL(blob);
+    navigator.serviceWorker.register(url).then(reg => {
+      const saved = localStorage.getItem(NOTIF_KEY);
+      if (saved && Notification.permission === 'granted') {
+        document.getElementById('notif-dot').style.display = 'block';
+      }
+    }).catch(err => console.log('SW error', err));
+  }
+}
+
+// ============ TOAST ============
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+</script>
+</body>
+</html>
