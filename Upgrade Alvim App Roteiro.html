@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Upgrade Alvim — Roteiro de Atendimento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#1B1B1B;
+    --charcoal-soft:#262624;
+    --charcoal-card:#2A2A28;
+    --cream:#F7F4EE;
+    --cream-card:#FFFFFF;
+    --gold:#B8924A;
+    --gold-light:#D8BD82;
+    --ink:#242422;
+    --muted:#7A756A;
+    --line:#E4DFD3;
+    --success:#5C6E4F;
+    --success-bg:#EAF0E2;
+    --danger:#8C4A42;
+    --danger-bg:#F3E4E1;
+    --shadow: 0 8px 28px rgba(20,18,14,0.14);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Montserrat', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .serif{font-family:'Cormorant Garamond', serif;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    background:var(--charcoal);
+    color:var(--cream);
+    padding:28px 24px 22px;
+    position:sticky;
+    top:0;
+    z-index:50;
+    box-shadow: var(--shadow);
+  }
+  .header-inner{
+    max-width:1180px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:18px;
+  }
+  .brand-eyebrow{
+    font-size:11px;
+    letter-spacing:3px;
+    color:var(--gold-light);
+    text-transform:uppercase;
+    margin:0 0 6px;
+    font-weight:600;
+  }
+  .brand-title{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size:34px;
+    margin:0;
+    letter-spacing:0.5px;
+  }
+  .mode-toggle{
+    display:inline-flex;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:999px;
+    padding:4px;
+    gap:2px;
+  }
+  .mode-btn{
+    border:none;
+    background:transparent;
+    color:var(--gold-light);
+    font-family:'Montserrat', sans-serif;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:0.5px;
+    padding:9px 18px;
+    border-radius:999px;
+    cursor:pointer;
+    transition: background 0.2s, color 0.2s;
+    white-space:nowrap;
+  }
+  .mode-btn.active{
+    background:var(--gold);
+    color:var(--charcoal);
+  }
+  .mode-btn:hover:not(.active){ color:var(--cream); }
+  .mode-btn:focus-visible, button:focus-visible, .node-btn:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:2px;
+  }
+
+  /* ---------- LAYOUT ---------- */
+  main{
+    max-width:1180px;
+    margin:0 auto;
+    padding:32px 24px 80px;
+  }
+  .view{ display:none; }
+  .view.active{ display:block; }
+
+  .flow-layout{
+    display:grid;
+    grid-template-columns: 320px 1fr;
+    gap:28px;
+    align-items:flex-start;
+  }
+  @media (max-width: 860px){
+    .flow-layout{ grid-template-columns: 1fr; }
+  }
+
+  /* ---------- TIMELINE ---------- */
+  .timeline{
+    background:var(--cream-card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:22px 18px;
+    position:sticky;
+    top:110px;
+  }
+  @media (max-width: 860px){ .timeline{ position:static; } }
+
+  .timeline-title{
+    font-size:10.5px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:600;
+    margin:0 0 16px 6px;
+  }
+  .node-list{ list-style:none; margin:0; padding:0; }
+  .node-item{ position:relative; padding-left:6px; }
+  .node-item:not(:last-child)::before{
+    content:"";
+    position:absolute;
+    left:24px;
+    top:44px;
+    width:1px;
+    height:calc(100% - 20px);
+    background:var(--line);
+  }
+  .node-btn{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:transparent;
+    border:none;
+    text-align:left;
+    padding:10px 8px;
+    border-radius:10px;
+    cursor:pointer;
+    font-family:'Montserrat', sans-serif;
+    transition: background 0.15s;
+  }
+  .node-btn:hover{ background:#F0ECE1; }
+  .node-btn.active{ background:var(--charcoal); }
+  .node-badge{
+    flex:0 0 auto;
+    width:34px; height:34px;
+    border-radius:50%;
+    background:var(--gold);
+    color:var(--charcoal);
+    display:flex; align-items:center; justify-content:center;
+    font-weight:700;
+    font-size:13px;
+    z-index:1;
+    position:relative;
+  }
+  .node-btn.active .node-badge{ background:var(--gold-light); }
+  .node-label{
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--ink);
+    line-height:1.3;
+  }
+  .node-btn.active .node-label{ color:var(--cream); }
+  .node-sub{
+    font-size:11px;
+    color:var(--muted);
+    margin-top:2px;
+  }
+  .node-btn.active .node-sub{ color:var(--gold-light); }
+
+  /* ---------- DETAIL PANEL ---------- */
+  .detail-panel{
+    background:var(--charcoal);
+    color:var(--cream);
+    border-radius:18px;
+    padding:36px 38px;
+    min-height:420px;
+    display:flex;
+    flex-direction:column;
+    box-shadow:var(--shadow);
+  }
+  @media (max-width: 640px){ .detail-panel{ padding:26px 22px; } }
+
+  .detail-progress{
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--gold-light);
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .detail-title{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size:30px;
+    margin:0 0 6px;
+  }
+  .detail-subtitle{
+    font-size:13.5px;
+    color:#C9C5BB;
+    font-style:italic;
+    font-family:'Cormorant Garamond', serif;
+    margin:0 0 22px;
+  }
+  .script-box{
+    background:var(--charcoal-card);
+    border-radius:14px;
+    padding:24px 26px;
+    flex:1;
+  }
+  .script-trigger{
+    font-size:10.5px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--gold-light);
+    font-weight:600;
+    margin:0 0 14px;
+  }
+  .script-line{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:19px;
+    line-height:1.5;
+    margin:0 0 16px;
+  }
+  .script-line:last-child{ margin-bottom:0; }
+  .bullet-line{
+    font-size:14px;
+    line-height:1.6;
+    margin:0 0 12px;
+    padding-left:20px;
+    position:relative;
+    color:#DAD6CA;
+  }
+  .bullet-line::before{
+    content:"—";
+    position:absolute; left:0; color:var(--gold);
+  }
+  .bullet-line:last-child{ margin-bottom:0; }
+  .note-box{
+    margin-top:18px;
+    background:#3A3120;
+    border:1px solid var(--gold);
+    border-radius:10px;
+    padding:12px 16px;
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--gold-light);
+    display:flex;
+    gap:8px;
+    align-items:flex-start;
+  }
+  .detail-footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    margin-top:24px;
+    flex-wrap:wrap;
+  }
+  .nav-btns{ display:flex; gap:10px; }
+  .btn{
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    font-size:12.5px;
+    letter-spacing:0.4px;
+    border-radius:999px;
+    padding:11px 20px;
+    cursor:pointer;
+    border:1px solid rgba(255,255,255,0.2);
+    background:transparent;
+    color:var(--cream);
+    transition: background 0.15s, opacity 0.15s;
+  }
+  .btn:hover{ background:rgba(255,255,255,0.08); }
+  .btn:disabled{ opacity:0.35; cursor:not-allowed; }
+  .btn.gold{
+    background:var(--gold);
+    color:var(--charcoal);
+    border-color:var(--gold);
+  }
+  .btn.gold:hover{ background:var(--gold-light); }
+  .copy-btn{
+    font-size:11.5px;
+    color:var(--gold-light);
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .copy-btn:hover{ text-decoration:underline; }
+
+  /* ---------- OBJECTIONS VIEW ---------- */
+  .obj-intro{
+    max-width:640px;
+    margin:0 0 26px;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.6;
+  }
+  .obj-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+    margin-bottom:26px;
+  }
+  @media (max-width:860px){ .obj-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:480px){ .obj-grid{ grid-template-columns:1fr; } }
+  .obj-card{
+    background:var(--cream-card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:18px 16px;
+    text-align:left;
+    cursor:pointer;
+    transition: border-color 0.15s, transform 0.15s;
+    font-family:'Montserrat', sans-serif;
+  }
+  .obj-card:hover{ border-color:var(--gold); transform:translateY(-2px); }
+  .obj-card.active{ border-color:var(--gold); background:#FBF6EA; }
+  .obj-icon{
+    width:30px; height:30px;
+    border-radius:8px;
+    background:var(--danger-bg);
+    color:var(--danger);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;
+    font-size:13px;
+    margin-bottom:10px;
+  }
+  .obj-title{ font-weight:700; font-size:14px; margin-bottom:4px; }
+  .obj-trigger{ font-size:11.5px; color:var(--muted); line-height:1.4; }
+
+  .obj-detail{
+    background:var(--charcoal);
+    color:var(--cream);
+    border-radius:18px;
+    padding:32px 34px;
+    box-shadow:var(--shadow);
+  }
+  .obj-detail-empty{
+    color:#B9B5A9;
+    font-size:14px;
+    text-align:center;
+    padding:40px 10px;
+  }
+
+  .footnote{
+    max-width:1180px;
+    margin:34px auto 0;
+    padding:0 24px;
+    font-size:11.5px;
+    color:var(--muted);
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div>
+      <p class="brand-eyebrow">Clínica Alvim &middot; Treinamento de atendimento</p>
+      <h1 class="brand-title">Upgrade Alvim — passo a passo</h1>
+    </div>
+    <div class="mode-toggle" role="tablist" aria-label="Selecionar modo">
+      <button class="mode-btn active" id="tab-flow" role="tab" aria-selected="true">Fluxo de atendimento</button>
+      <button class="mode-btn" id="tab-obj" role="tab" aria-selected="false">Quebra de objeções</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== FLUXO PRINCIPAL ===================== -->
+  <section class="view active" id="view-flow">
+    <div class="flow-layout">
+
+      <nav class="timeline" aria-label="Etapas do atendimento">
+        <p class="timeline-title">As 9 etapas</p>
+        <ul class="node-list" id="node-list"></ul>
+      </nav>
+
+      <div class="detail-panel" id="detail-panel">
+        <!-- preenchido via JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== QUEBRA DE OBJEÇÕES ===================== -->
+  <section class="view" id="view-obj">
+    <p class="obj-intro">Nenhuma resposta abaixo fala em desconto. Todas redirecionam a paciente para o valor do planejamento completo — a régua da campanha nunca muda.</p>
+    <div class="obj-grid" id="obj-grid"></div>
+    <div class="obj-detail" id="obj-detail">
+      <p class="obj-detail-empty">Clique em uma objeção acima para ver a resposta completa.</p>
+    </div>
+  </section>
+
+</main>
+
+<p class="footnote">Roteiro interno de atendimento — Clínica Alvim, mês de inauguração.</p>
+
+<script>
+  const STEPS = [
+    {
+      badge: "A",
+      label: "Atração da paciente",
+      sub: "Antes do contato",
+      title: "Atração da paciente",
+      subtitle: "Todo canal deve cair no mesmo roteiro abaixo",
+      trigger: "Canais de origem",
+      type: "bullets",
+      lines: [
+        "Base própria — reativação de pacientes sumidas e disparos segmentados",
+        "Indicação — pergunte sempre \u201ccomo você conheceu a clínica?\u201d",
+        "Instagram — todo DM entra no roteiro de boas-vindas abaixo",
+        "Google — perfil completo do Google Business para busca local"
+      ],
+      note: null
+    },
+    {
+      badge: "1",
+      label: "Boas-vindas no WhatsApp",
+      sub: "Etapa 1",
+      title: "Boas-vindas no WhatsApp",
+      subtitle: "O primeiro contato define o tom de toda a conversa",
+      trigger: "Quando a paciente chegar pelo WhatsApp",
+      type: "script",
+      lines: [
+        "Olá, tudo bem? Seja muito bem-vinda à Clínica Alvim!",
+        "Meu nome é ______ e será um prazer te atender.",
+        "Antes de explicar como funciona nosso atendimento, posso saber seu nome?"
+      ],
+      note: "Esperar a resposta antes de continuar."
+    },
+    {
+      badge: "2",
+      label: "Descobrir a dor",
+      sub: "Etapa 2",
+      title: "Descobrir a dor da paciente",
+      subtitle: "Nunca falar de preço nesta etapa",
+      trigger: "Depois que a paciente responder o nome",
+      type: "script",
+      lines: [
+        "Prazer, [nome]. Me conta uma coisa...",
+        "O que mais te incomoda hoje quando você olha no espelho?"
+      ],
+      note: "Esperar a resposta. Nunca falar de preço. Nunca."
+    },
+    {
+      badge: "3",
+      label: "Planejamento facial",
+      sub: "Etapa 3",
+      title: "Apresentar o Planejamento Facial",
+      subtitle: "Posiciona a autoridade, não o procedimento isolado",
+      trigger: "Depois da resposta da paciente",
+      type: "script",
+      lines: [
+        "Entendi perfeitamente. Esse tipo de queixa é muito comum.",
+        "Aqui na Clínica Alvim nós não indicamos procedimentos isolados.",
+        "Primeiro realizamos um Planejamento Facial completo para entender exatamente quais estruturas precisam ser tratadas para alcançar um resultado bonito e natural."
+      ],
+      note: null
+    },
+    {
+      badge: "4",
+      label: "Introduz a campanha",
+      sub: "Etapa 4",
+      title: "Introduzir a campanha, sem revelar detalhes",
+      subtitle: "A campanha aparece como consequência do plano",
+      trigger: "Emendando na fala anterior",
+      type: "script",
+      lines: [
+        "Aproveitando... como estamos em nosso mês de inauguração, criamos uma condição muito especial para pacientes que iniciarem seu planejamento durante o mês de agosto.",
+        "Dependendo do protocolo indicado pela Dra. Anny, você poderá receber um Upgrade Exclusivo para complementar o tratamento."
+      ],
+      note: "Não falar \u201cBotox\u201d. Não falar \u201cSkinbooster\u201d. Ainda."
+    },
+    {
+      badge: "5",
+      label: "\u201cComo funciona?\u201d",
+      sub: "Etapa 5",
+      title: "Se a paciente perguntar \u201ccomo funciona?\u201d",
+      subtitle: "Mantém o interesse sem antecipar o benefício exato",
+      trigger: "Pergunta da paciente",
+      type: "script",
+      lines: [
+        "Após a avaliação, a Dra. Anny define o melhor planejamento para o seu caso.",
+        "Os pacientes participantes da campanha recebem benefícios exclusivos que podem incluir Skinbooster ou até mesmo Toxina Botulínica, conforme o planejamento realizado."
+      ],
+      note: null
+    },
+    {
+      badge: "6",
+      label: "Agendar avaliação",
+      sub: "Etapa 6",
+      title: "Conduzir para o agendamento",
+      subtitle: "O objetivo é sempre a avaliação — nunca o fechamento pelo WhatsApp",
+      trigger: "Fechamento da conversa",
+      type: "script",
+      lines: [
+        "Vamos agendar sua avaliação?",
+        "Assim a Dra. Anny poderá montar um planejamento personalizado e verificar em qual condição especial você se encaixa."
+      ],
+      note: null
+    },
+    {
+      badge: "7",
+      label: "Consulta presencial",
+      sub: "Na clínica",
+      title: "O momento certo de revelar a campanha",
+      subtitle: "Só depois de apresentar estrutura, plano e valor",
+      trigger: "Quando perceber o interesse da paciente",
+      type: "script",
+      lines: [
+        "Tenho uma boa notícia. Como estamos em nosso mês de inauguração, seu planejamento entrou na campanha Upgrade Alvim."
+      ],
+      note: "Nesse momento a paciente já decidiu — agora ela ganhou um presente. Psicologicamente é muito mais forte."
+    },
+    {
+      badge: "8",
+      label: "Fechamento",
+      sub: "Última etapa",
+      title: "Fechamento",
+      subtitle: "Confirme a data antes de encerrar a conversa",
+      trigger: "Se houver objeção",
+      type: "bullets",
+      lines: [
+        "Reforce sempre o planejamento, nunca o preço",
+        "Consulte o modo \u201cQuebra de objeções\u201d para a resposta certa",
+        "Nunca encerre sem confirmar data e horário"
+      ],
+      note: null
+    }
+  ];
+
+  const OBJECTIONS = [
+    {
+      key: "preco",
+      title: "Preço",
+      trigger: "Pergunta o valor antes de terminar de ouvir o plano",
+      lines: [
+        "Eu entendo. Esse valor já contempla um planejamento completo, pensado especificamente pra sua anatomia — não é um procedimento avulso.",
+        "Durante agosto, esse mesmo planejamento ainda entra na campanha Upgrade Alvim, então você recebe um upgrade sem pagar por ele à parte."
+      ]
+    },
+    {
+      key: "pensar",
+      title: "Vou pensar",
+      trigger: "Respostas curtas, para de perguntar sobre o procedimento",
+      lines: [
+        "Sem problema, é uma decisão importante mesmo. Só te lembro que a condição especial da inauguração vale até 31 de agosto — depois disso o planejamento continua existindo, mas sem o upgrade.",
+        "Posso deixar sua avaliação pré-agendada pra você não perder a vaga?"
+      ]
+    },
+    {
+      key: "outro",
+      title: "Outro lugar",
+      trigger: "Menciona valor visto em outro lugar ou compara produto",
+      lines: [
+        "Cada planejamento aqui é desenhado individualmente pela Dra. Anny pra sua anatomia — não é um pacote fechado como em outros lugares.",
+        "Por isso os resultados são tão naturais. Vale a pena pelo menos conhecer a proposta na avaliação, sem compromisso."
+      ]
+    },
+    {
+      key: "familia",
+      title: "Família",
+      trigger: "Quer falar com marido ou família antes de decidir",
+      lines: [
+        "Faz todo sentido. Que tal já trazer ela pra avaliação com você? Assim a Dra. Anny explica o planejamento pra vocês duas juntas, e a decisão fica mais fácil.",
+        "Posso confirmar um horário que funcione pras duas?"
+      ]
+    }
+  ];
+
+  let currentStep = 0;
+
+  function renderNodeList(){
+    const list = document.getElementById('node-list');
+    list.innerHTML = '';
+    STEPS.forEach((step, i) => {
+      const li = document.createElement('li');
+      li.className = 'node-item';
+      const btn = document.createElement('button');
+      btn.className = 'node-btn' + (i === currentStep ? ' active' : '');
+      btn.setAttribute('aria-current', i === currentStep ? 'step' : 'false');
+      btn.innerHTML =
+        '<span class="node-badge">' + step.badge + '</span>' +
+        '<span><span class="node-label">' + step.label + '</span>' +
+        '<div class="node-sub">' + step.sub + '</div></span>';
+      btn.addEventListener('click', () => { currentStep = i; render(); });
+      li.appendChild(btn);
+      list.appendChild(li);
+    });
+  }
+
+  function renderDetail(){
+    const step = STEPS[currentStep];
+    const panel = document.getElementById('detail-panel');
+
+    const linesHtml = step.lines.map(l =>
+      step.type === 'script'
+        ? '<p class="script-line">\u201c' + l + '\u201d</p>'
+        : '<p class="bullet-line">' + l + '</p>'
+    ).join('');
+
+    const noteHtml = step.note
+      ? '<div class="note-box">⚠ ' + step.note + '</div>'
+      : '';
+
+    const copyText = step.type === 'script' ? step.lines.join(' ') : step.lines.join(' | ');
+
+    panel.innerHTML =
+      '<div class="detail-progress">Etapa ' + (currentStep + 1) + ' de ' + STEPS.length + '</div>' +
+      '<h2 class="detail-title">' + step.title + '</h2>' +
+      '<p class="detail-subtitle">' + step.subtitle + '</p>' +
+      '<div class="script-box">' +
+        '<p class="script-trigger">' + step.trigger + '</p>' +
+        linesHtml +
+        noteHtml +
+      '</div>' +
+      '<div class="detail-footer">' +
+        '<button class="copy-btn" id="copy-btn">Copiar texto</button>' +
+        '<div class="nav-btns">' +
+          '<button class="btn" id="prev-btn" ' + (currentStep === 0 ? 'disabled' : '') + '>Anterior</button>' +
+          '<button class="btn gold" id="next-btn" ' + (currentStep === STEPS.length - 1 ? 'disabled' : '') + '>Próxima etapa</button>' +
+        '</div>' +
+      '</div>';
+
+    document.getElementById('prev-btn').addEventListener('click', () => { if(currentStep>0){currentStep--; render();} });
+    document.getElementById('next-btn').addEventListener('click', () => { if(currentStep<STEPS.length-1){currentStep++; render();} });
+    document.getElementById('copy-btn').addEventListener('click', (e) => {
+      navigator.clipboard.writeText(copyText).then(() => {
+        const btn = e.currentTarget;
+        const original = btn.textContent;
+        btn.textContent = 'Copiado!';
+        setTimeout(() => { btn.textContent = original; }, 1500);
+      });
+    });
+  }
+
+  function render(){
+    renderNodeList();
+    renderDetail();
+  }
+
+  let currentObj = null;
+
+  function renderObjGrid(){
+    const grid = document.getElementById('obj-grid');
+    grid.innerHTML = '';
+    OBJECTIONS.forEach(obj => {
+      const card = document.createElement('button');
+      card.className = 'obj-card' + (currentObj === obj.key ? ' active' : '');
+      card.innerHTML =
+        '<div class="obj-icon">\u2715</div>' +
+        '<div class="obj-title">' + obj.title + '</div>' +
+        '<div class="obj-trigger">' + obj.trigger + '</div>';
+      card.addEventListener('click', () => { currentObj = obj.key; renderObjView(); });
+      grid.appendChild(card);
+    });
+  }
+
+  function renderObjDetail(){
+    const detail = document.getElementById('obj-detail');
+    if(!currentObj){
+      detail.innerHTML = '<p class="obj-detail-empty">Clique em uma objeção acima para ver a resposta completa.</p>';
+      return;
+    }
+    const obj = OBJECTIONS.find(o => o.key === currentObj);
+    const linesHtml = obj.lines.map(l => '<p class="script-line">\u201c' + l + '\u201d</p>').join('');
+    const copyText = obj.lines.join(' ');
+    detail.innerHTML =
+      '<div class="detail-progress">Objeção</div>' +
+      '<h2 class="detail-title">' + obj.title + '</h2>' +
+      '<p class="detail-subtitle">' + obj.trigger + '</p>' +
+      '<div class="script-box">' +
+        '<p class="script-trigger">Resposta sugerida</p>' +
+        linesHtml +
+      '</div>' +
+      '<div class="detail-footer">' +
+        '<button class="copy-btn" id="copy-obj-btn">Copiar texto</button>' +
+        '<div></div>' +
+      '</div>';
+    document.getElementById('copy-obj-btn').addEventListener('click', (e) => {
+      navigator.clipboard.writeText(copyText).then(() => {
+        const btn = e.currentTarget;
+        const original = btn.textContent;
+        btn.textContent = 'Copiado!';
+        setTimeout(() => { btn.textContent = original; }, 1500);
+      });
+    });
+  }
+
+  function renderObjView(){
+    renderObjGrid();
+    renderObjDetail();
+  }
+
+  document.getElementById('tab-flow').addEventListener('click', () => {
+    document.getElementById('tab-flow').classList.add('active');
+    document.getElementById('tab-flow').setAttribute('aria-selected','true');
+    document.getElementById('tab-obj').classList.remove('active');
+    document.getElementById('tab-obj').setAttribute('aria-selected','false');
+    document.getElementById('view-flow').classList.add('active');
+    document.getElementById('view-obj').classList.remove('active');
+  });
+  document.getElementById('tab-obj').addEventListener('click', () => {
+    document.getElementById('tab-obj').classList.add('active');
+    document.getElementById('tab-obj').setAttribute('aria-selected','true');
+    document.getElementById('tab-flow').classList.remove('active');
+    document.getElementById('tab-flow').setAttribute('aria-selected','false');
+    document.getElementById('view-obj').classList.add('active');
+    document.getElementById('view-flow').classList.remove('active');
+  });
+
+  render();
+  renderObjView();
+</script>
+
+</body>
+</html>
